@@ -1,0 +1,61 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.chip {
+    @apply 
+        bg-indigo-500 
+        text-sm 
+        px-4 
+        py-1 
+        m-1 
+        text-white 
+        rounded-s-full 
+        rounded-e-full;
+}
+
+.main{
+    @apply 
+        w-full 
+        container 
+        mx-auto 
+        px-8;
+}
+
+.section-title{
+    @apply 
+        text-3xl 
+        font-bold 
+        tracking-tight 
+        sm:text-4xl;
+}
+
+.section-subtitle{
+    @apply 
+        mt-2 
+        text-lg 
+        leading-8;
+}
+
+.section-header {
+    @apply 
+        mx-auto 
+        max-w-2xl 
+        text-center;
+}
+
+.section-content {
+    @apply 
+        mx-auto 
+        mt-16  
+        sm:mt-20;
+}
+
+.section{
+    @apply 
+        isolate 
+        px-6 
+        py-24 
+        sm:py-32 
+        lg:px-8;
+}
