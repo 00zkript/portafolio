@@ -31,6 +31,7 @@ import IconGlobe from '../components/icons/Globe.astro';
 import IconAstro from '../components/icons/AstroIcon.astro';
 import IconMysql from '../components/icons/Mysql.astro';
 import IconPostgressql from '../components/icons/Postgressql.astro';
+import IconMe from '../components/icons/Me.astro';
 
 
 ---
@@ -145,7 +146,7 @@ import IconPostgressql from '../components/icons/Postgressql.astro';
 						<IconDatabase class="w-16 h-16 m-5"/>
 					</div>
 					<h2 class="font-bold mb-2 text-xl">Backend</h2>
-					<p class="text-sm">Especialista en Laravel, creando soluciones sólidas y escalables. También tengo experiencia con Node.js, pero mi enfoque principal es Laravel</p>
+					<p class="text-sm">Especialista en Laravel, creando soluciones sólidas y escalables. También tengo experiencia con Node.js y otros framworks, pero mi enfoque principal es Laravel</p>
 				</div>
 				<div class="pb-3">
 					<h2 class="font-bold mb-2">Lenguajes</h2>
@@ -164,6 +165,7 @@ import IconPostgressql from '../components/icons/Postgressql.astro';
 						<span class="chip bg-indigo-500 text-white"><IconCodeigniter/> Codeigniter</span>
 						<span class="chip bg-indigo-500 text-white"><IconNode/> Node</span>
 						<span class="chip bg-indigo-500 text-white"><IconOpencart/> Opencart</span>
+						<span class="chip bg-indigo-500 text-white"><IconWordpress/> Wordpress</span>
 					</div>
 				</div>
 			</div>
@@ -174,7 +176,7 @@ import IconPostgressql from '../components/icons/Postgressql.astro';
 						<IconCode class="w-16 h-16 m-5"/>
 					</div>
 					<h2 class="font-bold mb-2 text-xl">Otros</h2>
-					<p class="text-sm">Experiencia en bases de datos, servicios en la nube y control de versiones, complementando mis habilidades como desarrollador.</p>
+					<p class="text-sm">Experiencia en servicios en la nube y control de versiones, complementando mis habilidades como desarrollador.</p>
 				</div>
 				<div class="pb-3">
 					<div class="flex flex-wrap justify-center">
@@ -201,7 +203,10 @@ import IconPostgressql from '../components/icons/Postgressql.astro';
 	<section class="section" >
 	
 		<div class="section-header">
-			<h2 class="section-title text-black-russian-400">Sobre Mi</h2>
+			<h2 class="section-title text-black-russian-400 flex gap-2 justify-center items-center">
+				<!-- <IconMe class="h-12"/>  -->
+				Sobre Mi
+			</h2>
 			<p class="section-subtitle ">Un breve resumen de mi persona.</p>
 		</div>
 	
@@ -282,14 +287,14 @@ import IconPostgressql from '../components/icons/Postgressql.astro';
 						<img src="img/1031-1000x500.jpg" alt="" class="object-cover rounded-t-md h-48 w-full" >
 					</a>
 					<div class="px-4 py-4 flex flex-col">
-						<a href="https://optimania.pe/" target="_blank">
+						<!-- <a href="https://optimania.pe/" target="_blank">
 							<h3 class="text-md font-semibold mb-2 text-black-russian-400">Optimania</h3>
-						</a>
+						</a> -->
 						<div class="flex flex-wrap justify-start">
 							<span class="chip bg-indigo-500 text-white"><IconLaravel/> Laravel</span>
+							<span class="chip bg-indigo-500 text-white"><IconLaravel/> Blade</span>
 							<span class="chip bg-indigo-500 text-white"><IconVue/> Vuejs </span>
 							<span class="chip bg-indigo-500 text-white"><IconJs/> Vanilla Js </span>
-							<span class="chip bg-indigo-500 text-white"><IconLaravel/> Blade</span>
 							<span class="chip bg-indigo-500 text-white"><IconMercadopago/> Mercado pago </span>
 							<!-- <span class="chip bg-indigo-500 text-white">Mas...</span> -->
 						</div>
@@ -310,17 +315,26 @@ import IconPostgressql from '../components/icons/Postgressql.astro';
 							class="object-cover object-top w-full h-full rounded-lg" 
 						/>
 						<div class="absolute inset-0 bg-black opacity-50 rounded-lg"></div>
+						<div class="absolute inset-0 rounded-lg flex flex-col justify-center items-center h-full">
+							<div class="text-center text-gray-200">
+								<p class="text-2xl">Optimania</p>
+							</div>
+						</div>
 					</div>
 						
-					<div class="relative flex flex-col justify-center items-center h-full text-center hover:bg-black hover:rounded-lg hover:bg-opacity-70">
-						<div class="text-center text-gray-200">
-							<p class="text-xl">Optimania</p>
-						</div>
+					<div class="relative flex flex-col justify-center items-center h-full text-center hover:bg-black hover:rounded-lg hover:bg-opacity-70 opacity-0 hover:opacity-100">
+						<!-- <div class="text-center text-gray-200">
+							<p class="text-2xl">Optimania</p>
+						</div> -->
 	
-						<div class="flex flex-wrap justify-center">
+						<div class="flex flex-wrap absolute bottom-2 left-2 ">
+
 							<span class="chip bg-indigo-500 text-white"><IconLaravel/> Laravel</span>
+							<span class="chip bg-indigo-500 text-white"><IconLaravel/> Blade</span>
 							<span class="chip bg-indigo-500 text-white"><IconVue/> Vuejs </span>
-							<span class="chip bg-indigo-500 text-white">Mas...</span>
+							<span class="chip bg-indigo-500 text-white"><IconJs/> Vanilla Js </span>
+							<span class="chip bg-indigo-500 text-white"><IconMercadopago/> Mercado pago </span>
+							
 						</div>
 						
 					</div>
