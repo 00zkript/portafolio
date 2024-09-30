@@ -1,53 +1,28 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import IconAmazonc2 from '../components/icons/Amazonc2.astro';
-import IconAmazons3 from '../components/icons/Amazons3.astro';
-import IconBootstrap from '../components/icons/Bootstrap.astro';
-import IconCodeigniter from '../components/icons/Codeigniter.astro';
-import IconCss from '../components/icons/Css.astro';
-import IconDatabase from '../components/icons/Database.astro';
-import IconDocker from '../components/icons/Docker.astro';
-import IconDownload from '../components/icons/Download.astro';
-import IconFaceid from '../components/icons/Faceid.astro';
-import IconGit from '../components/icons/Git.astro';
-import IconHtml from '../components/icons/Html.astro';
-import IconJs from '../components/icons/Js.astro';
-import IconLaravel from '../components/icons/Laravel.astro';
-import IconNode from '../components/icons/Node.astro';
-import IconOpencart from '../components/icons/Opencart.astro';
-import IconPhp from '../components/icons/Php.astro';
-import IconPhpstorm from '../components/icons/Phpstorm.astro';
-import IconPython from '../components/icons/Python.astro';
-import IconReact from '../components/icons/React.astro';
-import IconTailwindcss from '../components/icons/Tailwindcss.astro';
-import IconVscode from '../components/icons/Vscode.astro';
-import IconVue from '../components/icons/Vue.astro';
-import IconWordpress from '../components/icons/Wordpress.astro';
-import IconJquery from '../components/icons/Jquery.astro';
-import IconCode from '../components/icons/Code.astro';
-import IconSymbolMore from '../components/icons/SymbolMore.astro';
-import IconMercadopago from '../components/icons/Mercadopago.astro';
-import IconGlobe from '../components/icons/Globe.astro';
-import IconAstro from '../components/icons/AstroIcon.astro';
-import IconMysql from '../components/icons/Mysql.astro';
-import IconPostgressql from '../components/icons/Postgressql.astro';
-import IconMe from '../components/icons/Me.astro';
-import IconArrowDown from '../components/icons/ArrowDown.astro';
-import Job from '../components/Job.astro';
+
+import SectionPresentacion from '../components/sections/Presentacion.astro';
+import SectionHabilidades from '../components/sections/Habilidades.astro';
+import SectionSobreMi from '../components/sections/SobreMi.astro';
+import SectionPortafolio from '../components/sections/Portafolio.astro';
+import SectionExperiencia from '../components/sections/Experiencia.astro';
+import SectionContactame from '../components/sections/Contactame.astro';
+import Modal from '../components/Modal.astro';
 
 ---
 <Layout title="Welcome to Astro."> 
 
-	<div class="bg-indigo-950 text-gray-200 w-full inset-0 sticky z-50">
+	<div class="bg-indigo-950 text-gray-200 w-full inset-0 sticky z-20">
 			
 		<header class="main p-4 sm:p-2">
 			<div class="flex justify-between items-center">
 				<nav class="hidden md:flex space-x-2">
-					<a href="#" class="hover:text-indigo-400 px-4 py-2" >Competencias</a>
-					<a href="#" class="hover:text-indigo-400 px-4 py-2" >Sobre mi</a>
-					<a href="#" class="hover:text-indigo-400 px-4 py-2" >Proyectos</a>
-					<a href="#" class="hover:text-indigo-400 px-4 py-2" >Experiencia</a>
-					<a href="#" class="hover:text-indigo-400 px-4 py-2" >Contácteme</a>
+					<a href="#presentacion" class="hover:text-indigo-400 px-4 py-2"  >Presentación</a>
+					<a href="#habilidades" class="hover:text-indigo-400 px-4 py-2"  >Habilidades</a>
+					<a href="#sobre-mi" class="hover:text-indigo-400 px-4 py-2"  >Sobre mi</a>
+					<a href="#mis-trabajos" class="hover:text-indigo-400 px-4 py-2"  >Mi trabajo</a>
+					<a href="#experiencia" class="hover:text-indigo-400 px-4 py-2"  >Experiencia</a>
+					<a href="#contactame" class="hover:text-indigo-400 px-4 py-2"  >Contácteme</a>
 				</nav>
 		
 				<button id="menu-btn" class="md:hidden text-white focus:outline-none">
@@ -68,12 +43,13 @@ import Job from '../components/Job.astro';
 			</div>
 	
 			<div id="mobile-menu" class="md:hidden hidden flex flex-col space-y-1 mt-5">
-				<a href="#" class="py-2 px-2 hover:bg-indigo-800 rounded" >Competencias</a>
-				<a href="#" class="py-2 px-2 hover:bg-indigo-800 rounded" >Sobre mi</a>
-				<a href="#" class="py-2 px-2 hover:bg-indigo-800 rounded" >Proyectos</a>
-				<a href="#" class="py-2 px-2 hover:bg-indigo-800 rounded" >Experiencia</a>
-				<a href="#" class="py-2 px-2 hover:bg-indigo-800 rounded" >Contácteme</a>
-				<a href="#" class="py-2 px-2 hover:bg-indigo-800 rounded flex gap-2" >
+				<a href="#presentacion" class="py-2 px-2 hover:bg-indigo-800 rounded"  >Presentación</a>
+				<a href="#habilidades" class="py-2 px-2 hover:bg-indigo-800 rounded"  >Habilidades</a>
+				<a href="#sobre-mi" class="py-2 px-2 hover:bg-indigo-800 rounded"  >Sobre mi</a>
+				<a href="#mis-trabajos" class="py-2 px-2 hover:bg-indigo-800 rounded"  >Mis trabajos</a>
+				<a href="#experiencia" class="py-2 px-2 hover:bg-indigo-800 rounded"  >Experiencia</a>
+				<a href="#contactame" class="py-2 px-2 hover:bg-indigo-800 rounded"  >Contácteme</a>
+				<a href="" class="py-2 px-2 hover:bg-indigo-800 rounded flex gap-2" >
 					<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
 						<path stroke-linecap="round" stroke-linejoin="round" d="M12 9.75v6.75m0 0-3-3m3 3 3-3m-8.25 6a4.5 4.5 0 0 1-1.41-8.775 5.25 5.25 0 0 1 10.233-2.33 3 3 0 0 1 3.758 3.848A3.752 3.752 0 0 1 18 19.5H6.75Z" />
 					</svg>
@@ -84,442 +60,15 @@ import Job from '../components/Job.astro';
 	</div>
 	
 	
-	<section class="w-full h-screen relative py-24 sm:py-32 bg-no-repeat bg-center bg-cover bg-fixed bg-black" style="background-image: url('img/banner.jpg');">
-		<div class="absolute inset-0 bg-black opacity-50"></div>
-			
-		<div class="absolute">
-			<div class="px-8 sm:px-16 py-8 text-gray-200 z-10">
-				<h1 class="text-4xl">hola, soy</h1>
-				<h1 class="text-6xl font-bold">henry quispe cabello</h1>
-				<h2 class="text-3xl pt-2">Developer full stack </h2>
-				<p class="mt-4 md:w-1/2">
-					Desarrollador Full Stack con especialización en backend, principalmente con Laravel, y habilidades para desarrollar interfaces y soluciones completas de manera eficiente.
-				</p>
-			</div>
-			
-		</div>
+	<SectionPresentacion id="presentacion" />
+	<SectionHabilidades  id="habilidades" />
+	<SectionSobreMi      id="sobre-mi" />	
+	<SectionPortafolio   id="mis-trabajos" />	
+	<SectionExperiencia  id="experiencia" />	
+	<SectionContactame   id="contactame" />	
 	
-	</section>
-	
-	
-	<section class="py-16 mx-auto rounded-lg bg-slate-100 -mt-24 w-11/12 z-20 relative shadow-md" >
-		<div class="relative grid grid-cols-1 md:grid-cols-3 gap-x-4 gap-y-12 justify-items-center text-center">
-			<div class="p-5 md:py-0 md:px-12 md:w-full border-b-2 md:border-b-0 ">
-				<div class="mb-3 flex flex-col items-center">
-					<div class="rounded-full bg-black-russian-400 text-white mb-5">
-						<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-16 h-16 m-5">
-							<path stroke-linecap="round" stroke-linejoin="round" d="M6.429 9.75 2.25 12l4.179 2.25m0-4.5 5.571 3 5.571-3m-11.142 0L2.25 7.5 12 2.25l9.75 5.25-4.179 2.25m0 0L21.75 12l-4.179 2.25m0 0 4.179 2.25L12 21.75 2.25 16.5l4.179-2.25m11.142 0-5.571 3-5.571-3" />
-						</svg>
-								  
-					</div>
-							  
-					<h2 class="font-bold mb-2 text-xl ">Frontend</h2>
-					<p class="text-sm">Conocimientos en HTML, CSS y Tailwind CSS. Puedo maquetar y desarrollar interfaces, aunque mi especialidad es el backend.</p>
-				</div>
-	
-				<div class="pb-3">
-					<h2 class="font-bold mb-2">Lenguajes</h2>
-					<div class="flex flex-wrap justify-center">
-						<span class="chip bg-indigo-500 text-white"><IconHtml/> Html</span>
-						<span class="chip bg-indigo-500 text-white"><IconJs/> Vanilla Js</span>
-						<span class="chip bg-indigo-500 text-white"><IconJquery/> Jquery</span>
-						<span class="chip bg-indigo-500 text-white"><IconCss/> Css</span>
-					</div>
-				</div>
-	
-				<div class="pb-3">
-					<h2 class="font-bold mb-2">Framework y otros</h2>
-					<div class="flex flex-wrap justify-center">
-						<span class="chip bg-indigo-500 text-white"><IconVue/> Vuejs</span>
-						<span class="chip bg-indigo-500 text-white"><IconAstro/> Astro</span>
-						<span class="chip bg-indigo-500 text-white"><IconReact/> React</span>
-						<span class="chip bg-indigo-500 text-white"><IconBootstrap/> Bootstrap</span>
-						<span class="chip bg-indigo-500 text-white"><IconTailwindcss/> Tailwindcss</span>
-					</div>
-				</div>
-					
-					
-			</div>
-	
-			<div class="p-5 md:py-0 md:px-12 md:w-full border-b-2 md:border-b-0 ">
-				<div class="mb-3 flex flex-col items-center">
-					<div class="rounded-full bg-black-russian-400 text-white mb-5">
-						<IconDatabase class="w-16 h-16 m-5"/>
-					</div>
-					<h2 class="font-bold mb-2 text-xl">Backend</h2>
-					<p class="text-sm">Especialista en Laravel, creando soluciones sólidas y escalables. También tengo experiencia con Node.js y otros framworks, pero mi enfoque principal es Laravel</p>
-				</div>
-				<div class="pb-3">
-					<h2 class="font-bold mb-2">Lenguajes</h2>
-					<div class="flex flex-wrap justify-center">
-						<span class="chip bg-indigo-500 text-white"><IconPhp/> Php</span>
-						<span class="chip bg-indigo-500 text-white"><IconJs/> Vanilla Js</span>
-						<span class="chip bg-indigo-500 text-white"><IconPython/> Python</span>
-					</div>
-				</div>
-				<div class="pb-3">
-					<h2 class="font-bold mb-2">Framework y otros</h2>
-					<div class="flex flex-wrap justify-center">
-						<span class="chip bg-indigo-500 text-white"><IconLaravel/> Laravel</span>
-						<span class="chip bg-indigo-500 text-white"><IconMysql/> MySQL</span>
-						<span class="chip bg-indigo-500 text-white"><IconPostgressql/> PostgreSQL</span>
-						<span class="chip bg-indigo-500 text-white"><IconCodeigniter/> Codeigniter</span>
-						<span class="chip bg-indigo-500 text-white"><IconNode/> Node</span>
-						<span class="chip bg-indigo-500 text-white"><IconOpencart/> Opencart</span>
-						<span class="chip bg-indigo-500 text-white"><IconWordpress/> Wordpress</span>
-					</div>
-				</div>
-			</div>
-	
-			<div class="p-5 md:py-0 md:px-12 md:w-full ">
-				<div class="mb-3 flex flex-col items-center">
-					<div class="rounded-full bg-black-russian-400 text-white mb-5">
-						<IconCode class="w-16 h-16 m-5"/>
-					</div>
-					<h2 class="font-bold mb-2 text-xl">Otros</h2>
-					<p class="text-sm">Experiencia en servicios en la nube y control de versiones, complementando mis habilidades como desarrollador.</p>
-				</div>
-				<div class="pb-3">
-					<div class="flex flex-wrap justify-center">
-						
-						<span class="chip bg-indigo-500 text-white"><IconAmazonc2/> Amazon C2</span>
-						<span class="chip bg-indigo-500 text-white"><IconAmazons3/> Amazon S3</span>
-						<span class="chip bg-indigo-500 text-white"><IconFaceid/> Amazon Rekognition</span>
-						<span class="chip bg-indigo-500 text-white"><IconFaceid/> Face ++</span>
-						<span class="chip bg-indigo-500 text-white"><IconGit/> Git</span>
-						<span class="chip bg-indigo-500 text-white"><IconDocker/> Docker</span>
-						<span class="chip bg-indigo-500 text-white"><IconVscode/> Vscode</span>
-						<span class="chip bg-indigo-500 text-white"><IconPhpstorm/>Php Storm</span>
-					</div>
-				</div>
-			</div>
-	
-			<div class="hidden md:block absolute inset-y-0 left-1/3 w-[1px] bg-gray-300"></div>
-			<div class="hidden md:block absolute inset-y-0 left-2/3 w-[1px] bg-gray-300"></div>
-	
-		</div>
-	</section>
-	
-	
-	<section class="section" >
-	
-		<div class="section-header">
-			<h2 class="section-title text-black-russian-400 flex gap-2 justify-center items-center">
-				<!-- <IconMe class="h-12"/>  -->
-				Sobre Mi
-			</h2>
-			<p class="section-subtitle ">Un breve resumen de mi persona.</p>
-		</div>
-	
-		<div class="section-content max-w-2xl text-center" >    
-			<p class="p-2">Soy un apasionado desarrollador Full Stack con más de 5 años de experiencia en la creación de soluciones personalizadas que impactan. Especializado en Laravel y Vue.js, he liderado proyectos de E-commerce y ERP, integrando tecnologías innovadoras como Amazon S3 y Rekognition para ofrecer resultados excepcionales. Me encanta optimizar el código y desarrollar APIs y microservicios eficientes, además de implementar pasarelas de pago como Izipay, Culqui y Pago Efectivo para garantizar una experiencia de usuario fluida.</p>
-			<p class="p-2">Tengo un sólido dominio de bases de datos MySQL y PostgreSQL, y utilizo herramientas como Git y Bitbucket para mantener un control de versiones eficaz. En el ámbito del frontend, manejo Vue.js con confianza y continúo expandiendo mis conocimientos en tecnologías como React y Astro, siempre buscando nuevas formas de enriquecer mis habilidades. Mi objetivo es crear soluciones robustas y escalables que no solo cumplan con los requisitos, sino que también superen las expectativas.</p>
-		</div>
-	</section>
-	
-	<section class="section bg-black bg-no-repeat bg-cover bg-center bg-fixed" style="background-image: url('img/1031-1000x500.jpg');" >
-		<div class="section-header">
-			<h2 class="section-title text-white">Mi Trabajo</h2>
-			<h3 class="section-subtitle text-white">Una colección de proyectos en las que eh trabajado</h3>
-		</div>
-		<div class="section-content max-w-7xl" >
-			<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+	<Modal/>
 
-				<Job title="Optimania" img="img/screenshot_1.png" url="https://optimania.pe/" >
-					<Fragment slot="content">
-						<p>
-							Tienda online especializada en la venta de lentes de medida, lentes de sol con medida y lentes deportivos para hombres, mujeres y niños. Ofrecen una amplia variedad de estilos y marcas para satisfacer las necesidades visuales de sus clientes.
-						</p>
-					</Fragment>
-					<Fragment slot="tags">
-						<span class="chip bg-indigo-500 text-white"><IconLaravel/> Laravel</span>
-						<span class="chip bg-indigo-500 text-white"><IconLaravel/> Blade</span>
-						<span class="chip bg-indigo-500 text-white"><IconVue/> Vuejs </span>
-						<span class="chip bg-indigo-500 text-white"><IconJs/> Vanilla Js </span>
-						<span class="chip bg-indigo-500 text-white"><IconJquery/> Jquery </span>
-						<span class="chip bg-indigo-500 text-white"><IconMercadopago/> Mercado pago </span>
-					</Fragment>
-				</Job>
-
-				<Job title="Puro Amor" img="img/screenshot_2.png" url="https://puroamorshop.com/" >
-					<Fragment slot="content">
-						<p>
-							Tienda en línea que ofrece cajas de regalo personalizadas y productos de diseño únicos. Ideal para quienes buscan regalos especiales y personalizados para cualquier ocasión.
-						</p>
-					</Fragment>
-					<Fragment slot="tags">
-						<span class="chip bg-indigo-500 text-white"><IconLaravel/> Laravel</span>
-						<span class="chip bg-indigo-500 text-white"><IconLaravel/> Blade</span>
-						<span class="chip bg-indigo-500 text-white"><IconVue/> Vuejs </span>
-						<span class="chip bg-indigo-500 text-white"><IconJs/> Vanilla Js </span>
-						<span class="chip bg-indigo-500 text-white"><IconJquery/> Jquery </span>
-					</Fragment>
-				</Job>
-
-				<Job title="Compu Andina" img="img/screenshot_4.png" url="https://compuandina.com.pe/" >
-					<Fragment slot="content">
-						<p>
-							Empresa peruana dedicada a la comercialización y distribución de suministros y equipos de tecnología informática. Proveen soluciones tecnológicas tanto para empresas como para usuarios individuales.
-						</p>
-					</Fragment>
-					<Fragment slot="tags">
-						<span class="chip bg-indigo-500 text-white"><IconLaravel/> Laravel</span>
-						<span class="chip bg-indigo-500 text-white"><IconLaravel/> Blade</span>
-						<span class="chip bg-indigo-500 text-white"><IconVue/> Vuejs </span>
-						<span class="chip bg-indigo-500 text-white"><IconJs/> Vanilla Js </span>
-						<span class="chip bg-indigo-500 text-white"><IconJquery/> Jquery </span>
-						<span class="chip bg-indigo-500 text-white"><IconMercadopago/> Mercado pago </span>
-					</Fragment>
-				</Job>
-
-				<Job title="Tortas lucas" img="img/screenshot_5.png" url="https://tortaslucas.com.pe/" >
-					<Fragment slot="content">
-						<p>
-							Pastelería que elabora tortas y postres artesanales con ingredientes naturales. Sus productos destacan por mantener un sabor casero y auténtico, ideal para celebraciones y eventos especiales.
-						</p>
-					</Fragment>
-					<Fragment slot="tags">
-						<span class="chip bg-indigo-500 text-white"><IconLaravel/> Laravel</span>
-						<span class="chip bg-indigo-500 text-white"><IconLaravel/> Blade</span>
-						<span class="chip bg-indigo-500 text-white"><IconVue/> Vuejs </span>
-						<span class="chip bg-indigo-500 text-white"><IconJs/> Vanilla Js </span>
-						<span class="chip bg-indigo-500 text-white"><IconJquery/> Jquery </span>
-						<span class="chip bg-indigo-500 text-white"><IconMercadopago/> Izipay </span>
-					</Fragment>
-				</Job>
-
-				<Job title="Brit" img="img/screenshot_3.png" url="https://brit.pe/" >
-					<Fragment slot="content">
-						<p>
-							Marca de alimentos naturales y sostenibles para perros y gatos. Ofrecen productos premium y libres de granos, asegurando una alimentación saludable y balanceada para las mascotas.
-						</p>
-					</Fragment>
-					<Fragment slot="tags">
-						<span class="chip bg-indigo-500 text-white"><IconLaravel/> Laravel</span>
-						<span class="chip bg-indigo-500 text-white"><IconLaravel/> Blade</span>
-						<span class="chip bg-indigo-500 text-white"><IconVue/> Vuejs </span>
-						<span class="chip bg-indigo-500 text-white"><IconJs/> Vanilla Js </span>
-						<span class="chip bg-indigo-500 text-white"><IconJquery/> Jquery </span>
-						<!-- <span class="chip bg-indigo-500 text-white"><IconMercadopago/> Mercado pago </span> -->
-					</Fragment>
-				</Job>
-
-				<Job title="Tecmah" img="img/photo-1522252234503-e356532cafd5.jpeg" url="" >
-					<Fragment slot="content">
-						<p>
-							Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae accusamus dolore explicabo odit modi saepe sequi odio repellendus non veritatis!
-						</p>
-					</Fragment>
-					<Fragment slot="tags">
-						<span class="chip bg-indigo-500 text-white"><IconLaravel/> Laravel</span>
-						<span class="chip bg-indigo-500 text-white"><IconLaravel/> Blade</span>
-						<span class="chip bg-indigo-500 text-white"><IconVue/> Vuejs </span>
-						<span class="chip bg-indigo-500 text-white"><IconJs/> Vanilla Js </span>
-						<span class="chip bg-indigo-500 text-white"><IconMercadopago/> Mercado pago </span>
-					</Fragment>
-				</Job>
-
-				<div id="jobsHidden" class="grid grid-cols-subgrid col-span-3 gap-8 max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
-				 
-					<Job title="Power Fenix" img="img/photo-1522252234503-e356532cafd5.jpeg" url="" >
-						<Fragment slot="content">
-							<p>
-								Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae accusamus dolore explicabo odit modi saepe sequi odio repellendus non veritatis!
-							</p>
-						</Fragment>
-						<Fragment slot="tags">
-							<span class="chip bg-indigo-500 text-white"><IconLaravel/> Laravel</span>
-							<span class="chip bg-indigo-500 text-white"><IconLaravel/> Blade</span>
-							<span class="chip bg-indigo-500 text-white"><IconVue/> Vuejs </span>
-							<span class="chip bg-indigo-500 text-white"><IconJs/> Vanilla Js </span>
-							<span class="chip bg-indigo-500 text-white"><IconMercadopago/> Mercado pago </span>
-						</Fragment>
-					</Job>
-		
-					<Job title="Iarebet" img="img/screenshot_6.png" url="https://iarebt.org/" >
-						<Fragment slot="content">
-							<p>
-								Instituto especializado en la formación y certificación en terapias de comportamiento racional emotivo. Ofrecen cursos y programas para profesionales interesados en esta área de la psicología.
-							</p>
-						</Fragment>
-						<Fragment slot="tags">
-							<span class="chip bg-indigo-500 text-white"><IconLaravel/> Laravel</span>
-							<span class="chip bg-indigo-500 text-white"><IconLaravel/> Blade</span>
-							<span class="chip bg-indigo-500 text-white"><IconVue/> Vuejs </span>
-							<span class="chip bg-indigo-500 text-white"><IconJs/> Vanilla Js </span>
-							<span class="chip bg-indigo-500 text-white"><IconJquery/> Jquery </span>
-						</Fragment>
-					</Job>
-	
-					<Job title="Waira" img="img/screenshot_7.png" url="https://waira.com.pe/" >
-						<Fragment slot="content">
-							<p>
-								Empresa que ofrece soluciones tecnológicas y servicios de consultoría en transformación digital. Ayudan a las empresas a adaptarse y prosperar en la era digital mediante la implementación de tecnologías innovadoras.
-							</p>
-						</Fragment>
-						<Fragment slot="tags">
-							<span class="chip bg-indigo-500 text-white"><IconLaravel/> Laravel</span>
-							<span class="chip bg-indigo-500 text-white"><IconLaravel/> Blade</span>
-							<span class="chip bg-indigo-500 text-white"><IconVue/> Vuejs </span>
-							<span class="chip bg-indigo-500 text-white"><IconJs/> Vanilla Js </span>
-							<span class="chip bg-indigo-500 text-white"><IconJquery/> Jquery </span>
-						</Fragment>
-					</Job>
-	
-					<Job title="Cyber plaza" img="img/screenshot_8.png" url="https://cyberplaza.com.pe/" >
-						<Fragment slot="content">
-							<p>
-								Centro comercial en Lima especializado en la venta de productos tecnológicos y electrónicos. Es un punto de referencia para quienes buscan lo último en tecnología a precios competitivos.
-							</p>
-						</Fragment>
-						<Fragment slot="tags">
-							<span class="chip bg-indigo-500 text-white"><IconLaravel/> Laravel</span>
-							<span class="chip bg-indigo-500 text-white"><IconLaravel/> Blade</span>
-							<span class="chip bg-indigo-500 text-white"><IconVue/> Vuejs </span>
-							<span class="chip bg-indigo-500 text-white"><IconJs/> Vanilla Js </span>
-							<span class="chip bg-indigo-500 text-white"><IconJquery/> Jquery </span>
-						</Fragment>
-					</Job>
-	
-					<Job title="Piaggio" img="img/screenshot_9.png" url="https://piaggiope.com/" >
-						<Fragment slot="content">
-							<p>
-								Distribuidor oficial de motocicletas y scooters Piaggio en Perú. Ofrecen una variedad de modelos que combinan estilo, eficiencia y tecnología italiana.
-							</p>
-						</Fragment>
-						<Fragment slot="tags">
-							<span class="chip bg-indigo-500 text-white"><IconLaravel/> Laravel</span>
-							<span class="chip bg-indigo-500 text-white"><IconLaravel/> Blade</span>
-							<span class="chip bg-indigo-500 text-white"><IconVue/> Vuejs </span>
-							<span class="chip bg-indigo-500 text-white"><IconJs/> Vanilla Js </span>
-							<span class="chip bg-indigo-500 text-white"><IconJquery/> Jquery </span>
-						</Fragment>
-					</Job>
-				</div>
-
-				<div id="btnShowJobs" class="col-span-3 flex flex-col items-center">
-					<button type="button" class="text-lg text-white text-center flex flex-col items-center hover:text-black-russian-400">
-						Ver más 
-						<IconArrowDown width="1.5rem" height="1.5rem"/>
-					</button>
-				</div>
-				
-				<div id="btnHiddenJobs" class="hidden col-span-3 flex flex-col items-center">
-					<button type="button" class="text-lg text-white text-center flex flex-col items-center hover:text-black-russian-400">
-						<IconArrowDown class="rotate-180" width="1.5rem" height="1.5rem"/>
-						Ver menos
-					</button>
-				</div>
-				
-	
-		
-	
-			</div>
-		</div>
-	
-	</section>
-	
-		
-	
-	<section class="section bg-black bg-no-repeat bg-cover bg-center bg-fixed" style="background-image: url('img/1031-1000x500.jpg');" >
-			
-		<div class="section-header">
-			<h2 class="section-title text-white">Experiencia</h2>
-			<!-- <p class="section-subtitle text-slate-200">Aute magna irure deserunt veniam aliqua magna enim voluptate.</p> -->
-		</div>
-		<div class="section-content max-w-5xl">
-	
-			<div class="px-8 mt-10">
-		
-				<ol class="relative border-s border-gray-200">  
-										
-					<li class="mb-10 ms-4">
-						<div class="absolute w-3 h-3 bg-gray-200 rounded-full mt-6 -start-1.5 border border-white"></div>
-						<div class="bg-black bg-opacity-50 p-4 rounded-md">
-							<time class="mb-1 text-sm font-normal leading-none text-gray-200">
-								Enero 2020 - actualidad
-							</time>
-							<h3 class="text-lg font-semibold text-white">
-								Dezain studios
-							</h3>
-								
-							<ul class="text-base font-normal text-slate-300 list-disc ps-4">
-								<li>Liderazgo en proyectos ERP y E-commerce usando Laravel y Vue.js.</li>
-								<li>Implementación de reconocimiento facial y nuevas tecnologías (Amazon S3, Google Drive, Amazon rekognition, Amazon C2).</li>
-								<li>Refactorización de código, microservicios, desarrollo de APIs.</li>
-								<li>Integración de pasarelas de pago (Izipay, Culqui, Pago Efectivo).</li>
-								<li>Migración de sitios web y data.</li>
-								<li>Liderazgo de proyecto desde inicio hasta producción.</li>
-								<li>Análisis de requerimientos.</li>
-							</ul>
-						</div>
-							
-					</li>
-					<li class="mb-10 ms-4">
-						<div class="absolute w-3 h-3 bg-gray-200 rounded-full mt-6 -start-1.5 border border-white"></div>
-						<div class="bg-black bg-opacity-50 p-4 rounded-md">
-							<time class="mb-1 text-sm font-normal leading-none text-gray-200">
-								Septiembre 2019 - Enero 2020
-							</time>
-							<h3 class="text-lg font-semibold text-white">
-								AppVentures
-							</h3>
-							<ul class=" text-base font-normal text-slate-300 list-disc ps-4">
-								<li>Desarrollo y mantenimiento de proyectos tecnológicos, mejorando rendimiento y funcionalidad.</li>
-								<li>Análisis de requerimientos.</li>
-							</ul>
-						</div>
-					</li>
-	
-				</ol>
-	
-			</div>    
-	
-		</div>
-	</section>
-	
-	<section class="section bg-white ">
-	
-		<div class="section-header">
-			<h2 class="section-title text-black-russian-800">Contactame</h2>
-			<p class="section-subtitle text-gray-600">Rellene sus datos para poder contactarme</p>
-		</div>
-	
-		<div class="section-content">
-			<form action="#" method="POST" class="mx-auto mt-16 max-w-xl">
-				<div class="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
-					<div>
-						<label for="first-name" class="block text-sm font-semibold leading-6 text-gray-900">Nombres</label>
-						<div class="mt-2.5">
-							<input type="text" name="first-name" id="first-name" autocomplete="given-name" class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
-						</div>
-					</div>
-					<div>
-						<label for="last-name" class="block text-sm font-semibold leading-6 text-gray-900">Apellidos</label>
-						<div class="mt-2.5">
-							<input type="text" name="last-name" id="last-name" autocomplete="family-name" class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
-						</div>
-					</div>
-					<div class="sm:col-span-2">
-						<label for="email" class="block text-sm font-semibold leading-6 text-gray-900">Correo</label>
-						<div class="mt-2.5">
-							<input type="email" name="email" id="email" autocomplete="email" class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
-						</div>
-					</div>
-					<div class="sm:col-span-2">
-						<label for="message" class="block text-sm font-semibold leading-6 text-gray-900">Mensaje</label>
-						<div class="mt-2.5">
-							<textarea name="message" id="message" rows="4" class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"></textarea>
-						</div>
-					</div>
-				</div>
-				<div class="mt-10">
-					<button type="submit" class="block w-full rounded-md bg-indigo-600 px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Enviar</button>
-				</div>
-			</form>
-		</div>
-	</section>
-	
 </Layout>
 
 <script>
@@ -535,26 +84,7 @@ import Job from '../components/Job.astro';
 
 	}
 
-	const toggleJobs = () => {
-		const btnHiddenJobs = document.querySelector('#btnHiddenJobs');
-		const btnShowJobs = document.querySelector('#btnShowJobs');
-		const jobsHidden = document.querySelector('#jobsHidden');
-	
-		btnShowJobs.addEventListener('click', (e) => {
-			jobsHidden.style.maxHeight = jobsHidden.scrollHeight + "px"; 
-			btnShowJobs.classList.toggle('hidden');
-			btnHiddenJobs.classList.toggle('hidden');
-		});
-	
-		btnHiddenJobs.addEventListener('click', (e) => {
-			jobsHidden.style.maxHeight = null;
-			btnShowJobs.classList.toggle('hidden');
-			btnHiddenJobs.classList.toggle('hidden');
-		});
-
-	}
 
 	toggleMenuMobil();
-	toggleJobs();
 
 </script>
