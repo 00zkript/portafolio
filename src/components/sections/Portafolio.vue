@@ -51,8 +51,8 @@ const closeModal = () => {
             <h2 class="section-title text-white">Mi Trabajo</h2>
             <h3 class="section-subtitle text-white">Una colección de proyectos en las que eh trabajado</h3>
         </div>
-        <div class="section-content max-w-7xl" >
-            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+        <div class="section-content max-w-full md:max-w-7xl " >
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-3 gap-8">
     
                 <Job title="Optimania" img="img/screenshot_1.png" url="https://optimania.pe/" >
                     <template #content>
@@ -155,7 +155,7 @@ const closeModal = () => {
                     </template>
                 </Job>
     
-                <div v-if="showMore" class="grid grid-cols-subgrid col-span-3 gap-8 overflow-hidden transition-all duration-300 ease-in-out" :class="showMore ? 'max-h-100' : 'max-h-0' ">
+                <div v-show="showMore" class="grid grid-cols-subgrid col-span-1 sm:col-span-2 md:col-span-3 xl:col-span-3 gap-8 overflow-hidden transition-all duration-300 ease-in-out" :class="showMore ? 'max-h-100' : 'max-h-0' ">
                  
                     <Job title="Power Fenix" img='img/photo-1522252234503-e356532cafd5.jpeg' url="" >
                         <template #content>
@@ -248,7 +248,7 @@ const closeModal = () => {
                     </Job>
                 </div>
     
-                <div class="col-span-3 flex flex-col items-center">
+                <div class="col-span-1 sm:col-span-2 md:col-span-3 xl:col-span-3 flex flex-col items-center">
                     <button type="button" class="text-lg text-white text-center flex flex-col items-center hover:text-black-russian-400" @click="showMore = !showMore">
                         <template v-if="showMore">
                             <span class="ep--arrow-up-bold" style="width:1.5rem;height:1.5rem"></span>
