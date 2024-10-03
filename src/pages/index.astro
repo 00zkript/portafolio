@@ -1,12 +1,12 @@
 ---
 import Layout from '../layouts/Layout.astro';
 
-import SectionPresentacion from '../components/sections/Presentacion.astro';
-import SectionHabilidades from '../components/sections/Habilidades.astro';
-import SectionSobreMi from '../components/sections/SobreMi.astro';
+import SectionPresentacion from '../components/sections/Presentacion.vue';
+import SectionHabilidades from '../components/sections/Habilidades.vue';
+import SectionSobreMi from '../components/sections/SobreMi.vue';
 import SectionPortafolio from '../components/sections/Portafolio.vue';
-import SectionExperiencia from '../components/sections/Experiencia.astro';
-import SectionContactame from '../components/sections/Contactame.astro';
+import SectionExperiencia from '../components/sections/Experiencia.vue';
+import SectionContactame from '../components/sections/Contactame.vue';
 
 ---
 <Layout title="Welcome to Astro."> 
@@ -65,12 +65,12 @@ import SectionContactame from '../components/sections/Contactame.astro';
 	</div>
 	
 	
-	<SectionPresentacion id="presentacion" />
-	<SectionHabilidades  id="habilidades" />
-	<SectionSobreMi      id="sobre-mi" />	
+	<SectionPresentacion id="presentacion" client:load />
+	<SectionHabilidades  id="habilidades" client:visible />
+	<SectionSobreMi      id="sobre-mi" client:load />	
 	<SectionPortafolio   id="mis-trabajos" client:visible  />	
-	<SectionExperiencia  id="experiencia" />	
-	<SectionContactame   id="contactame" />	
+	<SectionExperiencia  id="experiencia" client:load  />	
+	<SectionContactame   id="contactame" client:only />	
 	
 
 </Layout>

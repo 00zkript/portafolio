@@ -1,12 +1,8 @@
 <script setup>
-import IconJs from '../iconsVue/Js.vue';
-import IconLaravel from '../iconsVue/Laravel.vue';
-import IconVue from '../iconsVue/Vue.vue';
-import IconJquery from '../iconsVue/Jquery.vue';
-import IconMercadopago from '../iconsVue/Mercadopago.vue';
 import Job from '../Job.vue';
 import Modal from '../Modal.vue';
 import { ref } from 'vue';
+import { Icon } from '@iconify/vue';
 
 const props = defineProps(['id']);
 
@@ -61,12 +57,12 @@ const closeModal = () => {
                         </p>
                     </template>
                     <template #tags>
-                        <span class="chip bg-indigo-500 text-white"><IconLaravel/> Laravel</span>
-                        <span class="chip bg-indigo-500 text-white"><IconLaravel/> Blade</span>
-                        <span class="chip bg-indigo-500 text-white"><IconVue/> Vuejs </span>
-                        <span class="chip bg-indigo-500 text-white"><IconJs/> Vanilla Js </span>
-                        <span class="chip bg-indigo-500 text-white"><IconJquery/> Jquery </span>
-                        <span class="chip bg-indigo-500 text-white"><IconMercadopago/> Mercado pago </span>
+                        <span class="chip bg-indigo-500 text-white"><Icon icon="simple-icons:laravel" width="1rem" height="1rem"  style="color: white" /> Laravel</span>
+                        <span class="chip bg-indigo-500 text-white"><Icon icon="simple-icons:laravel" width="1rem" height="1rem"  style="color: white" /> Blade</span>
+                        <span class="chip bg-indigo-500 text-white"><Icon icon="akar-icons:vue-fill" width="1rem" height="1rem"  style="color: white" /> Vuejs </span>
+                        <span class="chip bg-indigo-500 text-white"><Icon icon="raphael:js" width="1rem" height="1rem"  style="color: white" /> Vanilla Js </span>
+                        <span class="chip bg-indigo-500 text-white"><Icon icon="simple-icons:jquery" width="1rem" height="1rem"  style="color: white" /> Jquery </span>
+                        <span class="chip bg-indigo-500 text-white"><Icon icon="arcticons:mercado-pago" width="1rem" height="1rem"  style="color: white" /> Mercado pago </span>
                     </template>
                 </Job>
     
@@ -77,11 +73,11 @@ const closeModal = () => {
                         </p>
                     </template>
                     <template #tags>
-                        <span class="chip bg-indigo-500 text-white"><IconLaravel/> Laravel</span>
-                        <span class="chip bg-indigo-500 text-white"><IconLaravel/> Blade</span>
-                        <span class="chip bg-indigo-500 text-white"><IconVue/> Vuejs </span>
-                        <span class="chip bg-indigo-500 text-white"><IconJs/> Vanilla Js </span>
-                        <span class="chip bg-indigo-500 text-white"><IconJquery/> Jquery </span>
+                        <span class="chip bg-indigo-500 text-white"><Icon icon="simple-icons:laravel" width="1rem" height="1rem"  style="color: white" /> Laravel</span>
+                        <span class="chip bg-indigo-500 text-white"><Icon icon="simple-icons:laravel" width="1rem" height="1rem"  style="color: white" /> Blade</span>
+                        <span class="chip bg-indigo-500 text-white"><Icon icon="akar-icons:vue-fill" width="1rem" height="1rem"  style="color: white" /> Vuejs </span>
+                        <span class="chip bg-indigo-500 text-white"><Icon icon="raphael:js" width="1rem" height="1rem"  style="color: white" /> Vanilla Js </span>
+                        <span class="chip bg-indigo-500 text-white"><Icon icon="simple-icons:jquery" width="1rem" height="1rem"  style="color: white" /> Jquery </span>
                     </template>
                 </Job>
     
@@ -92,12 +88,12 @@ const closeModal = () => {
                         </p>
                     </template>
                     <template #tags>
-                        <span class="chip bg-indigo-500 text-white"><IconLaravel/> Laravel</span>
-                        <span class="chip bg-indigo-500 text-white"><IconLaravel/> Blade</span>
-                        <span class="chip bg-indigo-500 text-white"><IconVue/> Vuejs </span>
-                        <span class="chip bg-indigo-500 text-white"><IconJs/> Vanilla Js </span>
-                        <span class="chip bg-indigo-500 text-white"><IconJquery/> Jquery </span>
-                        <span class="chip bg-indigo-500 text-white"><IconMercadopago/> Mercado pago </span>
+                        <span class="chip bg-indigo-500 text-white"><Icon icon="simple-icons:laravel" width="1rem" height="1rem"  style="color: white" /> Laravel</span>
+                        <span class="chip bg-indigo-500 text-white"><Icon icon="simple-icons:laravel" width="1rem" height="1rem"  style="color: white" /> Blade</span>
+                        <span class="chip bg-indigo-500 text-white"><Icon icon="akar-icons:vue-fill" width="1rem" height="1rem"  style="color: white" /> Vuejs </span>
+                        <span class="chip bg-indigo-500 text-white"><Icon icon="raphael:js" width="1rem" height="1rem"  style="color: white" /> Vanilla Js </span>
+                        <span class="chip bg-indigo-500 text-white"><Icon icon="simple-icons:jquery" width="1rem" height="1rem"  style="color: white" /> Jquery </span>
+                        <span class="chip bg-indigo-500 text-white"><Icon icon="arcticons:mercado-pago" width="1rem" height="1rem"  style="color: white" /> Mercado pago </span>
                     </template>
                 </Job>
     
@@ -108,12 +104,12 @@ const closeModal = () => {
                         </p>
                     </template>
                     <template #tags>
-                        <span class="chip bg-indigo-500 text-white"><IconLaravel/> Laravel</span>
-                        <span class="chip bg-indigo-500 text-white"><IconLaravel/> Blade</span>
-                        <span class="chip bg-indigo-500 text-white"><IconVue/> Vuejs </span>
-                        <span class="chip bg-indigo-500 text-white"><IconJs/> Vanilla Js </span>
-                        <span class="chip bg-indigo-500 text-white"><IconJquery/> Jquery </span>
-                        <span class="chip bg-indigo-500 text-white"><IconMercadopago/> Izipay </span>
+                        <span class="chip bg-indigo-500 text-white"><Icon icon="simple-icons:laravel" width="1rem" height="1rem"  style="color: white" /> Laravel</span>
+                        <span class="chip bg-indigo-500 text-white"><Icon icon="simple-icons:laravel" width="1rem" height="1rem"  style="color: white" /> Blade</span>
+                        <span class="chip bg-indigo-500 text-white"><Icon icon="akar-icons:vue-fill" width="1rem" height="1rem"  style="color: white" /> Vuejs </span>
+                        <span class="chip bg-indigo-500 text-white"><Icon icon="raphael:js" width="1rem" height="1rem"  style="color: white" /> Vanilla Js </span>
+                        <span class="chip bg-indigo-500 text-white"><Icon icon="simple-icons:jquery" width="1rem" height="1rem"  style="color: white" /> Jquery </span>
+                        <span class="chip bg-indigo-500 text-white"><Icon icon="arcticons:mercado-pago" width="1rem" height="1rem"  style="color: white" /> Izipay </span>
                     </template>
                 </Job>
     
@@ -124,12 +120,12 @@ const closeModal = () => {
                         </p>
                     </template>
                     <template #tags>
-                        <span class="chip bg-indigo-500 text-white"><IconLaravel/> Laravel</span>
-                        <span class="chip bg-indigo-500 text-white"><IconLaravel/> Blade</span>
-                        <span class="chip bg-indigo-500 text-white"><IconVue/> Vuejs </span>
-                        <span class="chip bg-indigo-500 text-white"><IconJs/> Vanilla Js </span>
-                        <span class="chip bg-indigo-500 text-white"><IconJquery/> Jquery </span>
-                        <!-- <span class="chip bg-indigo-500 text-white"><IconMercadopago/> Mercado pago </span> -->
+                        <span class="chip bg-indigo-500 text-white"><Icon icon="simple-icons:laravel" width="1rem" height="1rem"  style="color: white" /> Laravel</span>
+                        <span class="chip bg-indigo-500 text-white"><Icon icon="simple-icons:laravel" width="1rem" height="1rem"  style="color: white" /> Blade</span>
+                        <span class="chip bg-indigo-500 text-white"><Icon icon="akar-icons:vue-fill" width="1rem" height="1rem"  style="color: white" /> Vuejs </span>
+                        <span class="chip bg-indigo-500 text-white"><Icon icon="raphael:js" width="1rem" height="1rem"  style="color: white" /> Vanilla Js </span>
+                        <span class="chip bg-indigo-500 text-white"><Icon icon="simple-icons:jquery" width="1rem" height="1rem"  style="color: white" /> Jquery </span>
+                        <!-- <span class="chip bg-indigo-500 text-white"><Icon icon="arcticons:mercado-pago" width="1rem" height="1rem"  style="color: white" /> Mercado pago </span> -->
                     </template>
                 </Job>
     
@@ -147,11 +143,11 @@ const closeModal = () => {
                         </p>
                     </template>
                     <template #tags>
-                        <span class="chip bg-indigo-500 text-white"><IconLaravel/> Laravel</span>
-                        <span class="chip bg-indigo-500 text-white"><IconLaravel/> Blade</span>
-                        <span class="chip bg-indigo-500 text-white"><IconVue/> Vuejs </span>
-                        <span class="chip bg-indigo-500 text-white"><IconJs/> Vanilla Js </span>
-                        <span class="chip bg-indigo-500 text-white"><IconMercadopago/> Mercado pago </span>
+                        <span class="chip bg-indigo-500 text-white"><Icon icon="simple-icons:laravel" width="1rem" height="1rem"  style="color: white" /> Laravel</span>
+                        <span class="chip bg-indigo-500 text-white"><Icon icon="simple-icons:laravel" width="1rem" height="1rem"  style="color: white" /> Blade</span>
+                        <span class="chip bg-indigo-500 text-white"><Icon icon="akar-icons:vue-fill" width="1rem" height="1rem"  style="color: white" /> Vuejs </span>
+                        <span class="chip bg-indigo-500 text-white"><Icon icon="raphael:js" width="1rem" height="1rem"  style="color: white" /> Vanilla Js </span>
+                        <span class="chip bg-indigo-500 text-white"><Icon icon="arcticons:mercado-pago" width="1rem" height="1rem"  style="color: white" /> Mercado pago </span>
                     </template>
                 </Job>
     
@@ -164,11 +160,11 @@ const closeModal = () => {
                             </p>
                         </template>
                         <template #tags>
-                            <span class="chip bg-indigo-500 text-white"><IconLaravel/> Laravel</span>
-                            <span class="chip bg-indigo-500 text-white"><IconLaravel/> Blade</span>
-                            <span class="chip bg-indigo-500 text-white"><IconVue/> Vuejs </span>
-                            <span class="chip bg-indigo-500 text-white"><IconJs/> Vanilla Js </span>
-                            <span class="chip bg-indigo-500 text-white"><IconMercadopago/> Mercado pago </span>
+                            <span class="chip bg-indigo-500 text-white"><Icon icon="simple-icons:laravel" width="1rem" height="1rem"  style="color: white" /> Laravel</span>
+                            <span class="chip bg-indigo-500 text-white"><Icon icon="simple-icons:laravel" width="1rem" height="1rem"  style="color: white" /> Blade</span>
+                            <span class="chip bg-indigo-500 text-white"><Icon icon="akar-icons:vue-fill" width="1rem" height="1rem"  style="color: white" /> Vuejs </span>
+                            <span class="chip bg-indigo-500 text-white"><Icon icon="raphael:js" width="1rem" height="1rem"  style="color: white" /> Vanilla Js </span>
+                            <span class="chip bg-indigo-500 text-white"><Icon icon="arcticons:mercado-pago" width="1rem" height="1rem"  style="color: white" /> Mercado pago </span>
                         </template>
                     </Job>
     
@@ -179,11 +175,11 @@ const closeModal = () => {
                             </p>
                         </template>
                         <template #tags>
-                            <span class="chip bg-indigo-500 text-white"><IconLaravel/> Laravel</span>
-                            <span class="chip bg-indigo-500 text-white"><IconLaravel/> Blade</span>
-                            <span class="chip bg-indigo-500 text-white"><IconVue/> Vuejs </span>
-                            <span class="chip bg-indigo-500 text-white"><IconJs/> Vanilla Js </span>
-                            <span class="chip bg-indigo-500 text-white"><IconMercadopago/> Mercado pago </span>
+                            <span class="chip bg-indigo-500 text-white"><Icon icon="simple-icons:laravel" width="1rem" height="1rem"  style="color: white" /> Laravel</span>
+                            <span class="chip bg-indigo-500 text-white"><Icon icon="simple-icons:laravel" width="1rem" height="1rem"  style="color: white" /> Blade</span>
+                            <span class="chip bg-indigo-500 text-white"><Icon icon="akar-icons:vue-fill" width="1rem" height="1rem"  style="color: white" /> Vuejs </span>
+                            <span class="chip bg-indigo-500 text-white"><Icon icon="raphael:js" width="1rem" height="1rem"  style="color: white" /> Vanilla Js </span>
+                            <span class="chip bg-indigo-500 text-white"><Icon icon="arcticons:mercado-pago" width="1rem" height="1rem"  style="color: white" /> Mercado pago </span>
                         </template>
                     </Job>
         
@@ -194,11 +190,11 @@ const closeModal = () => {
                             </p>
                         </template>
                         <template #tags>
-                            <span class="chip bg-indigo-500 text-white"><IconLaravel/> Laravel</span>
-                            <span class="chip bg-indigo-500 text-white"><IconLaravel/> Blade</span>
-                            <span class="chip bg-indigo-500 text-white"><IconVue/> Vuejs </span>
-                            <span class="chip bg-indigo-500 text-white"><IconJs/> Vanilla Js </span>
-                            <span class="chip bg-indigo-500 text-white"><IconJquery/> Jquery </span>
+                            <span class="chip bg-indigo-500 text-white"><Icon icon="simple-icons:laravel" width="1rem" height="1rem"  style="color: white" /> Laravel</span>
+                            <span class="chip bg-indigo-500 text-white"><Icon icon="simple-icons:laravel" width="1rem" height="1rem"  style="color: white" /> Blade</span>
+                            <span class="chip bg-indigo-500 text-white"><Icon icon="akar-icons:vue-fill" width="1rem" height="1rem"  style="color: white" /> Vuejs </span>
+                            <span class="chip bg-indigo-500 text-white"><Icon icon="raphael:js" width="1rem" height="1rem"  style="color: white" /> Vanilla Js </span>
+                            <span class="chip bg-indigo-500 text-white"><Icon icon="simple-icons:jquery" width="1rem" height="1rem"  style="color: white" /> Jquery </span>
                         </template>
                     </Job>
     
@@ -209,11 +205,11 @@ const closeModal = () => {
                             </p>
                         </template>
                         <template #tags>
-                            <span class="chip bg-indigo-500 text-white"><IconLaravel/> Laravel</span>
-                            <span class="chip bg-indigo-500 text-white"><IconLaravel/> Blade</span>
-                            <span class="chip bg-indigo-500 text-white"><IconVue/> Vuejs </span>
-                            <span class="chip bg-indigo-500 text-white"><IconJs/> Vanilla Js </span>
-                            <span class="chip bg-indigo-500 text-white"><IconJquery/> Jquery </span>
+                            <span class="chip bg-indigo-500 text-white"><Icon icon="simple-icons:laravel" width="1rem" height="1rem"  style="color: white" /> Laravel</span>
+                            <span class="chip bg-indigo-500 text-white"><Icon icon="simple-icons:laravel" width="1rem" height="1rem"  style="color: white" /> Blade</span>
+                            <span class="chip bg-indigo-500 text-white"><Icon icon="akar-icons:vue-fill" width="1rem" height="1rem"  style="color: white" /> Vuejs </span>
+                            <span class="chip bg-indigo-500 text-white"><Icon icon="raphael:js" width="1rem" height="1rem"  style="color: white" /> Vanilla Js </span>
+                            <span class="chip bg-indigo-500 text-white"><Icon icon="simple-icons:jquery" width="1rem" height="1rem"  style="color: white" /> Jquery </span>
                         </template>
                     </Job>
     
@@ -224,11 +220,11 @@ const closeModal = () => {
                             </p>
                         </template>
                         <template #tags>
-                            <span class="chip bg-indigo-500 text-white"><IconLaravel/> Laravel</span>
-                            <span class="chip bg-indigo-500 text-white"><IconLaravel/> Blade</span>
-                            <span class="chip bg-indigo-500 text-white"><IconVue/> Vuejs </span>
-                            <span class="chip bg-indigo-500 text-white"><IconJs/> Vanilla Js </span>
-                            <span class="chip bg-indigo-500 text-white"><IconJquery/> Jquery </span>
+                            <span class="chip bg-indigo-500 text-white"><Icon icon="simple-icons:laravel" width="1rem" height="1rem"  style="color: white" /> Laravel</span>
+                            <span class="chip bg-indigo-500 text-white"><Icon icon="simple-icons:laravel" width="1rem" height="1rem"  style="color: white" /> Blade</span>
+                            <span class="chip bg-indigo-500 text-white"><Icon icon="akar-icons:vue-fill" width="1rem" height="1rem"  style="color: white" /> Vuejs </span>
+                            <span class="chip bg-indigo-500 text-white"><Icon icon="raphael:js" width="1rem" height="1rem"  style="color: white" /> Vanilla Js </span>
+                            <span class="chip bg-indigo-500 text-white"><Icon icon="simple-icons:jquery" width="1rem" height="1rem"  style="color: white" /> Jquery </span>
                         </template>
                     </Job>
     
@@ -239,11 +235,11 @@ const closeModal = () => {
                             </p>
                         </template>
                         <template #tags>
-                            <span class="chip bg-indigo-500 text-white"><IconLaravel/> Laravel</span>
-                            <span class="chip bg-indigo-500 text-white"><IconLaravel/> Blade</span>
-                            <span class="chip bg-indigo-500 text-white"><IconVue/> Vuejs </span>
-                            <span class="chip bg-indigo-500 text-white"><IconJs/> Vanilla Js </span>
-                            <span class="chip bg-indigo-500 text-white"><IconJquery/> Jquery </span>
+                            <span class="chip bg-indigo-500 text-white"><Icon icon="simple-icons:laravel" width="1rem" height="1rem"  style="color: white" /> Laravel</span>
+                            <span class="chip bg-indigo-500 text-white"><Icon icon="simple-icons:laravel" width="1rem" height="1rem"  style="color: white" /> Blade</span>
+                            <span class="chip bg-indigo-500 text-white"><Icon icon="akar-icons:vue-fill" width="1rem" height="1rem"  style="color: white" /> Vuejs </span>
+                            <span class="chip bg-indigo-500 text-white"><Icon icon="raphael:js" width="1rem" height="1rem"  style="color: white" /> Vanilla Js </span>
+                            <span class="chip bg-indigo-500 text-white"><Icon icon="simple-icons:jquery" width="1rem" height="1rem"  style="color: white" /> Jquery </span>
                         </template>
                     </Job>
                 </div>
