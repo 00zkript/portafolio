@@ -133,12 +133,12 @@ const closeModal = () => {
                     </template>
                 </Job>
     
-                <Job title="Linea" img='img/photo-1522252234503-e356532cafd5.jpeg' 
+                <Job title="Linea" img='img/linea_panel_login.png' 
                     @abrirModal="openModal([
-                        'img/photo-1522252234503-e356532cafd5.jpeg',
-                        'img/photo-1522252234503-e356532cafd5.jpeg',
-                        'img/photo-1522252234503-e356532cafd5.jpeg',
-                        'img/photo-1522252234503-e356532cafd5.jpeg',
+                        'img/linea_panel_login.png',
+                        'img/linea_panel_gimnasio_venta_create.png',
+                        'img/linea_panel_gimnasio_productos.png',
+                        'img/linea_panel_gimnasio_membresia.png',
                     ])" 
                     >
                     <template #content>
