@@ -1,0 +1,22 @@
+{
+    "esp": {
+        "title": "Contáctame",
+        "sub_title": "Rellene sus datos para poder contactarme",
+        "form": {
+            "first_name": "Nombres",
+            "last_name": "Apellidos",
+            "email": "Correo",
+            "message": "Mensaje"
+        }
+    },
+    "eng": {
+        "title": "Contact Me",
+        "sub_title": "Fill in your details to contact me",
+        "form": {
+            "first_name": "First Name",
+            "last_name": "Last Name",
+            "email": "Email",
+            "message": "Message"
+        }
+    }
+}

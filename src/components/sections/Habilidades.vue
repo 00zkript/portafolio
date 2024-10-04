@@ -1,5 +1,8 @@
 <script setup>
 import { Icon } from '@iconify/vue';
+import { esp, eng } from '../../data/habilidades.json';
+    
+const content = esp;
 </script>
 <template>
     <section class="py-16 mx-auto rounded-lg bg-slate-100 -mt-24 w-11/12 z-10 relative shadow-md">
@@ -13,12 +16,12 @@ import { Icon } from '@iconify/vue';
                                   
                     </div>
                               
-                    <h2 class="font-bold mb-2 text-xl ">Frontend</h2>
-                    <p class="text-sm">Conocimientos en HTML, CSS y Tailwind CSS. Puedo maquetar y desarrollar interfaces, aunque mi especialidad es el backend.</p>
+                    <h2 class="font-bold mb-2 text-xl ">{{ content.frontend.title }}</h2>
+                    <p class="text-sm">{{ content.frontend.content }}</p>
                 </div>
     
                 <div class="pb-3">
-                    <h2 class="font-bold mb-2">Lenguajes</h2>
+                    <h2 class="font-bold mb-2">{{ content.frontend.title_2 }}</h2>
                     <div class="flex flex-wrap justify-center">
                         <span class="chip bg-indigo-500 text-white"><Icon icon="flowbite:html-solid" width="1rem" height="1rem"  style="color: white" /> Html</span>
                         <span class="chip bg-indigo-500 text-white"><Icon icon="raphael:js" width="1rem" height="1rem"  style="color: white" /> Vanilla Js</span>
@@ -28,7 +31,7 @@ import { Icon } from '@iconify/vue';
                 </div>
     
                 <div class="pb-3">
-                    <h2 class="font-bold mb-2">Framework y otros</h2>
+                    <h2 class="font-bold mb-2">{{ content.frontend.title_3 }}</h2>
                     <div class="flex flex-wrap justify-center">
                         <span class="chip bg-indigo-500 text-white"><Icon icon="akar-icons:vue-fill" width="1rem" height="1rem"  style="color: white" /> Vuejs</span>
                         <span class="chip bg-indigo-500 text-white"><Icon icon="simple-icons:astro" width="1rem" height="1rem"  style="color: white" /> Astro</span>
@@ -48,11 +51,11 @@ import { Icon } from '@iconify/vue';
                             <path strokeLinecap="round" strokeLinejoin="round" d="M20.25 6.375c0 2.278-3.694 4.125-8.25 4.125S3.75 8.653 3.75 6.375m16.5 0c0-2.278-3.694-4.125-8.25-4.125S3.75 4.097 3.75 6.375m16.5 0v11.25c0 2.278-3.694 4.125-8.25 4.125s-8.25-1.847-8.25-4.125V6.375m16.5 0v3.75m-16.5-3.75v3.75m16.5 0v3.75C20.25 16.153 16.556 18 12 18s-8.25-1.847-8.25-4.125v-3.75m16.5 0c0 2.278-3.694 4.125-8.25 4.125s-8.25-1.847-8.25-4.125" />
                         </svg>
                     </div>
-                    <h2 class="font-bold mb-2 text-xl">Backend</h2>
-                    <p class="text-sm">Especialista en Laravel, creando soluciones sólidas y escalables. También tengo experiencia con Node.js y otros framworks, pero mi enfoque principal es Laravel</p>
+                    <h2 class="font-bold mb-2 text-xl">{{ content.backend.title }}</h2>
+                    <p class="text-sm">{{ content.backend.content }}</p>
                 </div>
                 <div class="pb-3">
-                    <h2 class="font-bold mb-2">Lenguajes</h2>
+                    <h2 class="font-bold mb-2">{{ content.backend.title_2 }}</h2>
                     <div class="flex flex-wrap justify-center">
                         <span class="chip bg-indigo-500 text-white"><Icon icon="zondicons:php-elephant" width="1rem" height="1rem"  style="color: white" /> Php</span>
                         <span class="chip bg-indigo-500 text-white"><Icon icon="raphael:js" width="1rem" height="1rem"  style="color: white" /> Vanilla Js</span>
@@ -60,7 +63,7 @@ import { Icon } from '@iconify/vue';
                     </div>
                 </div>
                 <div class="pb-3">
-                    <h2 class="font-bold mb-2">Framework y otros</h2>
+                    <h2 class="font-bold mb-2">{{ content.backend.title_3 }}</h2>
                     <div class="flex flex-wrap justify-center">
                         <span class="chip bg-indigo-500 text-white"><Icon icon="simple-icons:laravel" width="1rem" height="1rem"  style="color: white" /> Laravel</span>
                         <span class="chip bg-indigo-500 text-white"><Icon icon="fontisto:mysql" width="1rem" height="1rem"  style="color: white" /> MySQL</span>
@@ -80,8 +83,8 @@ import { Icon } from '@iconify/vue';
                             <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 6.75 22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3-4.5 16.5" />
                         </svg>
                     </div>
-                    <h2 class="font-bold mb-2 text-xl">Otros</h2>
-                    <p class="text-sm">Experiencia en servicios en la nube y control de versiones, complementando mis habilidades como desarrollador.</p>
+                    <h2 class="font-bold mb-2 text-xl">{{ content.others.title }}</h2>
+                    <p class="text-sm">{{ content.others.content }}</p>
                 </div>
                 <div class="pb-3">
                     <div class="flex flex-wrap justify-center">

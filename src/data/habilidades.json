@@ -1,0 +1,38 @@
+{
+    "esp": {
+        "frontend": {
+            "title": "Frontend",
+            "title_2": "Lenguajes",
+            "title_3": "Framework y otros",
+            "content": "Conocimientos en HTML, CSS y Tailwind CSS. Puedo maquetar y desarrollar interfaces, aunque mi especialidad es el backend."
+        },
+        "backend": {
+            "title": "Backend",
+            "title_2": "Lenguajes",
+            "title_3": "Framework y otros",
+            "content": "Especialista en Laravel, creando soluciones sólidas y escalables. También tengo experiencia con Node.js y otros framworks, pero mi enfoque principal es Laravel."
+        },
+        "others": {
+            "title": "Otros",
+            "content": "Experiencia en servicios en la nube y control de versiones, complementando mis habilidades como desarrollador."
+        }
+    },
+    "eng": {
+        "frontend": {
+            "title": "Frontend",
+            "title_2": "Languages",
+            "title_3": "Framework and others",
+            "content": "Knowledge in HTML, CSS, and Tailwind CSS. I can design and develop interfaces, although my specialty is backend."
+        },
+        "backend": {
+            "title": "Backend",
+            "title_2": "Languages",
+            "title_3": "Framework and others",
+            "content": "Specialist in Laravel, creating solid and scalable solutions. I also have experience with Node.js and other frameworks, but my main focus is Laravel."
+        },
+        "others": {
+            "title": "Others",
+            "content": "Experience in cloud services and version control, complementing my skills as a developer."
+        }
+    }
+}

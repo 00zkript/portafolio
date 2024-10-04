@@ -1,14 +1,20 @@
+<script setup>
+    import { esp, eng } from '../../data/presentacion.json';
+    
+    const content = esp;
+    
+</script>
 <template>
     <section class="w-full h-screen relative py-24 sm:py-32 bg-no-repeat bg-center bg-cover bg-fixed bg-black" style="background-image: url('img/banner.jpg');">
         <div class="absolute inset-0 bg-black opacity-50"></div>
             
         <div class="absolute">
             <div class="mx-8 sm:mx-16 py-8 text-gray-200">
-                <h1 class="text-4xl">hola, soy</h1>
-                <h1 class="text-6xl font-bold">henry quispe cabello</h1>
-                <h2 class="text-3xl pt-2">Developer full stack </h2>
+                <h1 class="text-4xl">{{ content.title }}</h1>
+                <h1 class="text-6xl font-bold">{{ content.title_2 }}</h1>
+                <h2 class="text-3xl pt-2">{{ content.title_3 }}</h2>
                 <p class="mt-4 md:w-1/2">
-                    Desarrollador Full Stack con especialización en backend, principalmente con Laravel, y habilidades para desarrollar interfaces y soluciones completas de manera eficiente.
+                    {{ content.content }}
                 </p>
                 
                 <div class="flex gap-2 p-2">

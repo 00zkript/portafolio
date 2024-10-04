@@ -3,6 +3,7 @@ import Job from '../Job.vue';
 import Modal from '../Modal.vue';
 import { ref } from 'vue';
 import { Icon } from '@iconify/vue';
+import { esp, eng } from '../../data/portafolio.json'
 
 const props = defineProps(['id']);
 
@@ -18,6 +19,8 @@ const openModal = (imagen) => {
 const closeModal = () => {
     showModal.value = false; 
 }
+
+const content = esp;
 
 // const toggleJobs = () => {
 //     const btnHiddenJobs = document.querySelector('#btnHiddenJobs');
@@ -44,8 +47,8 @@ const closeModal = () => {
 <template>
     <section class="section bg-black bg-no-repeat bg-cover bg-center bg-fixed" style="background-image: url('img/1031-1000x500.jpg');" :id="props.id">
         <div class="section-header">
-            <h2 class="section-title text-white">Mi Trabajo</h2>
-            <h3 class="section-subtitle text-white">Una colección de proyectos en las que eh trabajado</h3>
+            <h2 class="section-title text-white">{{ content.title }}</h2>
+            <h3 class="section-subtitle text-white">{{ content.sub_title }}</h3>
         </div>
         <div class="section-content max-w-full md:max-w-7xl " >
             <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-3 gap-8">

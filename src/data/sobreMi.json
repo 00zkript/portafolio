@@ -1,0 +1,15 @@
+{
+    "esp": {
+      "title": "Sobre Mi",
+      "sub_title": "Un breve resumen de mi persona.",
+      "content": "Soy un apasionado desarrollador Full Stack con más de 5 años de experiencia en la creación de soluciones personalizadas que impactan. Especializado en Laravel y Vue.js, he liderado proyectos de E-commerce y ERP, integrando tecnologías innovadoras como Amazon S3 y Rekognition para ofrecer resultados excepcionales. Me encanta optimizar el código y desarrollar APIs y microservicios eficientes, además de implementar pasarelas de pago como Izipay, Culqui y Pago Efectivo para garantizar una experiencia de usuario fluida.",
+      "content_2": "Tengo un sólido dominio de bases de datos MySQL y PostgreSQL, y utilizo herramientas como Git y Bitbucket para mantener un control de versiones eficaz. En el ámbito del frontend, manejo Vue.js con confianza y continúo expandiendo mis conocimientos en tecnologías como React y Astro, siempre buscando nuevas formas de enriquecer mis habilidades. Mi objetivo es crear soluciones robustas y escalables que no solo cumplan con los requisitos, sino que también superen las expectativas."
+    },
+    "eng": {
+      "title": "About Me",
+      "sub_title": "A brief summary of myself.",
+      "content": "I am a passionate Full Stack developer with over 5 years of experience in creating impactful custom solutions. Specializing in Laravel and Vue.js, I have led E-commerce and ERP projects, integrating innovative technologies such as Amazon S3 and Rekognition to deliver exceptional results. I love optimizing code and developing efficient APIs and microservices, as well as implementing payment gateways like Izipay, Culqui, and Pago Efectivo to ensure a smooth user experience.",
+      "content_2": "I have a strong command of MySQL and PostgreSQL databases and use tools like Git and Bitbucket for effective version control. On the frontend, I confidently work with Vue.js and continue to expand my knowledge in technologies such as React and Astro, always seeking new ways to enhance my skills. My goal is to create robust and scalable solutions that not only meet requirements but also exceed expectations."
+    }
+  }
+  

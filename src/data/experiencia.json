@@ -1,0 +1,51 @@
+{
+    "esp": {
+      "title": "Experiencia",
+      "company_1": {
+        "name": "Dezain studios",
+        "time": "Enero 2020 - actualidad",
+        "list": [
+          "Liderazgo en proyectos ERP y E-commerce usando Laravel y Vue.js.",
+          "Implementación de reconocimiento facial y nuevas tecnologías (Amazon S3, Google Drive, Amazon rekognition, Amazon C2).",
+          "Refactorización de código, microservicios, desarrollo de APIs.",
+          "Integración de pasarelas de pago (Izipay, Culqui, Pago Efectivo).",
+          "Migración de sitios web y data.",
+          "Liderazgo de proyecto desde inicio hasta producción.",
+          "Análisis de requerimientos."
+        ]
+      },
+      "company_2": {
+        "name": "AppVentures",
+        "time": "Septiembre 2019 - Enero 2020",
+        "list": [
+          "Desarrollo y mantenimiento de proyectos tecnológicos, mejorando rendimiento y funcionalidad.",
+          "Análisis de requerimientos."
+        ]
+      }
+    },
+    "eng": {
+      "title": "Experience",
+      "company_1": {
+        "name": "Dezain studios",
+        "time": "January 2020 - Present",
+        "list": [
+          "Leadership in ERP and E-commerce projects using Laravel and Vue.js.",
+          "Implementation of facial recognition and new technologies (Amazon S3, Google Drive, Amazon Rekognition, Amazon C2).",
+          "Code refactoring, microservices, API development.",
+          "Integration of payment gateways (Izipay, Culqui, Pago Efectivo).",
+          "Website and data migration.",
+          "Project leadership from start to production.",
+          "Requirements analysis."
+        ]
+      },
+      "company_2": {
+        "name": "AppVentures",
+        "time": "September 2019 - January 2020",
+        "list": [
+          "Development and maintenance of technology projects, improving performance and functionality.",
+          "Requirements analysis."
+        ]
+      }
+    }
+  }
+  

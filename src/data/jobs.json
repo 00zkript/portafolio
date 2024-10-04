@@ -1,0 +1,183 @@
+[
+    {
+        "title": "Optimania" ,
+        "img": "img/screenshot_1.png" ,
+        "url": "https://optimania.pe/",
+        "content": "Tienda online especializada en la venta de lentes de medida, lentes de sol con medida y lentes deportivos para hombres, mujeres y niños. Ofrecen una amplia variedad de estilos y marcas para satisfacer las necesidades visuales de sus clientes.",
+        "icons": [
+            { "icon": "simple-icons:laravel", "text": "Laravel" },
+            { "icon": "simple-icons:laravel", "text": "Blade" },
+            { "icon": "akar-icons:vue-fill", "text": "Vuejs " },
+            { "icon": "raphael:js", "text": "Vanilla Js " },
+            { "icon": "simple-icons:jquery", "text": "Jquery " },
+            { "icon": "arcticons:mercado-pago", "text": "Mercado pago " }
+        ]
+    },
+    {
+        "title": "Puro Amor",
+        "img": "img/screenshot_2.png" ,
+        "url": "https://puroamorshop.com/" ,
+        "content": "Tienda en línea que ofrece cajas de regalo personalizadas y productos de diseño únicos. Ideal para quienes buscan regalos especiales y personalizados para cualquier ocasión.",
+        "icons": [
+            { "icon": "simple-icons:laravel", "text": "Laravel" },
+            { "icon": "simple-icons:laravel", "text": "Blade" },
+            { "icon": "akar-icons:vue-fill", "text": "Vuejs " },
+            { "icon": "raphael:js", "text": "Vanilla Js " },
+            { "icon": "simple-icons:jquery", "text": "Jquery " }
+        ]
+    },
+    {
+        "title": "Compu Andina",
+        "img": "img/screenshot_4.png",
+        "url": "https://compuandina.com.pe/",
+        "content": "Empresa peruana dedicada a la comercialización y distribución de suministros y equipos de tecnología informática. Proveen soluciones tecnológicas tanto para empresas como para usuarios individuales.",
+        "icons": [
+            { "icon": "simple-icons:laravel", "text": "Laravel" },
+            { "icon": "simple-icons:laravel", "text": "Blade" },
+            { "icon": "akar-icons:vue-fill", "text": "Vuejs " },
+            { "icon": "raphael:js", "text": "Vanilla Js " },
+            { "icon": "simple-icons:jquery", "text": "Jquery " },
+            { "icon": "arcticons:mercado-pago", "text": "Mercado pago " }
+        ]
+    },
+    {
+        "title": "Tortas lucas" ,
+        "img": "img/screenshot_5.png" ,
+        "url": "https://tortaslucas.com.pe/",
+        "content": "Pastelería que elabora tortas y postres artesanales con ingredientes naturales. Sus productos destacan por mantener un sabor casero y auténtico, ideal para celebraciones y eventos especiales.",
+        "icons": [
+            { "icon": "simple-icons:laravel", "text": "Laravel" },
+            { "icon": "simple-icons:laravel", "text": "Blade" },
+            { "icon": "akar-icons:vue-fill", "text": "Vuejs " },
+            { "icon": "raphael:js", "text": "Vanilla Js " },
+            { "icon": "simple-icons:jquery", "text": "Jquery " },
+            { "icon": "arcticons:mercado-pago", "text": "Izipay " }
+        ]
+    },
+    {
+        "title": "Brit" ,
+        "img": "img/screenshot_3.png" ,
+        "url": "https://brit.pe/",
+        "content": "Marca de alimentos naturales y sostenibles para perros y gatos. Ofrecen productos premium y libres de granos, asegurando una alimentación saludable y balanceada para las mascotas.",
+        "icons": [
+            { "icon": "simple-icons:laravel", "text": "Laravel" },
+            { "icon": "simple-icons:laravel", "text": "Blade" },
+            { "icon": "akar-icons:vue-fill", "text": "Vuejs " },
+            { "icon": "raphael:js", "text": "Vanilla Js " },
+            { "icon": "simple-icons:jquery", "text": "Jquery " }
+            
+        ]
+    },
+    {
+        "title": "Linea",
+        "img": "img/linea_panel_login.png",
+        "url": "",
+        "images" : [
+            "img/linea_panel_login.png",
+            "img/linea_panel_gimnasio_venta_create.png",
+            "img/linea_panel_gimnasio_productos.png",
+            "img/linea_panel_gimnasio_membresia.png"
+        ],
+        "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae accusamus dolore explicabo odit modi saepe sequi odio repellendus non veritatis!",
+        "icons": [
+            { "icon": "simple-icons:laravel", "text": "Laravel" },
+            { "icon": "simple-icons:laravel", "text": "Blade" },
+            { "icon": "akar-icons:vue-fill", "text": "Vuejs " },
+            { "icon": "raphael:js", "text": "Vanilla Js " },
+            { "icon": "arcticons:mercado-pago", "text": "Mercado pago " }
+        ]
+    },
+        
+    {
+        "title": "Power Fenix",
+        "img": "img/photo-1522252234503-e356532cafd5.jpeg",
+        "url": "",
+        "images" : [],
+        "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae accusamus dolore explicabo odit modi saepe sequi odio repellendus non veritatis!",
+        "icons": [
+            { "icon": "simple-icons:laravel", "text": "Laravel" },
+            { "icon": "simple-icons:laravel", "text": "Blade" },
+            { "icon": "akar-icons:vue-fill", "text": "Vuejs " },
+            { "icon": "raphael:js", "text": "Vanilla Js " },
+            { "icon": "arcticons:mercado-pago", "text": "Mercado pago " }
+        ]
+    },
+    
+    {
+        "title": "Tecmah",
+        "img": "img/photo-1522252234503-e356532cafd5.jpeg",
+        "url": "",
+        "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae accusamus dolore explicabo odit modi saepe sequi odio repellendus non veritatis!",
+        "icons": [
+            { "icon": "simple-icons:laravel", "text": "Laravel" },
+            { "icon": "simple-icons:laravel", "text": "Blade" },
+            { "icon": "akar-icons:vue-fill", "text": "Vuejs " },
+            { "icon": "raphael:js", "text": "Vanilla Js " },
+            { "icon": "arcticons:mercado-pago", "text": "Mercado pago " }
+        ]
+    },
+    
+    {
+        "title": "Iarebet",
+        "img": "img/screenshot_6.png",
+        "url": "https://iarebt.org/",
+        "content": "Instituto especializado en la formación y certificación en terapias de comportamiento racional emotivo. Ofrecen cursos y programas para profesionales interesados en esta área de la psicología.",
+        "icons": [
+            { "icon": "simple-icons:laravel", "text": "Laravel" },
+            { "icon": "simple-icons:laravel", "text": "Blade" },
+            { "icon": "akar-icons:vue-fill", "text": "Vuejs " },
+            { "icon": "raphael:js", "text": "Vanilla Js " },
+            { "icon": "simple-icons:jquery", "text": "Jquery " }
+        ]
+    },
+    
+    {
+        "title": "Waira",
+        "img": "img/screenshot_7.png",
+        "url": "https://waira.com.pe/",
+        "content": "Empresa que ofrece soluciones tecnológicas y servicios de consultoría en transformación digital. Ayudan a las empresas a adaptarse y prosperar en la era digital mediante la implementación de tecnologías innovadoras.",
+        "icons": [
+            { "icon": "simple-icons:laravel", "text": "Laravel" },
+            { "icon": "simple-icons:laravel", "text": "Blade" },
+            { "icon": "akar-icons:vue-fill", "text": "Vuejs " },
+            { "icon": "raphael:js", "text": "Vanilla Js " },
+            { "icon": "simple-icons:jquery", "text": "Jquery " }
+        ]
+    },
+    
+    {
+        "title": "Cyber plaza",
+        "img": "img/screenshot_8.png",
+        "url": "https://cyberplaza.com.pe/",
+        "content": "Centro comercial en Lima especializado en la venta de productos tecnológicos y electrónicos. Es un punto de referencia para quienes buscan lo último en tecnología a precios competitivos.",
+        "icons": [
+            { "icon": "simple-icons:laravel", "text": "Laravel" },
+            { "icon": "simple-icons:laravel", "text": "Blade" },
+            { "icon": "akar-icons:vue-fill", "text": "Vuejs " },
+            { "icon": "raphael:js", "text": "Vanilla Js " },
+            { "icon": "simple-icons:jquery", "text": "Jquery " }
+        ]
+    },
+    
+    {
+        "title": "Piaggio",
+        "img": "img/screenshot_9.png",
+        "url": "https://piaggiope.com/",
+        "content": "Distribuidor oficial de motocicletas y scooters Piaggio en Perú. Ofrecen una variedad de modelos que combinan estilo, eficiencia y tecnología italiana.",
+        "icons": [
+            { "icon": "simple-icons:laravel", "text": "Laravel" },
+            { "icon": "simple-icons:laravel", "text": "Blade" },
+            { "icon": "akar-icons:vue-fill", "text": "Vuejs " },
+            { "icon": "raphael:js", "text": "Vanilla Js " },
+            { "icon": "simple-icons:jquery", "text": "Jquery " }
+        ]
+    }
+
+]    
+
+
+
+
+
+
+
