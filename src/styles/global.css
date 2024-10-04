@@ -14,9 +14,9 @@
 
 .main{
     @apply 
-        w-11/12
-        /* container  */
-        /* mx-auto  */
+        /* w-11/12 */
+        container 
+        mx-auto 
         px-8;
 }
 

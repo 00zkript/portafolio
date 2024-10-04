@@ -7,12 +7,13 @@ import SectionSobreMi from '../components/sections/SobreMi.vue';
 import SectionPortafolio from '../components/sections/Portafolio.vue';
 import SectionExperiencia from '../components/sections/Experiencia.vue';
 import SectionContactame from '../components/sections/Contactame.vue';
+import Menu from '../components/Menu.vue';
 
 ---
 <Layout title="Welcome to Astro."> 
 
 
-	<div class="bg-indigo-950 text-gray-200 w-full inset-0 sticky z-20">
+	<!-- <div class="bg-indigo-950 text-gray-200 w-full inset-0 sticky z-20">
 			
 		<header class="main p-4 sm:p-2">
 			<div class="flex justify-between items-center">
@@ -62,8 +63,9 @@ import SectionContactame from '../components/sections/Contactame.vue';
 				</a>
 			</div>
 		</header>
-	</div>
+	</div> -->
 	
+	<Menu id="menu" client:load />
 	
 	<SectionPresentacion id="presentacion" client:load />
 	<SectionHabilidades  id="habilidades" client:visible />

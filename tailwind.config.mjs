@@ -30,7 +30,29 @@ export default {
 					'900': '#115046',
 					'950': '#03302b',
 				},
-			}
+			},
+			keyframes: {
+				pulse: {
+					'0%': { 
+						transform: 'scale(1)',
+						boxShadow: '0 0 0 0 rgb(101 62 255 / var(--tw-bg-opacity))',
+						opacity: 1
+					},
+					'50%': { 
+						transform: 'scale(1.1)', 
+						boxShadow: '0 0 15px 15px rgba(52, 152, 219, 0)',
+						opacity: 1
+					},
+					'100%': { 
+						transform: 'scale(1)', 
+						boxShadow: '0 0 0 0 rgba(52, 152, 219, 0)',
+						opacity: 1
+					},
+				},
+			},
+			animation: {
+				pulse: 'pulse 2s infinite',
+			},
 		},
 	},
 	plugins: [],
