@@ -1,7 +1,8 @@
 <script setup>
     import { esp, eng } from '../../data/presentacion.json';
+    const props = defineProps(['languaje']);
+    const content = props.languaje == 'eng' ? eng : esp;
     
-    const content = esp;
     
 </script>
 <template>

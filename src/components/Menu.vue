@@ -1,7 +1,32 @@
 <script setup>
-import { esp, eng } from '../data/menu.json';
+import data from '../data/menu.json';
+import { ref, onMounted } from 'vue';
 
-const content = esp;
+const languaje = ref('esp');
+
+const changeLanguaje = (lan) => {
+    localStorage.setItem('languaje',lan);
+    languaje.value = lan;
+}
+
+const setLanguaje = _ => {
+	if (localStorage.getItem('languaje')) {
+		languaje.value = localStorage.getItem('languaje')
+	}
+}
+
+const getLanguaje = _ => {
+	return localStorage.getItem('languaje');
+}
+
+onMounted(_ => {
+    getLanguaje();
+})
+
+
+const content = data[languaje.value];
+
+
 </script>
 
 <template>
@@ -20,6 +45,14 @@ const content = esp;
 				</button>
 			
 				<nav id="menu" class="hidden md:flex space-x-1 ">
+									
+					<button v-if="languaje == 'eng'" type="button" @click="changeLanguaje('esp')" class="hover:text-indigo-400 p-2 hover:border-indigo-400 rounded-full flex items-center" >
+						{{ content.languages.spanish }}
+					</button>
+					<button v-else type="button" @click="changeLanguaje('eng')" class="hover:text-indigo-400 p-2 hover:border-indigo-400 rounded-full flex items-center" >
+						{{ content.languages.english }}
+					</button>
+
 					<a target="_blank" href="https://www.linkedin.com/in/henry-quispe-cabello-1742a99b/" class="hover:text-indigo-400 p-2 hover:border-indigo-400 rounded-full flex items-center" >
 						<i class="foundation--social-linkedin" style="width: 1.5rem; height: 1.5rem;"></i>
 					</a>

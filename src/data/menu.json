@@ -8,6 +8,10 @@
             { "url": "#experiencia", "text": "Experiencia" },
             { "url": "#contactame", "text": "Contácteme" }
         ],
+        "languages": {
+            "spanish": "Español",
+            "english": "Ingles"
+        },
         "download_cv": {
             "url": "https://example.com/cv.pdf",
             "name": "henry_quispe_cabello_cv.pdf",
@@ -23,6 +27,10 @@
             { "url": "#experiencia", "text": "Experience" },
             { "url": "#contactame", "text": "Contact Me" }
         ],
+        "languages": {
+            "spanish": "Spanish",
+            "english": "English"
+        },
         "download_cv": {
             "url": "https://example.com/cv.pdf",
             "name": "henry_quispe_cabello_cv.pdf",
