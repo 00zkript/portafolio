@@ -1,6 +1,6 @@
 {
     "esp": {
-        "links" : [
+        "links": [
             { "url": "#presentacion", "text": "Presentación" },
             { "url": "#habilidades", "text": "Habilidades" },
             { "url": "#sobre-mi", "text": "Sobre mi" },
@@ -14,5 +14,19 @@
             "text": "Descarga mi CV"
         }
     },
-    "eng": {}
+    "eng": {
+        "links": [
+            { "url": "#presentacion", "text": "Presentation" },
+            { "url": "#habilidades", "text": "Skills" },
+            { "url": "#sobre-mi", "text": "About Me" },
+            { "url": "#mis-trabajos", "text": "My Work" },
+            { "url": "#experiencia", "text": "Experience" },
+            { "url": "#contactame", "text": "Contact Me" }
+        ],
+        "download_cv": {
+            "url": "https://example.com/cv.pdf",
+            "name": "henry_quispe_cabello_cv.pdf",
+            "text": "Download my CV"
+        }
+    }
 }
