@@ -71,7 +71,7 @@
     {
         "title": "Linea",
         "img": "img/linea_panel_login.png",
-        "url": "",
+        "url": null,
         "images" : [
             "img/linea_panel_login.png",
             "img/linea_panel_gimnasio_venta_create.png",
@@ -91,7 +91,7 @@
     {
         "title": "Power Fenix",
         "img": "img/photo-1522252234503-e356532cafd5.jpeg",
-        "url": "",
+        "url": null,
         "images" : [],
         "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae accusamus dolore explicabo odit modi saepe sequi odio repellendus non veritatis!",
         "icons": [
@@ -106,7 +106,7 @@
     {
         "title": "Tecmah",
         "img": "img/photo-1522252234503-e356532cafd5.jpeg",
-        "url": "",
+        "url": null,
         "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae accusamus dolore explicabo odit modi saepe sequi odio repellendus non veritatis!",
         "icons": [
             { "icon": "simple-icons:laravel", "text": "Laravel" },
