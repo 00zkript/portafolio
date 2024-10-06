@@ -359,3 +359,41 @@
     mask-size: 100% 100%;
 }
 
+
+@keyframes typing {
+    /* 0% { width: 0; }
+    100% { width: 100%; } */
+    from { width: 0% }
+    to { width: 100% }
+}
+
+@keyframes blink {
+    50% { border-color: white; }
+}
+
+.animate-typing {
+    display: inline-block;
+    white-space: nowrap; /* Para que el texto no se rompa en líneas */
+    overflow: hidden; /* Esconde el texto que no ha aparecido */
+    width: 0; /* Comienza con ancho 0 */
+    border-right: 2px solid white;
+    animation: typing 4s steps(30) infinite ; /* Ajusta el tiempo y pasos según sea necesario */
+}
+
+.animate-typing-1 {
+    display: inline-block;
+    white-space: nowrap; /* Para que el texto no se rompa en líneas */
+    overflow: hidden; /* Esconde el texto que no ha aparecido */
+    width: 0; /* Comienza con ancho 0 */
+    border-right: 2px solid white;
+    animation: typing 1s steps(30) forwards ; /* Ajusta el tiempo y pasos según sea necesario */
+}
+.animate-typing-2 {
+    display: inline-block;
+    white-space: nowrap; /* Para que el texto no se rompa en líneas */
+    overflow: hidden; /* Esconde el texto que no ha aparecido */
+    width: 0; /* Comienza con ancho 0 */
+    border-right: 2px solid white;
+    animation: typing 4s steps(30) 1s forwards ; /* Ajusta el tiempo y pasos según sea necesario */
+}
+

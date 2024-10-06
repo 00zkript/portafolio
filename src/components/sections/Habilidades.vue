@@ -15,7 +15,7 @@
 
 </script>
 <template>
-    <section class="py-16 mx-auto rounded-lg bg-slate-100 -mt-24 w-11/12 z-10 relative shadow-md">
+    <section class="py-16 mx-[7%] rounded-lg bg-slate-100 -mt-24 z-10 relative shadow-md">
         <div class="relative grid grid-cols-1 md:grid-cols-3 gap-x-4 gap-y-12 justify-items-center text-center">
             <div class="p-5 md:py-0 md:px-12 md:w-full border-b-2 md:border-b-0 ">
                 <div class="mb-3 flex flex-col items-center">
