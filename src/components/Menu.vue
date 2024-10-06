@@ -16,6 +16,7 @@ const changeLanguage = (lang) => {
     setLanguage(lang);
 };
 
+const showMenuMobil = ref(false);
 
 </script>
 
@@ -28,7 +29,7 @@ const changeLanguage = (lang) => {
 					<a v-for="(item,idx) in content.links" :key="idx" :href="item.url" class="hover:text-indigo-400 px-4 py-2"  >{{ item.text }}</a>
 				</nav>
 		
-				<button id="menu-btn" class="md:hidden text-white focus:outline-none">
+				<button id="menu-btn" @click="showMenuMobil = !showMenuMobil" class="md:hidden text-white focus:outline-none">
 					<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
 						<path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
 					</svg>                      
@@ -60,12 +61,19 @@ const changeLanguage = (lang) => {
 			
 			</div>
 	
-			<div id="mobile-menu" class="md:hidden hidden flex flex-col space-y-1 mt-5">
+			<div id="mobile-menu" class="md:hidden flex-col space-y-1 mt-5" :class="showMenuMobil ? 'flex' : 'hidden' " >
                 <a v-for="(item,idx) in content.links" :key="idx" :href="item.url" class="py-2 px-2 hover:bg-indigo-800 rounded"  >{{ item.text }}</a>
 				<a :href="content.download_cv.url" :download="content.download_cv.name" class="py-2 px-2 hover:bg-indigo-800 rounded flex gap-2" >
 					<i class="line-md--cloud-alt-download-filled-loop" style="width: 1.5rem; height: 1.5rem;"></i>
 					{{ content.download_cv.text }}
 				</a>
+				<hr>
+				<button type="button" @click="changeLanguage('esp')" class="hover:text-indigo-400 p-2 hover:border-indigo-400 rounded-full flex items-center" >
+					{{ content.languages.spanish }}
+				</button>
+				<button type="button" @click="changeLanguage('eng')" class="hover:text-indigo-400 p-2 hover:border-indigo-400 rounded-full flex items-center" >
+					{{ content.languages.english }}
+				</button>
 			</div>
 		</header>
 	</div>
