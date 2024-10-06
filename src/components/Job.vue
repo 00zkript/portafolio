@@ -25,7 +25,7 @@ const { img, url, title} = props;
                 <div class="h-full w-full relative flex justify-center items-center bg-black opacity-0 hover:bg-opacity-50 hover:opacity-100 transition ease-in-out duration-0 hover:duration-500">
                     <slot name="hoverContent">
                         <h1 class="text-white text-bold text-xl flex gap-2 items-center" >
-                            <span class="mdi--eye-outline" style="width:1.5rem;height: 1.5rem" ></span> Visitar
+                            <span class="mdi--eye-outline" style="width:7rem;height: 7rem" ></span>
                         </h1>
                     </slot>
                 </div>
