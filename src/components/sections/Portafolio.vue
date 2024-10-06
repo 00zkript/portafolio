@@ -52,7 +52,7 @@
                     :url="item.url" 
                     >
                     <template #content>
-                        <p>{{ item.content }}</p>
+                        <p>{{ item.content[store.language] }}</p>
                     </template>
                     <template #tags>
                         <span class="chip bg-indigo-500 text-white" v-for="(icon, idx) in item.icons" :key="idx">
@@ -72,7 +72,7 @@
                         :url="item.url" 
                         >
                         <template #content>
-                            <p>{{ item.content }}</p>
+                            <p>{{ item.content[store.language] }}</p>
                         </template>
                         <template #tags>
                             <span class="chip bg-indigo-500 text-white" v-for="(icon, idx) in item.icons" :key="idx">
@@ -87,10 +87,10 @@
                     <button type="button" class="text-lg text-white text-center flex flex-col items-center hover:text-black-russian-400" @click="showMore = !showMore">
                         <template v-if="showMore">
                             <span class="ep--arrow-up-bold" style="width:1.5rem;height:1.5rem"></span>
-                            Ver menos
+                            {{ content.see_less }}
                         </template>
                         <template v-else>
-                            Ver más
+                            {{ content.see_more }}
                             <span class="ep--arrow-down-bold" style="width:1.5rem;height:1.5rem"></span>
                         </template>
                     </button>
