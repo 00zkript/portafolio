@@ -1,8 +1,18 @@
 <script setup>
-import { Icon } from '@iconify/vue';
-import { esp, eng } from '../../data/habilidades.json';
+    import { Icon } from '@iconify/vue';
+    import translations from '../../data/habilidades.json';
     
-const content = esp;
+    import { computed } from 'vue';
+    import { useStore } from '@nanostores/vue';
+    import { languageStore } from '../../stores/languageStore';
+
+    const store = useStore(languageStore);
+
+    const content = computed(() => {
+        const lang = store.value.language;
+        return translations[lang] || translations['esp']; // Accede a las traducciones usando el idioma
+    });
+
 </script>
 <template>
     <section class="py-16 mx-auto rounded-lg bg-slate-100 -mt-24 w-11/12 z-10 relative shadow-md">

@@ -1,48 +1,37 @@
 <script setup>
-import Job from '../Job.vue';
-import Modal from '../Modal.vue';
-import { ref } from 'vue';
-import { Icon } from '@iconify/vue';
-import { esp, eng } from '../../data/portafolio.json'
-import jobsData from '../../data/jobs.json'
+    import Job from '../Job.vue';
+    import Modal from '../Modal.vue';
+    import { ref, computed } from 'vue';
+    import { Icon } from '@iconify/vue';
+    import translations from '../../data/portafolio.json'
+    import jobsData from '../../data/jobs.json'
 
-const props = defineProps(['id']);
+    import { useStore } from '@nanostores/vue';
+    import { languageStore } from '../../stores/languageStore';
 
-const showMore = ref(false);
-const showModal = ref(false);
-const imagesModal = ref([]);
+    const store = useStore(languageStore);
 
-const openModal = (imagen) => {
-    imagesModal.value = imagen; 
-    showModal.value = true; 
-}
+    const content = computed(() => {
+        const lang = store.value.language;
+        return translations[lang] || translations['esp']; // Accede a las traducciones usando el idioma
+    });
 
-const closeModal = () => {
-    showModal.value = false; 
-}
 
-const content = esp;
+    const props = defineProps(['id']);
 
-// const toggleJobs = () => {
-//     const btnHiddenJobs = document.querySelector('#btnHiddenJobs');
-//     const btnShowJobs = document.querySelector('#btnShowJobs');
-//     const jobsHidden = document.querySelector('#jobsHidden');
+    const showMore = ref(false);
+    const showModal = ref(false);
+    const imagesModal = ref([]);
 
-//     btnShowJobs.addEventListener('click', (e) => {
-//         jobsHidden.style.maxHeight = jobsHidden.scrollHeight + "px"; 
-//         btnShowJobs.classList.toggle('hidden');
-//         btnHiddenJobs.classList.toggle('hidden');
-//     });
+    const openModal = (imagen) => {
+        imagesModal.value = imagen; 
+        showModal.value = true; 
+    }
 
-//     btnHiddenJobs.addEventListener('click', (e) => {
-//         jobsHidden.style.maxHeight = null;
-//         btnShowJobs.classList.toggle('hidden');
-//         btnHiddenJobs.classList.toggle('hidden');
-//     });
+    const closeModal = () => {
+        showModal.value = false; 
+    }
 
-// }
-
-// toggleJobs();
 
 </script>
 <template>

@@ -1,7 +1,16 @@
 <script setup>
-import { esp, eng } from '../../data/sobreMi.json';
-    
-const content = esp;
+    import translations from '../../data/sobreMi.json';
+    import { computed } from 'vue';
+    import { useStore } from '@nanostores/vue';
+    import { languageStore } from '../../stores/languageStore';
+
+    const store = useStore(languageStore);
+
+    const content = computed(() => {
+        const lang = store.value.language;
+        return translations[lang] || translations['esp']; // Accede a las traducciones usando el idioma
+    });
+
 </script>
 
 <template>

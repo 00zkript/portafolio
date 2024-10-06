@@ -1,7 +1,15 @@
 <script setup>
-import { esp, eng } from '../../data/contactame.json';
+    import translations from '../../data/contactame.json';
+    import { computed } from 'vue';
+    import { useStore } from '@nanostores/vue';
+    import { languageStore } from '../../stores/languageStore';
 
-const content = esp;
+    const store = useStore(languageStore);
+
+    const content = computed(() => {
+        const lang = store.value.language;
+        return translations[lang] || translations['esp']; // Accede a las traducciones usando el idioma
+    });
 </script>
 
 <template>

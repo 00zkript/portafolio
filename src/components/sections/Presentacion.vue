@@ -1,7 +1,16 @@
 <script setup>
-    import { esp, eng } from '../../data/presentacion.json';
-    const props = defineProps(['languaje']);
-    const content = props.languaje == 'eng' ? eng : esp;
+    import translations from '../../data/presentacion.json';
+
+    import { computed } from 'vue';
+    import { useStore } from '@nanostores/vue';
+    import { languageStore } from '../../stores/languageStore';
+    
+    const store = useStore(languageStore);
+
+    const content = computed(() => {
+        const lang = store.value.language;
+        return translations[lang] || translations['esp']; // Accede a las traducciones usando el idioma
+    });
     
     
 </script>

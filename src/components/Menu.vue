@@ -1,30 +1,20 @@
 <script setup>
-import data from '../data/menu.json';
-import { ref, onMounted } from 'vue';
-
-const languaje = ref('esp');
-
-const changeLanguaje = (lan) => {
-    localStorage.setItem('languaje',lan);
-    languaje.value = lan;
-}
-
-const setLanguaje = _ => {
-	if (localStorage.getItem('languaje')) {
-		languaje.value = localStorage.getItem('languaje')
-	}
-}
-
-const getLanguaje = _ => {
-	return localStorage.getItem('languaje');
-}
-
-onMounted(_ => {
-    getLanguaje();
-})
+import translations from '../data/menu.json';
+import { ref, onMounted, computed } from 'vue';
+import { useStore } from '@nanostores/vue';
+import { languageStore, setLanguage } from '../stores/languageStore';
 
 
-const content = data[languaje.value];
+const store = useStore(languageStore);
+
+const content = computed(() => {
+	const lang = store.value.language;
+    return translations[lang] || translations['esp']; // Accede a las traducciones usando el idioma
+});
+
+const changeLanguage = (lang) => {
+    setLanguage(lang);
+};
 
 
 </script>
@@ -46,10 +36,10 @@ const content = data[languaje.value];
 			
 				<nav id="menu" class="hidden md:flex space-x-1 ">
 									
-					<button v-if="languaje == 'eng'" type="button" @click="changeLanguaje('esp')" class="hover:text-indigo-400 p-2 hover:border-indigo-400 rounded-full flex items-center" >
+					<button type="button" @click="changeLanguage('esp')" class="hover:text-indigo-400 p-2 hover:border-indigo-400 rounded-full flex items-center" >
 						{{ content.languages.spanish }}
 					</button>
-					<button v-else type="button" @click="changeLanguaje('eng')" class="hover:text-indigo-400 p-2 hover:border-indigo-400 rounded-full flex items-center" >
+					<button type="button" @click="changeLanguage('eng')" class="hover:text-indigo-400 p-2 hover:border-indigo-400 rounded-full flex items-center" >
 						{{ content.languages.english }}
 					</button>
 
