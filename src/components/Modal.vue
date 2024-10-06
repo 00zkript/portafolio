@@ -32,21 +32,21 @@ const closeModal = () => {
 <template>
   <div class="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50" >
     <div class="p-4 rounded-lg max-w-2xl w-full ">
-      <button class="absolute right-3 top-1 text-white" @click="closeModal"><span class="material-symbols--close" style="width: 2.5rem;height: 2.5rem;"></span></button>
-      <button class="absolute left-8 top-1/2 text-white text-8xl font-light" @click="prevImage"><span class="ep--arrow-left-bold" style="width: 3rem;height: 3rem;"></span></button>
-      <button class="absolute right-8 top-1/2 text-white text-8xl font-light" @click="nextImage"><span class="ep--arrow-right-bold" style="width: 3rem;height: 3rem;"></span></button>
+      <button class="absolute z-10 right-3 top-1 text-white" @click="closeModal"><span class="material-symbols--close" style="width: 2.5rem;height: 2.5rem;"></span></button>
+      <button class="absolute z-10 left-8 top-1/2 text-white bg-black bg-opacity-45 rounded-full p-4 flex font-light" @click="prevImage"><span class="ep--arrow-left-bold" style="width: 3rem;height: 3rem;"></span></button>
+      <button class="absolute z-10 right-8 top-1/2 text-white bg-black bg-opacity-45 rounded-full p-4 flex font-light" @click="nextImage"><span class="ep--arrow-right-bold" style="width: 3rem;height: 3rem;"></span></button>
 
       <!-- Carrusel de imágenes -->
-      <div class="flex justify-center items-center space-x-4">
+      <div class="absolute inset-0 flex justify-center items-center space-x-4">
         <img
           :src="images[currentImageIndex]"
-          class="max-h-fit w-auto"
+          class="max-h-full w-auto"
           alt="Carousel Image"
         />
       </div>
 
       <!-- Miniaturas debajo del carrusel -->
-      <div class="flex justify-center mt-4 space-x-2">
+      <!-- <div class="flex justify-center mt-4 space-x-2">
         <img
           v-for="(img, index) in images"
           :key="index"
@@ -55,7 +55,7 @@ const closeModal = () => {
           :class="{'border-blue-500': index === currentImageIndex}"
           @click="currentImageIndex = index"
         />
-      </div>
+      </div> -->
     </div>
   </div>
 </template>

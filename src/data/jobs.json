@@ -108,9 +108,15 @@
         
     {
         "title": "Power Fenix",
-        "img": "img/photo-1522252234503-e356532cafd5.jpeg",
+        "img": "img/power_1.png",
         "url": null,
-        "images" : [],
+        "images" : [
+            "img/power_1.png",
+            "img/power_2.png",
+            "img/power_3.png",
+            "img/power_4.png",
+            "img/power_5.png"
+        ],
         "content": {
             "esp" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae accusamus dolore explicabo odit modi saepe sequi odio repellendus non veritatis!",
             "eng" : ""
