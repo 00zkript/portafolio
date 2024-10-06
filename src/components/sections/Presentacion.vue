@@ -30,19 +30,19 @@
             
             <div class="flex text-gray-200">
                 <div class="font-mono overflow-hidden whitespace-nowrap">
-                    <p class="text-3xl ">{{ content.title }}</p>
+                    <p class="text-xl md:text-3xl ">{{ content.title }}</p>
                 </div>
             </div>
 
             <div class="flex text-gray-200 pt-2">
                 <div class="font-mono overflow-hidden whitespace-nowrap">
-                    <h1 class="text-6xl font-bold animate-typing">{{ content.title_2 }} &nbsp;</h1>
+                    <h1 class="text-4xl md:text-6xl font-bold animate-typing">{{ content.title_2 }} &nbsp;</h1>
                 </div>
             </div>
 
             <div class="flex text-gray-200 pt-2">
                 <div class="font-mono overflow-hidden whitespace-nowrap">
-                    <h2 class="text-3xl">{{ content.title_3 }}</h2>
+                    <h2 class="text-xl md:text-3xl">{{ content.title_3 }}</h2>
                 </div>
             </div>
             
