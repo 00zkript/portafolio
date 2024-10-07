@@ -16,8 +16,8 @@
 </script>
 <template>
     <section class="py-16 mx-[7%] rounded-lg bg-slate-100 -mt-24 z-10 relative shadow-md">
-        <div class="relative grid grid-cols-1 md:grid-cols-3 gap-x-4 gap-y-12 justify-items-center text-center">
-            <div class="p-5 md:py-0 md:px-12 md:w-full border-b-2 md:border-b-0 ">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-x-4 gap-y-12 justify-items-center text-center divide-x-0 md:divide-x-2 divide-y-2 md:divide-y-0">
+            <div class="p-5 md:py-0 md:px-12 md:w-full ">
                 <div class="mb-3 flex flex-col items-center">
                     <div class="rounded-full bg-black-russian-400 text-white mb-5">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-16 h-16 m-5">
@@ -54,7 +54,7 @@
                     
             </div>
     
-            <div class="p-5 md:py-0 md:px-12 md:w-full border-b-2 md:border-b-0 ">
+            <div class="p-5 md:py-0 md:px-12 md:w-full ">
                 <div class="mb-3 flex flex-col items-center">
                     <div class="rounded-full bg-black-russian-400 text-white mb-5">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" class="w-16 h-16 m-5" >
@@ -111,8 +111,6 @@
                 </div>
             </div>
     
-            <div class="hidden md:block absolute inset-y-0 left-1/3 w-[1px] bg-gray-300"></div>
-            <div class="hidden md:block absolute inset-y-0 left-2/3 w-[1px] bg-gray-300"></div>
     
         </div>
     </section>
