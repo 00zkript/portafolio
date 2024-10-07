@@ -1,5 +1,7 @@
 
 <script setup>
+import { Icon } from '@iconify/vue/dist/iconify.js';
+
 
 const props = defineProps(['img', 'url', 'title'])
 const emits = defineEmits(['abrirModal'])
@@ -35,8 +37,11 @@ const { img, url, title} = props;
         <div class="px-4 pb-4 pt-2">
             <a :href=" url ?? 'javascript:void(0);'" :target="url ? '_target': '' " @click="!url ? emits('abrirModal',true): ''" class="transition ease-in-out duration-0 hover:duration-300">
                 <h3 class="text-xl font-bold my-4 text-white flex gap-2 items-center hover:text-black-russian-300">
-                    <span class="arcticons--urlsanitizer" v-if="url" ></span>
+                    <Icon icon="solar:link-bold" width="1rem" height="1rem" v-if="url" />
+                    <Icon icon="tabler:lock" width="1rem" height="1rem" v-else />
+                    
                     {{ title }}
+
                 </h3>
             </a>
             <div class=" text-white opacity-90 text-md">

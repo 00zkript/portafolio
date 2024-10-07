@@ -5,7 +5,7 @@
         "url": "https://optimania.pe/",
         "content": {
             "esp" : "Tienda online especializada en la venta de lentes de medida, lentes de sol con medida y lentes deportivos para hombres, mujeres y niños. Ofrecen una amplia variedad de estilos y marcas para satisfacer las necesidades visuales de sus clientes.",
-            "eng" : ""
+            "eng": "Online store specialized in selling prescription glasses, prescription sunglasses, and sports glasses for men, women, and children. They offer a wide variety of styles and brands to meet the visual needs of their customers."
         },
         "icons": [
             { "icon": "simple-icons:laravel", "text": "Laravel" },
@@ -13,7 +13,11 @@
             { "icon": "akar-icons:vue-fill", "text": "Vuejs " },
             { "icon": "raphael:js", "text": "Vanilla Js " },
             { "icon": "simple-icons:jquery", "text": "Jquery " },
-            { "icon": "arcticons:mercado-pago", "text": "Mercado pago " }
+            { "icon": "arcticons:mercado-pago", "text": "Mercado pago " },
+            { "icon": "simple-icons:amazonec2", "text": "Amazon C2" },
+            { "icon": "simple-icons:amazons3", "text": "Amazon S3" },
+            { "icon": "teenyicons:face-id-outline", "text": "Amazon Rekognition" },
+            { "icon": "ep:more-filled", "text": "" }
         ]
     },
     {
@@ -22,7 +26,7 @@
         "url": "https://puroamorshop.com/" ,
         "content": {
             "esp" : "Tienda en línea que ofrece cajas de regalo personalizadas y productos de diseño únicos. Ideal para quienes buscan regalos especiales y personalizados para cualquier ocasión.",
-            "eng" : ""
+            "eng": "Online store that offers personalized gift boxes and unique design products. Ideal for those looking for special and personalized gifts for any occasion."
         },
         "icons": [
             { "icon": "simple-icons:laravel", "text": "Laravel" },
@@ -38,7 +42,7 @@
         "url": "https://compuandina.com.pe/",
         "content": {
             "esp" : "Empresa peruana dedicada a la comercialización y distribución de suministros y equipos de tecnología informática. Proveen soluciones tecnológicas tanto para empresas como para usuarios individuales.",
-            "eng" : ""
+            "eng": "Peruvian company dedicated to the marketing and distribution of IT supplies and equipment. They provide technological solutions for both businesses and individual users."
         },
         "icons": [
             { "icon": "simple-icons:laravel", "text": "Laravel" },
@@ -55,7 +59,7 @@
         "url": "https://tortaslucas.com.pe/",
         "content": {
             "esp" : "Pastelería que elabora tortas y postres artesanales con ingredientes naturales. Sus productos destacan por mantener un sabor casero y auténtico, ideal para celebraciones y eventos especiales.",
-            "eng" : ""
+            "eng": "Bakery that creates handmade cakes and desserts using natural ingredients. Their products stand out for their homemade and authentic flavor, ideal for celebrations and special events."
         },
         "icons": [
             { "icon": "simple-icons:laravel", "text": "Laravel" },
@@ -63,7 +67,7 @@
             { "icon": "akar-icons:vue-fill", "text": "Vuejs " },
             { "icon": "raphael:js", "text": "Vanilla Js " },
             { "icon": "simple-icons:jquery", "text": "Jquery " },
-            { "icon": "arcticons:mercado-pago", "text": "Izipay " }
+            { "icon": "fluent:payment-16-regular", "text": "Izipay " }
         ]
     },
     {
@@ -72,7 +76,7 @@
         "url": "https://brit.pe/",
         "content": {
             "esp" : "Marca de alimentos naturales y sostenibles para perros y gatos. Ofrecen productos premium y libres de granos, asegurando una alimentación saludable y balanceada para las mascotas.",
-            "eng" : ""
+            "eng": "Brand of natural and sustainable food for dogs and cats. They offer premium and grain-free products, ensuring a healthy and balanced diet for pets."
         },
         "icons": [
             { "icon": "simple-icons:laravel", "text": "Laravel" },
@@ -94,15 +98,13 @@
             "img/linea_panel_gimnasio_membresia.png"
         ],
         "content": {
-            "esp" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae accusamus dolore explicabo odit modi saepe sequi odio repellendus non veritatis!",
-            "eng" : ""
+            "esp" : "Plataforma utilizada para gestionar las membresías de gimnasio y las matrículas de clases de natación, con integración de facturación electrónica. Pensado para academias con múltiples locales, permite un control centralizado y eficiente desde un panel administrativo.",
+            "eng": "Platform used to manage gym memberships and swimming class enrollments, with integration of electronic billing. Designed for academies with multiple locations, it allows centralized and efficient control from an administrative panel."
         },
         "icons": [
-            { "icon": "simple-icons:laravel", "text": "Laravel" },
-            { "icon": "simple-icons:laravel", "text": "Blade" },
             { "icon": "akar-icons:vue-fill", "text": "Vuejs " },
-            { "icon": "raphael:js", "text": "Vanilla Js " },
-            { "icon": "arcticons:mercado-pago", "text": "Mercado pago " }
+            { "icon": "simple-icons:laravel", "text": "Laravel" },
+            { "icon": "simple-icons:laravel", "text": "Blade" }
         ]
     },
         
@@ -118,15 +120,13 @@
             "img/power_5.png"
         ],
         "content": {
-            "esp" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae accusamus dolore explicabo odit modi saepe sequi odio repellendus non veritatis!",
-            "eng" : ""
+            "esp" : "Plataforma utilizada para gestionar el mantenimiento de activos industriales. Permite la programación de mantenimientos, reparaciones y el seguimiento del estado de los equipos, ofreciendo un control eficiente sobre las necesidades operativas de los activos.",
+            "eng": "Platform used to manage the maintenance of industrial assets. It allows for scheduling maintenance, repairs, and tracking the condition of equipment, providing efficient control over the operational needs of assets."
         },
         "icons": [
-            { "icon": "simple-icons:laravel", "text": "Laravel" },
-            { "icon": "simple-icons:laravel", "text": "Blade" },
             { "icon": "akar-icons:vue-fill", "text": "Vuejs " },
-            { "icon": "raphael:js", "text": "Vanilla Js " },
-            { "icon": "arcticons:mercado-pago", "text": "Mercado pago " }
+            { "icon": "simple-icons:laravel", "text": "Laravel" },
+            { "icon": "simple-icons:laravel", "text": "Blade" }
         ]
     },
     
@@ -136,14 +136,12 @@
         "url": null,
         "content": {
             "esp" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae accusamus dolore explicabo odit modi saepe sequi odio repellendus non veritatis!",
-            "eng" : ""
+            "eng": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae accusamus dolore explicabo odit modi saepe sequi odio repellendus non veritatis!"
         },
         "icons": [
-            { "icon": "simple-icons:laravel", "text": "Laravel" },
-            { "icon": "simple-icons:laravel", "text": "Blade" },
             { "icon": "akar-icons:vue-fill", "text": "Vuejs " },
-            { "icon": "raphael:js", "text": "Vanilla Js " },
-            { "icon": "arcticons:mercado-pago", "text": "Mercado pago " }
+            { "icon": "simple-icons:laravel", "text": "Laravel" },
+            { "icon": "simple-icons:laravel", "text": "Blade" }
         ]
     },
     
@@ -153,7 +151,7 @@
         "url": "https://iarebt.org/",
         "content": {
             "esp" : "Instituto especializado en la formación y certificación en terapias de comportamiento racional emotivo. Ofrecen cursos y programas para profesionales interesados en esta área de la psicología.",
-            "eng" : ""
+            "eng": "Institute specialized in training and certification in rational emotive behavior therapy. They offer courses and programs for professionals interested in this area of psychology."
         },
         "icons": [
             { "icon": "simple-icons:laravel", "text": "Laravel" },
@@ -170,7 +168,7 @@
         "url": "https://waira.com.pe/",
         "content": {
             "esp" : "Empresa que ofrece soluciones tecnológicas y servicios de consultoría en transformación digital. Ayudan a las empresas a adaptarse y prosperar en la era digital mediante la implementación de tecnologías innovadoras.",
-            "eng" : ""
+            "eng": "Company that offers technological solutions and consulting services in digital transformation. They help businesses adapt and thrive in the digital age by implementing innovative technologies."
         },
         "icons": [
             { "icon": "simple-icons:laravel", "text": "Laravel" },
@@ -187,7 +185,7 @@
         "url": "https://cyberplaza.com.pe/",
         "content": {
             "esp" : "Centro comercial en Lima especializado en la venta de productos tecnológicos y electrónicos. Es un punto de referencia para quienes buscan lo último en tecnología a precios competitivos.",
-            "eng" : ""
+            "eng": "Shopping center in Lima specialized in selling technological and electronic products. It is a landmark for those looking for the latest in technology at competitive prices."
         },
         "icons": [
             { "icon": "simple-icons:laravel", "text": "Laravel" },
@@ -204,7 +202,7 @@
         "url": "https://piaggiope.com/",
         "content": {
             "esp" : "Distribuidor oficial de motocicletas y scooters Piaggio en Perú. Ofrecen una variedad de modelos que combinan estilo, eficiencia y tecnología italiana.",
-            "eng" : ""
+            "eng": "Official distributor of Piaggio motorcycles and scooters in Peru. They offer a variety of models that combine style, efficiency, and Italian technology."
         },
         "icons": [
             { "icon": "simple-icons:laravel", "text": "Laravel" },
