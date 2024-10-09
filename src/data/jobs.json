@@ -104,7 +104,9 @@
         "icons": [
             { "icon": "akar-icons:vue-fill", "text": "Vuejs " },
             { "icon": "simple-icons:laravel", "text": "Laravel" },
-            { "icon": "simple-icons:laravel", "text": "Blade" }
+            { "icon": "simple-icons:laravel", "text": "Blade" },
+            { "icon": "ic:baseline-api", "text": "API" },
+            { "icon": "material-symbols:fact-check", "text": "RAPIFACT" }
         ]
     },
         
@@ -126,22 +128,32 @@
         "icons": [
             { "icon": "akar-icons:vue-fill", "text": "Vuejs " },
             { "icon": "simple-icons:laravel", "text": "Laravel" },
-            { "icon": "simple-icons:laravel", "text": "Blade" }
+            { "icon": "simple-icons:laravel", "text": "Blade" },
+            { "icon": "ic:baseline-api", "text": "API" },
+            { "icon": "material-symbols:cloud", "text": "NubeFacT" }
         ]
     },
     
     {
         "title": "Tecmah",
-        "img": "img/photo-1522252234503-e356532cafd5.jpeg",
+        "img": "img/tecmah_0.png",
         "url": null,
+        "images": [
+            "img/tecmah_0.png",
+            "img/tecmah_1.png",
+            "img/tecmah_2.png",
+            "img/tecmah_3.png"
+        ],
         "content": {
-            "esp" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae accusamus dolore explicabo odit modi saepe sequi odio repellendus non veritatis!",
-            "eng": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae accusamus dolore explicabo odit modi saepe sequi odio repellendus non veritatis!"
+            "esp" : "Plataforma utilizada para gestionar la fabricación de productos plásticos, como sillas, vasos y otros artículos. Facilita el control de inventario, la planificación de la producción y el seguimiento de procesos, optimizando la gestión de materiales y la eficiencia en la producción.",
+            "eng": "A platform used to manage the production of plastic products, such as chairs, cups, and other items. It streamlines inventory control, production planning, and process tracking, optimizing material management and production efficiency."
         },
         "icons": [
             { "icon": "akar-icons:vue-fill", "text": "Vuejs " },
             { "icon": "simple-icons:laravel", "text": "Laravel" },
-            { "icon": "simple-icons:laravel", "text": "Blade" }
+            { "icon": "simple-icons:laravel", "text": "Blade" },
+            { "icon": "ic:baseline-api", "text": "API" },
+            { "icon": "material-symbols:cloud", "text": "NubeFacT" }
         ]
     },
     
