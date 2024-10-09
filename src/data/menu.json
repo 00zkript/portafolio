@@ -13,7 +13,7 @@
             "english": "Ingles"
         },
         "download_cv": {
-            "url": "https://example.com/cv.pdf",
+            "url": "cv-spanish-2024.pdf",
             "name": "henry_quispe_cabello_cv.pdf",
             "text": "Descarga mi CV"
         }
@@ -32,7 +32,7 @@
             "english": "English"
         },
         "download_cv": {
-            "url": "https://example.com/cv.pdf",
+            "url": "cv-english-2024.pdf",
             "name": "henry_quispe_cabello_cv.pdf",
             "text": "Download my CV"
         }
