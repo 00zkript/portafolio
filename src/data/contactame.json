@@ -7,7 +7,9 @@
             "last_name": "Apellidos",
             "email": "Correo",
             "message": "Mensaje",
-            "send":  "Enviar"
+            "send":  "Enviar",
+            "message_success" : "Su mensaje ha sido enviado con éxito",
+            "message_error" : "Error al enviar el mensaje, por favor inténtelo de nuevo"
         }
     },
     "eng": {
@@ -18,7 +20,9 @@
             "last_name": "Last Name",
             "email": "Email",
             "message": "Message",
-            "send": "Send"
+            "send": "Send",
+            "message_success" : "Your message has been sent successfully",
+            "message_error" : "Error sending the message, please try again"
         }
     }
 }
