@@ -35,7 +35,7 @@
                             </h3>
                                 
                             <ul class="text-base font-normal text-slate-300 list-disc ps-4">
-                                <li v-for="(item,idx) in content.company_1.list" :key="idx" >{{ item }}</li>
+                                <li v-for="(item,idx) in content.company_1.list" :key="idx" v-html="item"></li>
                             </ul>
                         </div>
                             
@@ -50,7 +50,7 @@
                                 {{ content.company_2.name }}
                             </h3>
                             <ul class=" text-base font-normal text-slate-300 list-disc ps-4">
-                                <li v-for="(item,idx) in content.company_2.list" :key="idx" >{{ item }}</li>
+                                <li v-for="(item,idx) in content.company_2.list" :key="idx" v-html="item"></li>
                             </ul>
                         </div>
                     </li>

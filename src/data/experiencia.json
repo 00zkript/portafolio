@@ -5,21 +5,30 @@
         "name": "Dezain studios",
         "time": "Enero 2020 - actualidad",
         "list": [
-          "Liderazgo en proyectos ERP y E-commerce usando Laravel y Vue.js.",
-          "Implementación de reconocimiento facial y nuevas tecnologías (Amazon S3, Google Drive, Amazon rekognition, Amazon C2).",
-          "Refactorización de código, microservicios, desarrollo de APIs.",
-          "Integración de pasarelas de pago (Izipay, Culqui, Pago Efectivo).",
-          "Migración de sitios web y data.",
-          "Liderazgo de proyecto desde inicio hasta producción.",
-          "Análisis de requerimientos."
+          "<b>Diseño de Sistemas:</b> Elaboré arquitecturas de software escalables y mantenibles, definiendo estructuras y componentes para cumplir requisitos específicos.",
+          "<b>Liderazgo Técnico:</b> Brindé orientación al equipo de desarrollo sobre mejores prácticas y normas de codificación, revisando el código para asegurar la adherencia a la arquitectura definida.",
+          "<b>Planificación de Escalabilidad:</b> Proactivamente planifiqué la adaptabilidad de las arquitecturas, minimizando retrabajo y tiempos de inactividad.",
+          "<b>Evaluación de Tecnologías:</b> Propuse y evalué tecnologías adecuadas para proyectos, considerando rendimiento, escalabilidad y costo.",
+          "<b>Innovación Continua:</b> Mantuve al día sobre herramientas y mejores prácticas, asegurando sistemas modernos y eficientes.",
+          "<b>Comunicación Efectiva:</b> Colaboré con el equipo y partes interesadas para alinear los aspectos técnicos con los objetivos organizacionales.",
+          "<b>Microservicios:</b> Trabajé con el Arquitecto de Soluciones en la evaluación y mejora de microservicios existentes.",
+          "<b>Gestión de Riesgos:</b> Identifiqué y mitigé riesgos potenciales en el desarrollo de software en fases tempranas.",
+          "<b>Documentación:</b> Elaboré documentación detallada sobre arquitectura y decisiones de diseño.",
+          "<b>Optimización de Rendimiento:</b> Analicé el rendimiento de los sistemas, identificando cuellos de botella y proponiendo optimizaciones.",
+          "<b>Resolución de Desafíos Técnicos:</b> Asesoré al equipo en la superación de obstáculos técnicos, garantizando la continuidad de los proyectos."
         ]
       },
       "company_2": {
         "name": "AppVentures",
         "time": "Septiembre 2019 - Enero 2020",
         "list": [
-          "Desarrollo y mantenimiento de proyectos tecnológicos, mejorando rendimiento y funcionalidad.",
-          "Análisis de requerimientos."
+          "<b>Diseño de Sistemas:</b> Participé en la elaboración de arquitecturas de software escalables, definiendo estructuras y componentes para cumplir requisitos de proyectos.",
+          "<b>Apoyo Técnico:</b> Colaboré con el equipo de desarrollo siguiendo mejores prácticas y normas de codificación, revisando el código para garantizar calidad.",
+          "<b>Planificación de Escalabilidad:</b> Asistí en la planificación de arquitecturas adaptables, ayudando a minimizar retrabajo y tiempos de inactividad.",
+          "<b>Evaluación de Tecnologías:</b> Contribuí en la propuesta y evaluación de tecnologías adecuadas para proyectos, considerando rendimiento y costos.",
+          "<b>Documentación:</b> Elaboré documentación sobre la arquitectura y decisiones de diseño para facilitar el trabajo del equipo.",
+          "<b>Optimización de Rendimiento:</b> Colaboré en la identificación de cuellos de botella y propuse mejoras para optimizar el rendimiento de los sistemas.",
+          "<b>Resolución de Problemas:</b> Asistí al equipo en la superación de obstáculos técnicos, contribuyendo a la continuidad de los proyectos."
         ]
       }
     },
@@ -29,21 +38,30 @@
         "name": "Dezain studios",
         "time": "January 2020 - Present",
         "list": [
-          "Leadership in ERP and E-commerce projects using Laravel and Vue.js.",
-          "Implementation of facial recognition and new technologies (Amazon S3, Google Drive, Amazon Rekognition, Amazon C2).",
-          "Code refactoring, microservices, API development.",
-          "Integration of payment gateways (Izipay, Culqui, Pago Efectivo).",
-          "Website and data migration.",
-          "Project leadership from start to production.",
-          "Requirements analysis."
+          "<b>System Design:</b> Developed scalable and maintainable software architectures, defining structures and components to meet project requirements.",
+          "<b>Technical Leadership:</b> Provided guidance to the development team on best practices and coding standards, reviewing code to ensure adherence to the defined architecture.",
+          "<b>Scalability Planning:</b> Proactively planned the adaptability of architectures, minimizing rework and downtime.",
+          "<b>Technology Assessment:</b> Proposed and evaluated suitable technologies for projects, considering performance, scalability, and cost.",
+          "<b>Continuous Innovation:</b> Kept updated on tools and best practices, ensuring modern and efficient systems.",
+          "<b>Effective Communication:</b> Collaborated with the team and stakeholders to align technical aspects with organizational goals.",
+          "<b>Microservices:</b> Worked with the Solutions Architect on assessing and improving existing microservices.",
+          "<b>Risk Management:</b> Identified and mitigated potential risks in the software development process at early stages.",
+          "<b>Documentation:</b> Created detailed documentation on architecture and design decisions.",
+          "<b>Performance Optimization:</b> Analyzed system performance, identifying bottlenecks and proposing optimizations.",
+          "<b>Technical Problem Solving:</b> Advised the team in overcoming technical challenges, ensuring project continuity."
         ]
       },
       "company_2": {
         "name": "AppVentures",
         "time": "September 2019 - January 2020",
         "list": [
-          "Development and maintenance of technology projects, improving performance and functionality.",
-          "Requirements analysis."
+          "<b>System Design:</b> Participated in developing scalable software architectures, defining structures and components to meet project requirements.",
+          "<b>Technical Support:</b> Collaborated with the development team following best practices and coding standards, reviewing code to ensure quality.",
+          "<b>Scalability Planning:</b> Assisted in planning adaptable architectures, helping to minimize rework and downtime.",
+          "<b>Technology Assessment:</b> Contributed to proposing and evaluating suitable technologies for projects, considering performance and costs.",
+          "<b>Documentation:</b> Created documentation on architecture and design decisions to facilitate team work.",
+          "<b>Performance Optimization:</b> Collaborated in identifying bottlenecks and proposed improvements to optimize system performance.",
+          "<b>Problem Solving:</b> Assisted the team in overcoming technical challenges, contributing to project continuity."
         ]
       }
     }
