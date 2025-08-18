@@ -13,52 +13,37 @@
 </script>
 
 <template>
-    <section class="section bg-black bg-no-repeat bg-cover bg-center bg-fixed" style="background-image: url('img/1031-1000x500.jpg');">
-                
-        <div class="section-header">
-            <h2 class="section-title text-white">{{ content.title }}</h2>
+  <section class="py-16 px-6 md:px-12 lg:px-24 relative z-10 max-w-5xl mx-auto">
+    <div class="text-center mb-12">
+      <h2 class="text-3xl font-bold text-white mb-4">{{ content.title }}</h2>
+    </div>
+    <div class="relative border-l-2 border-white/20">
+      <div
+        v-for="(company, index) in [content.company_1, content.company_2]"
+        :key="index"
+        class="mb-10 ml-6"
+      >
+        <div
+          class="absolute w-6 h-6 bg-white/20 backdrop-blur-md rounded-full -left-3 border-2 border-white flex items-center justify-center"
+        >
+          <span class="w-3 h-3 bg-indigo-500 rounded-full"></span>
         </div>
-        <div class="section-content max-w-5xl">
-    
-            <div class="px-8 mt-10">
-        
-                <ol class="relative border-s border-gray-200">  
-                                        
-                    <li class="mb-10 ms-4">
-                        <div class="absolute w-3 h-3 bg-gray-200 rounded-full mt-6 -start-1.5 border border-white"></div>
-                        <div class="bg-black bg-opacity-50 p-4 rounded-md">
-                            <time class="mb-1 text-sm font-normal leading-none text-gray-200">
-                                {{ content.company_1.time }}
-                            </time>
-                            <h3 class="text-lg font-semibold text-white">
-                                {{ content.company_1.name }}
-                            </h3>
-                                
-                            <ul class="text-base font-normal text-slate-300 list-disc ps-4">
-                                <li v-for="(item,idx) in content.company_1.list" :key="idx" v-html="item"></li>
-                            </ul>
-                        </div>
-                            
-                    </li>
-                    <li class="mb-10 ms-4">
-                        <div class="absolute w-3 h-3 bg-gray-200 rounded-full mt-6 -start-1.5 border border-white"></div>
-                        <div class="bg-black bg-opacity-50 p-4 rounded-md">
-                            <time class="mb-1 text-sm font-normal leading-none text-gray-200">
-                                {{ content.company_2.time }}
-                            </time>
-                            <h3 class="text-lg font-semibold text-white">
-                                {{ content.company_2.name }}
-                            </h3>
-                            <ul class=" text-base font-normal text-slate-300 list-disc ps-4">
-                                <li v-for="(item,idx) in content.company_2.list" :key="idx" v-html="item"></li>
-                            </ul>
-                        </div>
-                    </li>
-    
-                </ol>
-    
-            </div>    
-    
+        <div class="p-6 bg-white/10 backdrop-blur-md rounded-lg shadow-lg transition-transform transform hover:scale-105">
+          <time class="block mb-2 text-sm font-medium text-gray-300">
+            {{ company.time }}
+          </time>
+          <h3 class="text-lg font-semibold text-white mb-2">
+            {{ company.name }}
+          </h3>
+          <ul class="mt-2 text-sm text-gray-300 list-disc pl-5">
+            <li
+              v-for="(item, idx) in company.list"
+              :key="idx"
+              v-html="item"
+            ></li>
+          </ul>
         </div>
-    </section>
+      </div>
+    </div>
+  </section>
 </template>

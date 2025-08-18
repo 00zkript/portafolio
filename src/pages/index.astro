@@ -1,28 +1,14 @@
 ---
-import Layout from '../layouts/Layout.astro';
-
-import Body from '../components/Body.vue';
-
-
+import Layout from '@/layouts/Layout.astro';
+import Body from '@/components/Body.vue';
+import Footer from '@/components/Footer.vue';
+import Menu from '@/components/Menu.vue';
 ---
-<Layout title="Welcome to Astro."> 
-	<Body client:only />
+
+<Layout> 
+	<div class="container mx-auto">
+		<Menu client:only />
+		<Body client:only />
+		<Footer client:only />
+	</div>
 </Layout>
-
-<!-- <script>
-	
-	const toggleMenuMobil = () => {
-		// Manejar la visibilidad del menú móvil
-		const menuBtn = document.getElementById('menu-btn');
-		const mobileMenu = document.getElementById('mobile-menu');
-	
-		menuBtn.addEventListener('click', () => {
-			mobileMenu.classList.toggle('hidden');
-		});
-
-	}
-
-
-	toggleMenuMobil();
-
-</script> -->

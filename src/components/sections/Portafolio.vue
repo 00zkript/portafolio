@@ -35,75 +35,92 @@
 
 </script>
 <template>
-    <section class="section bg-black bg-no-repeat bg-cover bg-center bg-fixed" style="background-image: url('img/1031-1000x500.jpg');" :id="props.id">
-        <div class="section-header">
-            <h2 class="section-title text-white">{{ content.title }}</h2>
-            <h3 class="section-subtitle text-white">{{ content.sub_title }}</h3>
+  <section class="py-16 px-6 md:px-12 lg:px-24 relative z-10" :id="props.id">
+    <div class="text-center mb-12">
+      <h2 class="text-3xl font-bold text-white mb-4">{{ content.title }}</h2>
+      <h3 class="text-lg text-gray-300">{{ content.sub_title }}</h3>
+    </div>
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+      <!-- Tarjetas de trabajos principales -->
+      <div
+        v-for="(item, idx) in jobsData.slice(0, 6)"
+        :key="idx"
+        class="bg-white/10 backdrop-blur-md rounded-lg shadow-lg overflow-hidden transition-transform transform hover:scale-105"
+      >
+        <img :src="item.img" alt="" class="w-full h-48 object-cover" />
+        <div class="p-6">
+          <h4 class="text-xl font-semibold text-white mb-2">{{ item.title }}</h4>
+          <p class="text-sm text-gray-300 mb-4">{{ item.content[store.language] }}</p>
+          <div class="flex flex-wrap gap-2">
+            <span
+              v-for="(icon, idx) in item.icons"
+              :key="idx"
+              class="chip bg-white/20 backdrop-blur-md text-white"
+            >
+              <Icon :icon="icon.icon" width="1rem" height="1rem" /> {{ icon.text }}
+            </span>
+          </div>
+          <button
+            class="mt-4 text-indigo-400 hover:underline"
+            @click="openModal(item.images ?? [])"
+          >
+            {{ content.view_more }}
+          </button>
         </div>
-        <div class="section-content max-w-full md:max-w-7xl " >
-            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-3 gap-8">
+      </div>
 
-                <Job 
-                    v-for="(item,idx) in jobsData.slice(0,6)"
-                    :key="idx"
-                    :title="item.title" 
-                    :img="item.img" 
-                    @abrirModal="openModal(item.images ?? [])" 
-                    :url="item.url" 
-                    >
-                    <template #content>
-                        <p>{{ item.content[store.language] }}</p>
-                    </template>
-                    <template #tags>
-                        <span class="chip bg-indigo-500 text-white" v-for="(icon, idx) in item.icons" :key="idx">
-                            <Icon :icon="icon.icon" width="1rem" height="1rem"  style="color: white" /> 
-                            {{ icon.text }}
-                        </span>
-                    </template>
-                </Job>
-                
-                <div v-show="showMore" class="grid grid-cols-subgrid col-span-1 sm:col-span-2 md:col-span-3 xl:col-span-3 gap-8 overflow-hidden transition-all duration-300 ease-in-out" :class="showMore ? 'max-h-100' : 'max-h-0' ">
-                    <Job 
-                        v-for="(item,idx) in jobsData.slice(6,jobsData.length)"
-                        :key="idx"
-                        :title="item.title" 
-                        :img="item.img" 
-                        @abrirModal="openModal(item.images ?? [])" 
-                        :url="item.url" 
-                        >
-                        <template #content>
-                            <p>{{ item.content[store.language] }}</p>
-                        </template>
-                        <template #tags>
-                            <span class="chip bg-indigo-500 text-white" v-for="(icon, idx) in item.icons" :key="idx">
-                                <Icon :icon="icon.icon" width="1rem" height="1rem"  style="color: white" /> 
-                                {{ icon.text }}
-                            </span>
-                        </template>
-                    </Job>
-                </div>
-    
-                <div class="col-span-1 sm:col-span-2 md:col-span-3 xl:col-span-3 flex flex-col items-center">
-                    <button type="button" class="text-lg text-white text-center flex flex-col items-center hover:text-black-russian-400" @click="showMore = !showMore">
-                        <template v-if="showMore">
-                            <span class="ep--arrow-up-bold" style="width:1.5rem;height:1.5rem"></span>
-                            {{ content.see_less }}
-                        </template>
-                        <template v-else>
-                            {{ content.see_more }}
-                            <span class="ep--arrow-down-bold" style="width:1.5rem;height:1.5rem"></span>
-                        </template>
-                    </button>
-                </div>
-       
-    
+      <!-- Trabajos adicionales -->
+      <div
+        v-show="showMore"
+        class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 col-span-full"
+      >
+        <div
+          v-for="(item, idx) in jobsData.slice(6, jobsData.length)"
+          :key="idx"
+          class="bg-white/10 backdrop-blur-md rounded-lg shadow-lg overflow-hidden transition-transform transform hover:scale-105"
+        >
+          <img :src="item.img" alt="" class="w-full h-48 object-cover" />
+          <div class="p-6">
+            <h4 class="text-xl font-semibold text-white mb-2">{{ item.title }}</h4>
+            <p class="text-sm text-gray-300 mb-4">{{ item.content[store.language] }}</p>
+            <div class="flex flex-wrap gap-2">
+              <span
+                v-for="(icon, idx) in item.icons"
+                :key="idx"
+                class="chip bg-white/20 backdrop-blur-md text-white"
+              >
+                <Icon :icon="icon.icon" width="1rem" height="1rem" /> {{ icon.text }}
+              </span>
             </div>
+            <button
+              class="mt-4 text-indigo-400 hover:underline"
+              @click="openModal(item.images ?? [])"
+            >
+              {{ content.view_more }}
+            </button>
+          </div>
         </div>
-    
+      </div>
+    </div>
 
-    </section>
+    <!-- Botón para mostrar más/menos trabajos -->
+    <div class="text-center mt-8">
+      <button
+        class="text-lg text-indigo-400 hover:underline flex items-center justify-center"
+        @click="showMore = !showMore"
+      >
+        <template v-if="showMore">
+          <Icon icon="ep:arrow-up-bold" class="mr-2" /> {{ content.see_less }}
+        </template>
+        <template v-else>
+          <Icon icon="ep:arrow-down-bold" class="mr-2" /> {{ content.see_more }}
+        </template>
+      </button>
+    </div>
+
+    <!-- Modal para imágenes -->
     <Modal v-if="showModal" :images="imagesModal" @close="closeModal" />
-    
+  </section>
 </template>
 
 
