@@ -1,69 +1,68 @@
 {
-    "esp": {
-      "title": "Experiencia",
-      "company_1": {
-        "name": "Dezain studios",
-        "time": "Enero 2020 - actualidad",
-        "list": [
-          "<b>Diseño de Sistemas:</b> Elaboré arquitecturas de software escalables y mantenibles, definiendo estructuras y componentes para cumplir requisitos específicos.",
-          "<b>Liderazgo Técnico:</b> Brindé orientación al equipo de desarrollo sobre mejores prácticas y normas de codificación, revisando el código para asegurar la adherencia a la arquitectura definida.",
-          "<b>Planificación de Escalabilidad:</b> Proactivamente planifiqué la adaptabilidad de las arquitecturas, minimizando retrabajo y tiempos de inactividad.",
-          "<b>Evaluación de Tecnologías:</b> Propuse y evalué tecnologías adecuadas para proyectos, considerando rendimiento, escalabilidad y costo.",
-          "<b>Innovación Continua:</b> Mantuve al día sobre herramientas y mejores prácticas, asegurando sistemas modernos y eficientes.",
-          "<b>Comunicación Efectiva:</b> Colaboré con el equipo y partes interesadas para alinear los aspectos técnicos con los objetivos organizacionales.",
-          "<b>Microservicios:</b> Trabajé con el Arquitecto de Soluciones en la evaluación y mejora de microservicios existentes.",
-          "<b>Gestión de Riesgos:</b> Identifiqué y mitigé riesgos potenciales en el desarrollo de software en fases tempranas.",
-          "<b>Documentación:</b> Elaboré documentación detallada sobre arquitectura y decisiones de diseño.",
-          "<b>Optimización de Rendimiento:</b> Analicé el rendimiento de los sistemas, identificando cuellos de botella y proponiendo optimizaciones.",
-          "<b>Resolución de Desafíos Técnicos:</b> Asesoré al equipo en la superación de obstáculos técnicos, garantizando la continuidad de los proyectos."
-        ]
-      },
-      "company_2": {
-        "name": "AppVentures",
-        "time": "Septiembre 2019 - Enero 2020",
-        "list": [
-          "<b>Diseño de Sistemas:</b> Participé en la elaboración de arquitecturas de software escalables, definiendo estructuras y componentes para cumplir requisitos de proyectos.",
-          "<b>Apoyo Técnico:</b> Colaboré con el equipo de desarrollo siguiendo mejores prácticas y normas de codificación, revisando el código para garantizar calidad.",
-          "<b>Planificación de Escalabilidad:</b> Asistí en la planificación de arquitecturas adaptables, ayudando a minimizar retrabajo y tiempos de inactividad.",
-          "<b>Evaluación de Tecnologías:</b> Contribuí en la propuesta y evaluación de tecnologías adecuadas para proyectos, considerando rendimiento y costos.",
-          "<b>Documentación:</b> Elaboré documentación sobre la arquitectura y decisiones de diseño para facilitar el trabajo del equipo.",
-          "<b>Optimización de Rendimiento:</b> Colaboré en la identificación de cuellos de botella y propuse mejoras para optimizar el rendimiento de los sistemas.",
-          "<b>Resolución de Problemas:</b> Asistí al equipo en la superación de obstáculos técnicos, contribuyendo a la continuidad de los proyectos."
-        ]
-      }
+  "eng": {
+    "company_1": {
+      "list": [
+        "<b>CI/CD & Quality:</b> Implemented CI/CD pipelines, automated testing and observability practices.",
+        "<b>Microservices & APIs:</b> Designed, assessed and refined microservices and API contracts alongside solutions architects.",
+        "<b>Performance Optimization:</b> Diagnosed bottlenecks and proposed latency, throughput and cost optimizations.",
+        "<b>Risk Management:</b> Identified technical risks early and defined mitigation strategies.",
+        "<b>Scalability & Resilience:</b> Planned systems for scalability and fault tolerance to reduce rework and downtime.",
+        "<b>Support & Mentoring:</b> Resolved critical incidents and mentored engineers to maintain project continuity.",
+        "<b>System Architecture:</b> Designed and implemented scalable, maintainable architectures for enterprise APIs and platforms.",
+        "<b>Technical Documentation:</b> Produced design rationale, diagrams and runbooks to support the team.",
+        "<b>Technical Leadership:</b> Led engineering practices, code reviews and architectural standards across the team.",
+        "<b>Technology Evaluation:</b> Evaluated and adopted tooling and services based on performance and cost criteria."
+      ],
+      "name": "Dezain studios",
+      "summary": "Responsible for designing and implementing scalable architectures and engineering practices that improve reliability and efficiency of enterprise platforms.",
+      "time": "January 2020 - Present"
     },
-    "eng": {
-      "title": "Experience",
-      "company_1": {
-        "name": "Dezain studios",
-        "time": "January 2020 - Present",
-        "list": [
-          "<b>System Design:</b> Developed scalable and maintainable software architectures, defining structures and components to meet project requirements.",
-          "<b>Technical Leadership:</b> Provided guidance to the development team on best practices and coding standards, reviewing code to ensure adherence to the defined architecture.",
-          "<b>Scalability Planning:</b> Proactively planned the adaptability of architectures, minimizing rework and downtime.",
-          "<b>Technology Assessment:</b> Proposed and evaluated suitable technologies for projects, considering performance, scalability, and cost.",
-          "<b>Continuous Innovation:</b> Kept updated on tools and best practices, ensuring modern and efficient systems.",
-          "<b>Effective Communication:</b> Collaborated with the team and stakeholders to align technical aspects with organizational goals.",
-          "<b>Microservices:</b> Worked with the Solutions Architect on assessing and improving existing microservices.",
-          "<b>Risk Management:</b> Identified and mitigated potential risks in the software development process at early stages.",
-          "<b>Documentation:</b> Created detailed documentation on architecture and design decisions.",
-          "<b>Performance Optimization:</b> Analyzed system performance, identifying bottlenecks and proposing optimizations.",
-          "<b>Technical Problem Solving:</b> Advised the team in overcoming technical challenges, ensuring project continuity."
-        ]
-      },
-      "company_2": {
-        "name": "AppVentures",
-        "time": "September 2019 - January 2020",
-        "list": [
-          "<b>System Design:</b> Participated in developing scalable software architectures, defining structures and components to meet project requirements.",
-          "<b>Technical Support:</b> Collaborated with the development team following best practices and coding standards, reviewing code to ensure quality.",
-          "<b>Scalability Planning:</b> Assisted in planning adaptable architectures, helping to minimize rework and downtime.",
-          "<b>Technology Assessment:</b> Contributed to proposing and evaluating suitable technologies for projects, considering performance and costs.",
-          "<b>Documentation:</b> Created documentation on architecture and design decisions to facilitate team work.",
-          "<b>Performance Optimization:</b> Collaborated in identifying bottlenecks and proposed improvements to optimize system performance.",
-          "<b>Problem Solving:</b> Assisted the team in overcoming technical challenges, contributing to project continuity."
-        ]
-      }
-    }
+    "company_2": {
+      "list": [
+        "<b>Documentation:</b> Produced clear technical documentation and onboarding guides for the team.",
+        "<b>Incident Resolution:</b> Supported debugging and resolution of critical issues during releases.",
+        "<b>Performance & Stability:</b> Helped identify improvements to enhance reliability and performance.",
+        "<b>System Design:</b> Contributed to the design of scalable architectures and modular components for web projects.",
+        "<b>Technical Support:</b> Provided code reviews and supported engineering best practices.",
+        "<b>Technology Assessment:</b> Assisted in selecting technologies considering performance and cost trade-offs."
+      ],
+      "name": "AppVentures",
+      "summary": "Supported the design and integration of modular architectures, documentation, and incident resolution during releases.",
+      "time": "September 2019 - January 2020"
+    },
+    "title": "Experience"
+  },
+  "esp": {
+    "company_1": {
+      "list": [
+        "<b>Arquitectura de Sistemas:</b> Diseñé e implementé arquitecturas escalables y mantenibles para APIs y plataformas empresariales.",
+        "<b>CI/CD y Calidad:</b> Implementé pipelines de integración y despliegue, promoviendo pruebas automatizadas y observabilidad.",
+        "<b>Documentación Técnica:</b> Redacté decisiones de diseño, diagramas y guías para facilitar el trabajo del equipo.",
+        "<b>Escalabilidad y Resiliencia:</b> Planifiqué la escalabilidad y la tolerancia a fallos para reducir rework y tiempo de inactividad.",
+        "<b>Evaluación Tecnológica:</b> Seleccioné herramientas y servicios (cloud, bases de datos, tooling) según rendimiento y coste.",
+        "<b>Gestión de Riesgos:</b> Detección temprana y mitigación de riesgos técnicos e impactos en entrega.",
+        "<b>Liderazgo Técnico:</b> Guié al equipo en buenas prácticas, revisiones de código y estándares arquitectónicos.",
+        "<b>Microservicios y APIs:</b> Diseñé, evalué y mejoré microservicios y contratos API junto al equipo de soluciones.",
+        "<b>Optimización de Rendimiento:</b> Identifiqué cuellos de botella y propuse mejoras para latencia, rendimiento y coste.",
+        "<b>Soporte y Mentoring:</b> Resolví incidentes críticos y asesoré al equipo para mantener continuidad de los proyectos."
+      ],
+      "name": "Dezain studios",
+      "summary": "Responsable del diseño e implementación de arquitecturas escalables y de prácticas de ingeniería que mejoran la fiabilidad y eficiencia de plataformas empresariales.",
+      "time": "Enero 2020 - actualidad"
+    },
+    "company_2": {
+      "list": [
+        "<b>Arquitectura y Diseño:</b> Participé en el diseño de arquitecturas escalables y componentes modulares para proyectos web.",
+        "<b>Documentación:</b> Preparé documentación técnica y guías para facilitar la integración del equipo.",
+        "<b>Evaluación Tecnológica:</b> Colaboré en la selección de tecnologías considerando rendimiento y coste.",
+        "<b>Optimización:</b> Identifiqué oportunidades de mejora en rendimiento y estabilidad.",
+        "<b>Resolución de Incidencias:</b> Ayudé a depurar y resolver problemas críticos durante entregas.",
+        "<b>Soporte Técnico:</b> Brindé apoyo al equipo mediante revisiones de código y adopción de buenas prácticas."
+      ],
+      "name": "AppVentures",
+      "summary": "Apoyé el diseño e integración de arquitecturas modulares, documentación y la resolución de incidencias durante despliegues.",
+      "time": "Septiembre 2019 - Enero 2020"
+    },
+    "title": "Experiencia"
   }
-  
+}
