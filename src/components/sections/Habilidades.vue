@@ -1,6 +1,9 @@
 <script setup>
     import { Icon } from '@iconify/vue';
-    import translations from '../../data/habilidades.json';
+  import translations from '../../data/habilidades.json';
+  import stackData from '../../data/stack.json';
+  import stackIcons from '../../data/stack-icons.json';
+  import stackColors from '../../data/stack-colors.json';
     
     import { computed } from 'vue';
     import { useStore } from '@nanostores/vue';
@@ -12,6 +15,44 @@
         const lang = store.value.language;
         return translations[lang] || translations['esp']; // Accede a las traducciones usando el idioma
     });
+
+  const stack = computed(() => {
+    const lang = store.value.language;
+    return stackData[lang] || stackData['esp'];
+  });
+
+  // Resuelve iconos tolerando diferencias menores en el texto (puntos, espacios, mayúsculas)
+  const findIcon = (tech) => {
+    if (!tech) return null;
+    if (stackIcons[tech]) return stackIcons[tech];
+    const norm = (s) => s.replace(/\W/g, '').toLowerCase();
+    const target = norm(tech);
+    const key = Object.keys(stackIcons).find(k => norm(k) === target);
+    return key ? stackIcons[key] : null;
+  };
+
+  const findColor = (tech) => {
+    if (!tech) return null;
+    if (stackColors[tech]) return stackColors[tech];
+    const norm = (s) => s.replace(/\W/g, '').toLowerCase();
+    const key = Object.keys(stackColors).find(k => norm(k) === norm(tech));
+    return key ? stackColors[key] : null;
+  };
+
+  // Listas canónicas para frontend y backend (deben coincidir con etiquetas en stack.items o ser normalizables)
+  const frontendList = ['HTML', 'Vanilla JS', 'jQuery', 'CSS', 'Vue.js', 'Astro', 'React', 'Bootstrap', 'Tailwind CSS'];
+  const backendList = ['PHP', 'Laravel', 'MySQL', 'PostgreSQL', 'Node.js', 'Python', 'CodeIgniter'];
+
+  // Calcular 'otros' como los elementos en stack.items que no están en frontendList ni backendList
+  const otros = computed(() => {
+    const items = stack.value.items || [];
+    const norm = (s) => (s || '').replace(/\W/g, '').toLowerCase();
+    const inEither = (s) => {
+      const n = norm(s);
+      return frontendList.concat(backendList).some(x => norm(x) === n);
+    };
+    return items.filter(i => !inEither(i));
+  });
 
 </script>
 <template>
@@ -29,18 +70,17 @@
         <div>
           <h3 class="text-lg font-semibold text-white/80 mb-3">{{ content.frontend.title_2 }}</h3>
           <div class="flex flex-wrap gap-2">
-            <span class="chip bg-white/20 backdrop-blur-md text-white"><Icon icon="flowbite:html-solid" width="1rem" height="1rem" /> Html</span>
-            <span class="chip bg-white/20 backdrop-blur-md text-white"><Icon icon="raphael:js" width="1rem" height="1rem" /> Vanilla Js</span>
-            <span class="chip bg-white/20 backdrop-blur-md text-white"><Icon icon="simple-icons:jquery" width="1rem" height="1rem" /> Jquery</span>
-            <span class="chip bg-white/20 backdrop-blur-md text-white"><Icon icon="streamline:css-three-solid" width="1rem" height="1rem" /> Css</span>
+            <span v-for="(tech, i) in frontendList.slice(0,4)" :key="i" class="chip bg-white/20 backdrop-blur-md text-white flex items-center gap-2" :style="{ background: findColor(tech) ? findColor(tech) + '22' : undefined, borderColor: findColor(tech) ? findColor(tech) + '44' : undefined, borderWidth: findColor(tech) ? '1px' : undefined }">
+              <Icon v-if="findIcon(tech)" :icon="findIcon(tech)" width="1rem" height="1rem" />
+              <span>{{ tech }}</span>
+            </span>
           </div>
           <h3 class="text-lg font-semibold text-white/80 mt-4 mb-3">{{ content.frontend.title_3 }}</h3>
           <div class="flex flex-wrap gap-2">
-            <span class="chip bg-white/20 backdrop-blur-md text-white"><Icon icon="akar-icons:vue-fill" width="1rem" height="1rem" /> Vuejs</span>
-            <span class="chip bg-white/20 backdrop-blur-md text-white"><Icon icon="simple-icons:astro" width="1rem" height="1rem" /> Astro</span>
-            <span class="chip bg-white/20 backdrop-blur-md text-white"><Icon icon="uil:react" width="1rem" height="1rem" /> React</span>
-            <span class="chip bg-white/20 backdrop-blur-md text-white"><Icon icon="ri:bootstrap-fill" width="1rem" height="1rem" /> Bootstrap</span>
-            <span class="chip bg-white/20 backdrop-blur-md text-white"><Icon icon="file-icons:tailwind" width="1rem" height="1rem" /> Tailwindcss</span>
+            <span v-for="(tech, i) in frontendList.slice(4)" :key="i" class="chip bg-white/20 backdrop-blur-md text-white flex items-center gap-2" :style="{ background: findColor(tech) ? findColor(tech) + '22' : undefined, borderColor: findColor(tech) ? findColor(tech) + '44' : undefined, borderWidth: findColor(tech) ? '1px' : undefined }">
+              <Icon v-if="findIcon(tech)" :icon="findIcon(tech)" width="1rem" height="1rem" />
+              <span>{{ tech }}</span>
+            </span>
           </div>
         </div>
       </div>
@@ -57,19 +97,17 @@
         <div>
           <h3 class="text-lg font-semibold text-white/80 mb-3">{{ content.backend.title_2 }}</h3>
           <div class="flex flex-wrap gap-2">
-            <span class="chip bg-white/20 backdrop-blur-md text-white"><Icon icon="zondicons:php-elephant" width="1rem" height="1rem" /> Php</span>
-            <span class="chip bg-white/20 backdrop-blur-md text-white"><Icon icon="raphael:js" width="1rem" height="1rem" /> Vanilla Js</span>
-            <span class="chip bg-white/20 backdrop-blur-md text-white"><Icon icon="akar-icons:python-fill" width="1rem" height="1rem" /> Python</span>
+            <span v-for="(tech, i) in backendList.slice(0,3)" :key="i" class="chip bg-white/20 backdrop-blur-md text-white flex items-center gap-2" :style="{ background: findColor(tech) ? findColor(tech) + '22' : undefined, borderColor: findColor(tech) ? findColor(tech) + '44' : undefined, borderWidth: findColor(tech) ? '1px' : undefined }">
+              <Icon v-if="findIcon(tech)" :icon="findIcon(tech)" width="1rem" height="1rem" />
+              <span>{{ tech }}</span>
+            </span>
           </div>
           <h3 class="text-lg font-semibold text-white/80 mt-4 mb-3">{{ content.backend.title_3 }}</h3>
           <div class="flex flex-wrap gap-2">
-            <span class="chip bg-white/20 backdrop-blur-md text-white"><Icon icon="simple-icons:laravel" width="1rem" height="1rem" /> Laravel</span>
-            <span class="chip bg-white/20 backdrop-blur-md text-white"><Icon icon="fontisto:mysql" width="1rem" height="1rem" /> MySQL</span>
-            <span class="chip bg-white/20 backdrop-blur-md text-white"><Icon icon="cib:postgresql" width="1rem" height="1rem" /> PostgreSQL</span>
-            <span class="chip bg-white/20 backdrop-blur-md text-white"><Icon icon="cib:codeigniter" width="1rem" height="1rem" /> Codeigniter</span>
-            <span class="chip bg-white/20 backdrop-blur-md text-white"><Icon icon="la:node" width="1rem" height="1rem" /> Node</span>
-            <span class="chip bg-white/20 backdrop-blur-md text-white"><Icon icon="fa6-brands:opencart" width="1rem" height="1rem" /> Opencart</span>
-            <span class="chip bg-white/20 backdrop-blur-md text-white"><Icon icon="ic:sharp-wordpress" width="1rem" height="1rem" /> Wordpress</span>
+            <span v-for="(tech, i) in backendList.slice(3)" :key="i" class="chip bg-white/20 backdrop-blur-md text-white flex items-center gap-2" :style="{ background: findColor(tech) ? findColor(tech) + '22' : undefined, borderColor: findColor(tech) ? findColor(tech) + '44' : undefined, borderWidth: findColor(tech) ? '1px' : undefined }">
+              <Icon v-if="findIcon(tech)" :icon="findIcon(tech)" width="1rem" height="1rem" />
+              <span>{{ tech }}</span>
+            </span>
           </div>
         </div>
       </div>
@@ -85,14 +123,10 @@
         </div>
         <div>
           <div class="flex flex-wrap gap-2">
-            <span class="chip bg-white/20 backdrop-blur-md text-white"><Icon icon="simple-icons:amazonec2" width="1rem" height="1rem" /> Amazon EC2</span>
-            <span class="chip bg-white/20 backdrop-blur-md text-white"><Icon icon="simple-icons:amazons3" width="1rem" height="1rem" /> Amazon S3</span>
-            <span class="chip bg-white/20 backdrop-blur-md text-white"><Icon icon="teenyicons:face-id-outline" width="1rem" height="1rem" /> Amazon Rekognition</span>
-            <span class="chip bg-white/20 backdrop-blur-md text-white"><Icon icon="teenyicons:face-id-outline" width="1rem" height="1rem" /> Face ++</span>
-            <span class="chip bg-white/20 backdrop-blur-md text-white"><Icon icon="pajamas:git" width="1rem" height="1rem" /> Git</span>
-            <span class="chip bg-white/20 backdrop-blur-md text-white"><Icon icon="bxl:docker" width="1rem" height="1rem" /> Docker</span>
-            <span class="chip bg-white/20 backdrop-blur-md text-white"><Icon icon="file-icons:vscode" width="1rem" height="1rem" /> Vscode</span>
-            <span class="chip bg-white/20 backdrop-blur-md text-white"><Icon icon="devicon-plain:phpstorm" width="1rem" height="1rem" /> Php Storm</span>
+            <span v-for="(tech, i) in otros" :key="i" class="chip bg-white/20 backdrop-blur-md text-white flex items-center gap-2" :style="{ background: findColor(tech) ? findColor(tech) + '22' : undefined, borderColor: findColor(tech) ? findColor(tech) + '44' : undefined, borderWidth: findColor(tech) ? '1px' : undefined }">
+              <Icon v-if="findIcon(tech)" :icon="findIcon(tech)" width="1rem" height="1rem" />
+              <span>{{ tech }}</span>
+            </span>
           </div>
         </div>
       </div>
