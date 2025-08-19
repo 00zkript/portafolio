@@ -48,8 +48,13 @@ import '../styles/global.css';
 		<meta property="twitter:description" content="Desarrollador Full Stack con experiencia en soluciones personalizadas con Laravel y Vue.js. He liderado proyectos E-commerce y ERP, integrando tecnologías como Amazon S3, Amazon Rekognition, y más.">
 		<!-- <meta property="twitter:image" content="https://henryquispecabello.dev/tu-imagen.jpg"> -->
 
+		<style>
+      body.modal-open {
+        overflow: hidden;
+      }
+    </style>
 	</head>
-	<body class="overflow-x-hidden body bg-portafolio">
+	<body class="overflow-x-hidden body bg-portafolio" :class="{ 'modal-open': isModalOpen }">
 		<slot />
 	</body>
 

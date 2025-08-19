@@ -1,11 +1,13 @@
 <script setup>
 import translations from '../data/menu.json';
-import { ref, onMounted, computed } from 'vue';
+import { ref, onMounted, computed, watch } from 'vue';
 import { useStore } from '@nanostores/vue';
 import { languageStore, setLanguage } from '../stores/languageStore';
+import { uiStore } from '../stores/uiStore';
 
 
 const store = useStore(languageStore);
+const ui = useStore(uiStore);
 
 const content = computed(() => {
 	const lang = store.value.language;
@@ -17,11 +19,22 @@ const changeLanguage = (lang) => {
 };
 
 const showMenuMobil = ref(false);
+const modalOpen = computed(() => ui.value.modalOpen);
 
+// cerrar menú si modal se abre
+watch(modalOpen, (val) => {
+  if (val) showMenuMobil.value = false;
+});
+
+const toggleMenu = () => {
+  // no abrir menú si modal está abierto
+  if (modalOpen.value) return;
+  showMenuMobil.value = !showMenuMobil.value;
+};
 </script>
 
 <template>
-  <div class="bg-white/10 backdrop-blur-md text-white w-full sticky top-0 z-20 shadow-md">
+  <div :aria-hidden="modalOpen" class="bg-white/10 backdrop-blur-md text-white w-full sticky top-0 z-20 shadow-md">
     <header class="sm:p-4">
       <div class="flex justify-between items-center px-4">
         <!-- Enlaces a la izquierda -->
@@ -39,8 +52,11 @@ const showMenuMobil = ref(false);
         <!-- Botón de hamburguesa para menú móvil -->
         <button
           id="menu-btn"
-          @click="showMenuMobil = !showMenuMobil"
+          @click="toggleMenu"
+          :disabled="modalOpen"
+          :class="{'opacity-40 cursor-not-allowed': modalOpen}"
           class="lg:hidden text-white focus:outline-none"
+          aria-label="Abrir menú"
         >
           <svg
             v-if="!showMenuMobil"
@@ -134,7 +150,8 @@ const showMenuMobil = ref(false);
       <div
         id="mobile-menu"
         class="lg:hidden flex flex-col space-y-4 mt-4 px-4 pb-6 transition-all duration-300 bg-gradient-to-b from-gray-900 via-gray-800 to-gray-700 rounded-lg shadow-lg relative"
-        :class="showMenuMobil ? 'flex' : 'hidden'"
+        :class="(showMenuMobil && !modalOpen) ? 'flex' : 'hidden'"
+        :aria-hidden="modalOpen"
       >
         <!-- Botón de cerrar dentro del menú -->
         <button
