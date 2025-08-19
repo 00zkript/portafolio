@@ -42,26 +42,45 @@ const showMenuMobil = ref(false);
             <i class="line-md--cloud-alt-download-filled-loop w-4 h-4"></i>
             {{ content.download_cv.text }}
           </a>
-          <a
-            target="_blank"
-            href="https://www.linkedin.com/in/henry-quispe-cabello-1742a99b/"
-            class="hover:text-indigo-400 transition duration-300"
-          >
-            <i class="foundation--social-linkedin w-6 h-6"></i>
-          </a>
-          <a
-            target="_blank"
-            href="https://github.com/00zkript"
-            class="hover:text-indigo-400 transition duration-300"
-          >
-            <i class="ion--social-github w-6 h-6"></i>
-          </a>
-          <a
-            href="mailto:hg305718@gmail.com"
-            class="hover:text-indigo-400 transition duration-300"
-          >
-            <i class="material-symbols-light--mail w-6 h-6"></i>
-          </a>
+          <div class="flex space-x-4">
+            <a
+              target="_blank"
+              href="https://www.linkedin.com/in/henry-quispe-cabello-1742a99b/"
+              class="hover:text-indigo-400 transition duration-300 flex items-center justify-center w-8 h-8 bg-white/10 rounded-full"
+            >
+              <i class="foundation--social-linkedin w-5 h-5"></i>
+            </a>
+            <a
+              target="_blank"
+              href="https://github.com/00zkript"
+              class="hover:text-indigo-400 transition duration-300 flex items-center justify-center w-8 h-8 bg-white/10 rounded-full"
+            >
+              <i class="ion--social-github w-5 h-5"></i>
+            </a>
+            <a
+              href="mailto:hg305718@gmail.com"
+              class="hover:text-indigo-400 transition duration-300 flex items-center justify-center w-8 h-8 bg-white/10 rounded-full"
+            >
+              <i class="material-symbols-light--mail w-5 h-5"></i>
+            </a>
+          </div>
+          <!-- Selector de idioma -->
+          <div class="flex space-x-4 items-center">
+            <button
+              type="button"
+              @click="changeLanguage('esp')"
+              class="hover:text-indigo-300 transition duration-300"
+            >
+              {{ content.languages.spanish }}
+            </button>
+            <button
+              type="button"
+              @click="changeLanguage('eng')"
+              class="hover:text-indigo-300 transition duration-300"
+            >
+              {{ content.languages.english }}
+            </button>
+          </div>
         </nav>
 
         <!-- Botón para menú móvil -->
@@ -112,7 +131,7 @@ const showMenuMobil = ref(false);
         <!-- Botón de cerrar dentro del menú -->
         <button
           @click="showMenuMobil = false"
-          class="absolute top-4 right-4 text-white focus:outline-none"
+          class="absolute top-4 right-4 text-white focus:outline-none hover:scale-110 transition duration-300"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"

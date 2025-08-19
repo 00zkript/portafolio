@@ -25,7 +25,10 @@ body {
         rounded-e-full
         flex
         gap-1
-        items-center;
+        items-center
+        bg-white/10
+        backdrop-blur-md
+        text-white;
 }
 
 .main {
@@ -72,6 +75,7 @@ body {
         py-24
         sm:py-32
         lg:px-8;
+    animation: fadeIn 1s ease-in-out;
 }
 
 
@@ -110,5 +114,28 @@ body {
     width: 0; /* Comienza con ancho 0 */
     border-right: 2px solid white;
     animation: typing 4s steps(30) 1s forwards ; /* Ajusta el tiempo y pasos según sea necesario */
+}
+
+button:hover, a:hover {
+    @apply
+        scale-105
+        shadow-lg
+        transition
+        duration-300;
+}
+
+/* Mejora de accesibilidad */
+.text-white {
+    color: #f9fafb; /* Aumentar contraste */
+}
+
+/* Animaciones suaves */
+.section {
+    animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
 }
 

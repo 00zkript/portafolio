@@ -45,7 +45,7 @@
       <div
         v-for="(item, idx) in jobsData.slice(0, 6)"
         :key="idx"
-        class="bg-white/10 backdrop-blur-md rounded-lg shadow-lg overflow-hidden transition-transform transform hover:scale-105"
+        class="bg-white/10 backdrop-blur-md rounded-lg shadow-lg overflow-hidden transition-transform transform hover:scale-105 hover:shadow-xl"
       >
         <img :src="item.img" alt="" class="w-full h-48 object-cover" />
         <div class="p-6">
@@ -55,7 +55,7 @@
             <span
               v-for="(icon, idx) in item.icons"
               :key="idx"
-              class="chip bg-white/20 backdrop-blur-md text-white"
+              class="chip"
             >
               <Icon :icon="icon.icon" width="1rem" height="1rem" /> {{ icon.text }}
             </span>
