@@ -83,8 +83,8 @@ const findColor = (tech) => {
         </div>
 
         <div class="mt-auto flex gap-2">
-          <a :href="content.cv" class="btn-primary w-full text-center" :aria-label="content.cta_cv">{{ content.cta_cv }}</a>
-          <a :href="anchorId" class="btn-secondary w-full text-center" :aria-label="content.cta_hire">{{ content.cta_hire }}</a>
+          <a :href="content.cv" class="btn-primary w-full text-center" :aria-label="content.cta_cv" target="_blank" rel="noopener" download>{{ content.cta_cv }}</a>
+          <button @click.prevent="document.querySelector('#contactame')?.scrollIntoView({ behavior: 'smooth' })" class="btn-secondary w-full text-center" :aria-label="content.cta_hire">{{ content.cta_hire }}</button>
         </div>
       </aside>
     </div>
