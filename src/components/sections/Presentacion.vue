@@ -26,27 +26,24 @@ const { typed: typedTitle, start, stop } = useTypewriter(() => content.value.tit
 <template>
     <section class="w-full flex flex-col justify-center items-center py-20 sm:py-28 px-6 sm:px-8">
         <div class="text-center text-gray-200 max-w-3xl w-full">
-            <p class="text-lg md:text-2xl font-mono">{{ content.title }}</p>
+            <p class="text-base md:text-lg font-mono text-primary/80">{{ content.title }}</p>
 
-            <h1 class="text-3xl md:text-5xl font-bold mt-4 leading-tight">
+            <h1 class="text-4xl md:text-6xl font-extrabold mt-4 leading-tight text-[var(--text)]">
                 <span>{{ typedTitle }}</span><span class="type-cursor">|</span>
             </h1>
 
-            <h2 class="text-lg md:text-2xl mt-4">{{ content.title_3 }}</h2>
+            <h2 class="text-lg md:text-2xl mt-4 text-gray-300">{{ content.title_3 }}</h2>
 
-            <p class="mt-6 text-base sm:text-lg px-2 sm:px-0 leading-relaxed">
+            <p class="mt-6 text-base sm:text-lg px-2 sm:px-0 leading-relaxed text-gray-300">
                 {{ content.content }}
             </p>
 
-            <div class="flex justify-center gap-6 mt-8">
-                <a target="_blank" href="https://www.linkedin.com/in/henry-quispe-cabello-1742a99b/" class="hover:text-indigo-400 p-3 hover:border-indigo-400 border-2 rounded-full flex items-center transition duration-300">
-                    <i class="foundation--social-linkedin" style="width: 1.5rem; height: 1.5rem;"></i>
+            <div class="flex flex-col sm:flex-row justify-center gap-4 mt-8 items-center">
+                <a href="#mis-trabajos" class="inline-flex items-center gap-3 bg-[var(--color-primary)] hover:bg-[var(--color-primary-600)] text-white px-6 py-3 rounded-lg shadow-lg transition duration-300">
+                    Ver mi trabajo
                 </a>
-                <a target="_blank" href="https://github.com/00zkript" class="hover:text-indigo-400 p-3 hover:border-indigo-400 border-2 rounded-full flex items-center transition duration-300">
-                    <i class="ion--social-github" style="width: 1.5rem; height: 1.5rem;"></i>
-                </a>
-                <a href="mailto:hg305718@gmail.com" class="hover:text-indigo-400 p-3 hover:border-indigo-400 border-2 rounded-full flex items-center transition duration-300">
-                    <i class="material-symbols-light--mail" style="width: 1.5rem; height: 1.5rem;"></i>
+                <a target="_blank" href="/cv-spanish-2024.pdf" class="inline-flex items-center gap-3 border border-white/20 text-white px-4 py-2 rounded-lg hover:bg-white/5 transition duration-300">
+                    Descargar CV
                 </a>
             </div>
         </div>

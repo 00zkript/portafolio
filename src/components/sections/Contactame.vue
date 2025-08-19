@@ -92,7 +92,7 @@
               name="first-name"
               id="first-name"
               autocomplete="given-name"
-              class="mt-2 block w-full rounded-md bg-white/20 backdrop-blur-md border-0 px-4 py-2 text-white placeholder-gray-400 focus:ring-2 focus:ring-indigo-500"
+              class="mt-2 block w-full rounded-md bg-white/20 backdrop-blur-md border-0 px-4 py-2 text-white placeholder-gray-400 focus:ring-2 focus-ring-primary"
             />
           </div>
           <div>
@@ -104,7 +104,7 @@
               name="last-name"
               id="last-name"
               autocomplete="family-name"
-              class="mt-2 block w-full rounded-md bg-white/20 backdrop-blur-md border-0 px-4 py-2 text-white placeholder-gray-400 focus:ring-2 focus:ring-indigo-500"
+              class="mt-2 block w-full rounded-md bg-white/20 backdrop-blur-md border-0 px-4 py-2 text-white placeholder-gray-400 focus:ring-2 focus-ring-primary"
             />
           </div>
           <div class="sm:col-span-2">
@@ -116,7 +116,7 @@
               name="email"
               id="email"
               autocomplete="email"
-              class="mt-2 block w-full rounded-md bg-white/20 backdrop-blur-md border-0 px-4 py-2 text-white placeholder-gray-400 focus:ring-2 focus:ring-indigo-500"
+              class="mt-2 block w-full rounded-md bg-white/20 backdrop-blur-md border-0 px-4 py-2 text-white placeholder-gray-400 focus:ring-2 focus-ring-primary"
             />
           </div>
           <div class="sm:col-span-2">
@@ -127,7 +127,7 @@
               name="message"
               id="message"
               rows="4"
-              class="mt-2 block w-full rounded-md bg-white/20 backdrop-blur-md border-0 px-4 py-2 text-white placeholder-gray-400 focus:ring-2 focus:ring-indigo-500"
+              class="mt-2 block w-full rounded-md bg-white/20 backdrop-blur-md border-0 px-4 py-2 text-white placeholder-gray-400 focus:ring-2 focus-ring-primary"
             ></textarea>
           </div>
         </div>
@@ -162,7 +162,7 @@
         <div class="mt-8">
           <button
             type="submit"
-            class="block w-full rounded-md bg-indigo-500 px-4 py-2 text-center text-sm font-semibold text-white shadow-md hover:bg-indigo-400 focus:ring-2 focus:ring-indigo-500"
+            class="block w-full rounded-md btn-primary px-4 py-2 text-center text-sm font-semibold shadow-md focus-ring-primary"
           >
             {{ content.form.send }}
           </button>

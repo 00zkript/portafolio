@@ -18,7 +18,7 @@
 
         <!-- Botón anterior (lado izquierdo) -->
         <button
-          class="absolute left-4 top-1/2 transform -translate-y-1/2 text-gray-200 hover:text-white p-3 rounded-full bg-indigo-600/20 backdrop-blur-sm z-[10000]"
+          class="absolute left-4 top-1/2 transform -translate-y-1/2 text-gray-200 hover:text-white p-3 rounded-full bg-[var(--color-primary-600)]/20 backdrop-blur-sm z-[10000]"
           @click="prevImage"
           aria-label="Imagen anterior"
         >
@@ -42,7 +42,7 @@
 
         <!-- Botón siguiente (lado derecho) -->
         <button
-          class="absolute right-4 top-1/2 transform -translate-y-1/2 text-gray-200 hover:text-white p-3 rounded-full bg-indigo-600/20 backdrop-blur-sm z-[10000]"
+          class="absolute right-4 top-1/2 transform -translate-y-1/2 text-gray-200 hover:text-white p-3 rounded-full bg-[var(--color-primary-600)]/20 backdrop-blur-sm z-[10000]"
           @click="nextImage"
           aria-label="Siguiente imagen"
         >
@@ -249,7 +249,7 @@ onUnmounted(() => {
 
 .thumbnail.selected {
   opacity: 1;
-  border-color: rgba(99, 102, 241, 1); /* indigo-500 */
+  border-color: var(--color-primary); /* theme primary */
 }
 
 /* botones laterales minimalistas */

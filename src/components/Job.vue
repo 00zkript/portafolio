@@ -9,7 +9,7 @@ const { img, url, title} = props;
 </script>
 
 <template>
-  <div class="bg-gray-800 rounded-lg shadow-lg overflow-hidden transition-transform transform hover:scale-105 flex flex-col h-full">
+  <div class="rounded-lg overflow-hidden transition-transform transform hover:-translate-y-2 hover:shadow-2xl flex flex-col h-full" style="background: var(--card-bg)">
     <a
       :href="url ?? 'javascript:void(0);'"
       :target="url ? '_blank' : ''"
@@ -20,7 +20,8 @@ const { img, url, title} = props;
         <img
           :src="img"
           :alt="title"
-          class="object-cover w-full h-full group-hover:opacity-80 transition-opacity duration-300"
+          class="object-cover w-full h-full group-hover:opacity-90 transition-opacity duration-300"
+          loading="lazy"
         />
         <div
           class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300"
@@ -41,7 +42,7 @@ const { img, url, title} = props;
           :href="url ?? 'javascript:void(0);'"
           :target="url ? '_blank' : ''"
           @click="!url ? emits('abrirModal', true) : ''"
-          class="text-lg font-semibold text-white hover:text-indigo-400 transition-colors duration-300 flex items-center gap-2"
+    class="text-lg font-semibold text-white hover-text-primary transition-colors duration-300 flex items-center gap-2"
         >
           <Icon :icon="url ? 'solar:link-bold' : 'tabler:lock'" width="1rem" height="1rem" />
           {{ title }}

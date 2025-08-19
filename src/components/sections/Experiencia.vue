@@ -26,7 +26,7 @@
         <div
           class="absolute w-6 h-6 bg-white/20 backdrop-blur-md rounded-full -left-3 border-2 border-white flex items-center justify-center"
         >
-          <span class="w-3 h-3 bg-indigo-500 rounded-full"></span>
+          <span class="w-3 h-3 rounded-full" style="background: rgba(79,70,229,0.12);"></span>
         </div>
         <div class="p-6 bg-white/10 backdrop-blur-md rounded-lg shadow-lg transition-transform transform hover:scale-105">
           <time class="block mb-2 text-sm font-medium text-gray-300">

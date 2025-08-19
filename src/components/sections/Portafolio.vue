@@ -58,7 +58,7 @@
           <span
             v-for="(icon, idx) in item.icons"
             :key="idx"
-            class="chip bg-indigo-500 text-white flex items-center gap-2 px-2 py-1 rounded-full"
+            class="chip chip-primary flex items-center gap-2 px-2 py-1 rounded-full"
           >
             <Icon :icon="icon.icon" width="1rem" height="1rem" />
             {{ icon.text }}
@@ -86,7 +86,7 @@
             <span
               v-for="(icon, idx) in item.icons"
               :key="idx"
-              class="chip bg-indigo-500 text-white flex items-center gap-2 px-2 py-1 rounded-full"
+              class="chip chip-primary flex items-center gap-2 px-2 py-1 rounded-full"
             >
               <Icon :icon="icon.icon" width="1rem" height="1rem" />
               {{ icon.text }}

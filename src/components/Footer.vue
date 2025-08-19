@@ -9,7 +9,7 @@
       <a
         target="_blank"
         href="https://www.linkedin.com/in/henry-quispe-cabello-1742a99b/"
-        class="p-2 rounded-full flex items-center transition-transform transform hover:scale-110 hover:text-indigo-400"
+  class="p-2 rounded-full flex items-center transition-transform transform hover:scale-110 hover-text-primary"
       >
         <i class="foundation--social-linkedin" style="width: 1.5rem; height: 1.5rem;"></i>
       </a>

@@ -1,12 +1,23 @@
 @import "./iconos.css";
 @import "./fondo.css";
 
+:root{
+    /* Paleta final: menos saturada, fondo oscuro y acentos suaves */
+    --color-primary: #4f46e5; /* indigo-600 (menos brillante) */
+    --color-primary-600: #4338ca; /* indigo-700 */
+    --color-accent: #0ea5a4; /* teal-400 suave */
+    --bg: #0b1220; /* fondo oscuro cálido */
+    --text: #f3f4f6; /* blanco suave */
+    --card-bg: rgba(255,255,255,0.03); /* muy sutil */
+}
+
 
 body {
     margin: 0;
     font-family: 'Inter', sans-serif;
     min-height: 100vh;
-    color: #f3f4f6; /* Gray 200 */
+    color: var(--text);
+    background-color: var(--bg);
 }
 
 @keyframes gradientBG {
@@ -138,4 +149,34 @@ button:hover, a:hover {
     from { opacity: 0; transform: translateY(20px); }
     to { opacity: 1; transform: translateY(0); }
 }
+
+/* Theme helpers (semantic utilities) */
+.bg-primary { background: var(--color-primary) !important; color: var(--text) !important; }
+.bg-primary-600 { background: var(--color-primary-600) !important; }
+.text-primary { color: var(--color-primary) !important; }
+.hover-text-primary:hover { color: var(--color-primary) !important; }
+/* Botón primario más sobrio: gradiente suave, sombra tenue */
+.btn-primary {
+    background: linear-gradient(180deg, var(--color-primary), var(--color-primary-600));
+    color: var(--text);
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: transform .18s ease, filter .18s ease;
+    box-shadow: 0 6px 18px rgba(67,56,202,0.12);
+}
+.btn-primary:hover { transform: translateY(-2px); filter: brightness(.98); }
+.btn-primary-ghost { background: rgba(67,56,202,0.08); color: var(--text); }
+.btn-primary-ghost:hover { background: rgba(67,56,202,0.12); }
+/* Chip primario menos saturado, fondo semitransparente y borde sutil */
+.chip-primary {
+    background: rgba(79,70,229,0.12); /* var(--color-primary) con baja opacidad */
+    color: var(--text);
+    border: 1px solid rgba(255,255,255,0.06);
+    backdrop-filter: blur(6px);
+}
+.focus-ring-primary:focus { box-shadow: 0 0 0 4px rgba(67,56,202,0.08); outline: none; border-radius: .375rem; }
+.border-primary { border-color: var(--color-primary) !important; }
 

@@ -43,7 +43,7 @@ const toggleMenu = () => {
             v-for="(item, idx) in content.links"
             :key="idx"
             :href="item.url"
-            class="hover:text-indigo-400 transition duration-300"
+            class="hover-text-primary transition duration-300"
           >
             {{ item.text }}
           </a>
@@ -91,20 +91,20 @@ const toggleMenu = () => {
         </button>
 
         <!-- Elementos a la derecha en pantallas grandes -->
-        <div class="hidden lg:flex items-center space-x-6">
+          <div class="hidden lg:flex items-center space-x-6">
           <!-- Selector de idioma -->
           <div class="flex space-x-4 items-center">
             <button
               type="button"
               @click="changeLanguage('esp')"
-              class="hover:text-indigo-300 transition duration-300"
+              class="hover-text-primary transition duration-300"
             >
               {{ content.languages.spanish }}
             </button>
             <button
               type="button"
               @click="changeLanguage('eng')"
-              class="hover:text-indigo-300 transition duration-300"
+              class="hover-text-primary transition duration-300"
             >
               {{ content.languages.english }}
             </button>
@@ -115,7 +115,7 @@ const toggleMenu = () => {
             <a
               target="_blank"
               href="https://www.linkedin.com/in/henry-quispe-cabello-1742a99b/"
-              class="hover:text-indigo-400 transition duration-300 flex items-center justify-center w-8 h-8 bg-white/10 rounded-full"
+              class="hover-text-primary transition duration-300 flex items-center justify-center w-8 h-8 bg-white/10 rounded-full"
             >
               <i class="foundation--social-linkedin w-5 h-5"></i>
             </a>
@@ -135,11 +135,11 @@ const toggleMenu = () => {
           </div>
 
           <!-- Botón de descarga CV -->
-          <a
-            :href="content.download_cv.url"
-            :download="content.download_cv.name"
-            class="py-1 px-3 bg-indigo-600 text-white rounded hover:bg-indigo-500 transition duration-300 text-sm flex items-center gap-2"
-          >
+            <a
+              :href="content.download_cv.url"
+              :download="content.download_cv.name"
+              class="py-1 px-3 btn-primary rounded hover:bg-[var(--color-primary-600)] transition duration-300 text-sm flex items-center gap-2"
+            >
             <i class="line-md--cloud-alt-download-filled-loop w-4 h-4"></i>
             {{ content.download_cv.text }}
           </a>
@@ -180,7 +180,7 @@ const toggleMenu = () => {
             v-for="(item, idx) in content.links"
             :key="idx"
             :href="item.url"
-            class="py-2 px-4 bg-white/10 backdrop-blur-md rounded hover:bg-indigo-500 transition duration-300"
+            class="py-2 px-4 bg-white/10 backdrop-blur-md rounded btn-primary-ghost transition duration-300"
           >
             {{ item.text }}
           </a>
@@ -190,7 +190,7 @@ const toggleMenu = () => {
         <a
           :href="content.download_cv.url"
           :download="content.download_cv.name"
-          class="py-2 px-4 bg-white/10 backdrop-blur-md rounded flex items-center gap-2 hover:bg-indigo-500 transition duration-300"
+          class="py-2 px-4 bg-white/10 backdrop-blur-md rounded flex items-center gap-2 btn-primary-ghost transition duration-300"
         >
           <i class="line-md--cloud-alt-download-filled-loop w-6 h-6"></i>
           {{ content.download_cv.text }}
@@ -203,14 +203,14 @@ const toggleMenu = () => {
           <button
             type="button"
             @click="changeLanguage('esp')"
-            class="hover:text-indigo-300 transition duration-300"
+            class="hover-text-primary transition duration-300"
           >
             {{ content.languages.spanish }}
           </button>
           <button
             type="button"
             @click="changeLanguage('eng')"
-            class="hover:text-indigo-300 transition duration-300"
+            class="hover-text-primary transition duration-300"
           >
             {{ content.languages.english }}
           </button>
