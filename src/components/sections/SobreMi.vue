@@ -21,6 +21,9 @@ const stack = computed(() => {
   return stackData[lang] || stackData['esp'];
 });
 
+// Lista curada para el resumen breve en 'Tech stack' (no es la lista completa)
+const featuredStack = ['Laravel', 'MySQL', 'PostgreSQL', 'Vue.js', 'Tailwind CSS'];
+
 // Resuelve iconos tolerando diferencias menores en el texto (puntos, espacios, mayúsculas)
 const findIcon = (tech) => {
   if (!tech) return null;
@@ -69,7 +72,7 @@ const findColor = (tech) => {
         <div>
           <h3 class="text-sm text-gray-300 mb-2 font-semibold">Tech stack</h3>
             <div class="flex flex-wrap gap-2">
-              <span v-for="(tech, i) in (stack.items || stackData[store.value.language].items).slice(0,4)" :key="i" class="tech-chip text-gray-100 flex items-center gap-2" :style="{ background: findColor(tech) ? findColor(tech) + '22' : undefined, borderColor: findColor(tech) ? findColor(tech) + '44' : undefined, borderWidth: findColor(tech) ? '1px' : undefined }">
+              <span v-for="(tech, i) in featuredStack" :key="i" class="tech-chip text-gray-100 flex items-center gap-2" :style="{ background: findColor(tech) ? findColor(tech) + '22' : undefined, borderColor: findColor(tech) ? findColor(tech) + '44' : undefined, borderWidth: findColor(tech) ? '1px' : undefined }">
                 <Icon v-if="findIcon(tech)" :icon="findIcon(tech)" class="w-4 h-4" />
                 <span>{{ tech }}</span>
               </span>
