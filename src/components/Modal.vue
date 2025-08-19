@@ -28,11 +28,15 @@
         <!-- Imagen central -->
         <div class="flex items-center justify-center max-w-full max-h-full px-6">
           <img
+            ref="imageRef"
             :src="images[currentImageIndex]"
             class="modal-image"
+            :style="{ '--transform-origin': transformOrigin }"
             alt="Imagen del proyecto"
             @click="toggleZoom"
             :class="{ 'zoomed': isZoomed }"
+            @mousemove="onMouseMove"
+            @touchmove="onMouseMove"
           />
         </div>
 
@@ -73,6 +77,8 @@ import { setModalOpen } from '../stores/uiStore';
 
 const currentImageIndex = ref(0);
 const isZoomed = ref(false);
+const imageRef = ref(null);
+const transformOrigin = ref('50% 50%');
 
 const props = defineProps(['images']);
 const emits = defineEmits(['close']);
@@ -115,8 +121,49 @@ const closeModal = () => {
   emits('close');
 };
 
-const toggleZoom = () => {
-  isZoomed.value = !isZoomed.value;
+const setOriginFromEvent = (event) => {
+  const img = imageRef.value;
+  if (!img || !img.getBoundingClientRect) return;
+  const rect = img.getBoundingClientRect();
+  let clientX, clientY;
+  if (event.touches && event.touches[0]) {
+    clientX = event.touches[0].clientX;
+    clientY = event.touches[0].clientY;
+  } else {
+    clientX = event.clientX;
+    clientY = event.clientY;
+  }
+  const offsetX = clientX - rect.left;
+  const offsetY = clientY - rect.top;
+  const px = Math.max(0, Math.min(100, (offsetX / rect.width) * 100));
+  const py = Math.max(0, Math.min(100, (offsetY / rect.height) * 100));
+  transformOrigin.value = `${px}% ${py}%`;
+};
+
+const onMouseMove = (e) => {
+  if (!isZoomed.value) return;
+  setOriginFromEvent(e);
+};
+
+let resetOriginTimeout = null;
+
+const toggleZoom = (e) => {
+  if (!isZoomed.value) {
+    // set origin based on click/touch
+    if (e) setOriginFromEvent(e);
+    // small delay to ensure origin is set before scaling
+    // then enable zoom
+    isZoomed.value = true;
+  } else {
+    // salir del zoom: mantener el origen actual durante la transición
+    isZoomed.value = false;
+    // programar reseteo del origen después de la transición
+    if (resetOriginTimeout) clearTimeout(resetOriginTimeout);
+    resetOriginTimeout = setTimeout(() => {
+      transformOrigin.value = '50% 50%';
+      resetOriginTimeout = null;
+    }, 300); // ligeramente mayor que la transición CSS (0.25s)
+  }
 };
 
 const onKeyDown = (e) => {
@@ -164,6 +211,7 @@ onUnmounted(() => {
   setModalOpen(false);
   unlockScroll();
   window.removeEventListener('keydown', onKeyDown);
+  if (resetOriginTimeout) clearTimeout(resetOriginTimeout);
 });
 </script>
 
@@ -176,6 +224,7 @@ onUnmounted(() => {
   cursor: zoom-in;
   user-select: none;
   box-shadow: 0 8px 30px rgba(2,6,23,0.6);
+  transform-origin: var(--transform-origin, 50% 50%);
 }
 
 .modal-image.zoomed {
