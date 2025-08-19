@@ -133,3 +133,8 @@
     </div>
   </section>
 </template>
+
+<style scoped>
+.pulse-highlight { animation: pulse-quick 1s ease-in-out; box-shadow: 0 0 0 6px rgba(99,102,241,0.08) inset, 0 4px 14px rgba(99,102,241,0.08); }
+@keyframes pulse-quick { 0% { transform: translateY(0) scale(1); } 50% { transform: translateY(-3px) scale(1.02); } 100% { transform: translateY(0) scale(1); } }
+</style>

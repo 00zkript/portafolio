@@ -41,6 +41,32 @@ const findColor = (tech) => {
   const key = Object.keys(stackColors).find(k => norm(k) === norm(tech));
   return key ? stackColors[key] : null;
 };
+
+// Scroll suave y focus al llegar
+const goToContact = () => {
+  const id = anchorId.value || '#contactame';
+  const el = document.querySelector(id);
+  if (el) {
+    el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    // enfocar primer input/textarea dentro de la sección
+    setTimeout(() => {
+      const input = el.querySelector('input, textarea, button');
+      if (input) input.focus();
+    }, 400);
+  }
+};
+
+const goToHabilidades = () => {
+  const el = document.querySelector('#habilidades');
+  if (el) {
+    el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    setTimeout(() => {
+      el.classList.add('pulse-highlight');
+      setTimeout(() => el.classList.remove('pulse-highlight'), 1000);
+    }, 600);
+  }
+};
+
 </script>
 
 <template>
@@ -76,7 +102,7 @@ const findColor = (tech) => {
                 <Icon v-if="findIcon(tech)" :icon="findIcon(tech)" class="w-4 h-4" />
                 <span>{{ tech }}</span>
               </span>
-              <a href="#habilidades" class="ml-2 inline-flex items-center px-3 py-1 text-sm rounded-full border border-white/10 text-white/90 hover:bg-white/5">Ver más</a>
+              <button @click.prevent="goToHabilidades" class="ml-2 inline-flex items-center px-3 py-1 text-sm rounded-full border border-white/10 text-white/90 hover:bg-white/5">Ver más</button>
             </div>
         </div>
 
@@ -87,7 +113,7 @@ const findColor = (tech) => {
 
         <div class="mt-auto flex gap-2">
           <a :href="content.cv" class="btn-primary w-full text-center" :aria-label="content.cta_cv" target="_blank" rel="noopener" download>{{ content.cta_cv }}</a>
-          <button @click.prevent="document.querySelector('#contactame')?.scrollIntoView({ behavior: 'smooth' })" class="btn-secondary w-full text-center" :aria-label="content.cta_hire">{{ content.cta_hire }}</button>
+          <button @click.prevent="goToContact" class="btn-secondary w-full text-center" :aria-label="content.cta_hire">{{ content.cta_hire }}</button>
         </div>
       </aside>
     </div>
