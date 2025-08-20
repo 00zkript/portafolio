@@ -61,7 +61,7 @@ function itemsFor(company, idx) {
             </div>
             <div class="text-sm">
               <button
-                class="text-indigo-400 hover:text-indigo-300 text-xs font-medium"
+                class="text-indigo-400 hover:text-indigo-300 text-xs font-medium text-nowrap"
                 @click="toggleExpand(index)"
               >
                 {{ toggleLabel(expanded[index]) }}
