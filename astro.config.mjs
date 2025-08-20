@@ -11,6 +11,7 @@ import vercel from '@astrojs/vercel/serverless';
 export default defineConfig({
   // Local development
   // site: 'http://localhost:4321/',
+  site: 'https://portafolio-iota-dun.vercel.app/',
 
   // Production
   // site: 'https://00zkript.github.io',
