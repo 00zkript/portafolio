@@ -1,15 +1,38 @@
 {
-    "esp": {
-      "title": "Sobre Mi",
-      "sub_title": "Un breve resumen de mi persona.",
-      "content": "Soy un apasionado desarrollador Full Stack con más de 5 años de experiencia en la creación de soluciones personalizadas que impactan. Especializado en Laravel y Vue.js, he liderado proyectos de E-commerce y ERP, integrando tecnologías innovadoras como Amazon S3 y Rekognition para ofrecer resultados excepcionales. Me encanta optimizar el código y desarrollar APIs y microservicios eficientes, además de implementar pasarelas de pago como Izipay, Culqui y Pago Efectivo para garantizar una experiencia de usuario fluida.",
-      "content_2": "Tengo un sólido dominio de bases de datos MySQL y PostgreSQL, y utilizo herramientas como Git y Bitbucket para mantener un control de versiones eficaz. En el ámbito del frontend, manejo Vue.js con confianza y continúo expandiendo mis conocimientos en tecnologías como React y Astro, siempre buscando nuevas formas de enriquecer mis habilidades. Mi objetivo es crear soluciones robustas y escalables que no solo cumplan con los requisitos, sino que también superen las expectativas."
-    },
-    "eng": {
-      "title": "About Me",
-      "sub_title": "A brief summary of myself.",
-      "content": "I am a passionate Full Stack developer with over 5 years of experience in creating impactful custom solutions. Specializing in Laravel and Vue.js, I have led E-commerce and ERP projects, integrating innovative technologies such as Amazon S3 and Rekognition to deliver exceptional results. I love optimizing code and developing efficient APIs and microservices, as well as implementing payment gateways like Izipay, Culqui, and Pago Efectivo to ensure a smooth user experience.",
-      "content_2": "I have a strong command of MySQL and PostgreSQL databases and use tools like Git and Bitbucket for effective version control. On the frontend, I confidently work with Vue.js and continue to expand my knowledge in technologies such as React and Astro, always seeking new ways to enhance my skills. My goal is to create robust and scalable solutions that not only meet requirements but also exceed expectations."
-    }
+  "eng": {
+    "availability": "Available for freelance projects and full‑time roles",
+    "contact_hint": "Reach out via LinkedIn or email to discuss your project.",
+    "content": "I specialize in backend with Laravel and frontend with Vue.js. I care about software architecture, code quality and user experience.",
+    "cta_cv": "Download CV",
+    "cta_hire": "Hire me",
+    "cv": "/cv-english-2024v3.pdf",
+    "highlights": [
+      "Built AWS S3 + Rekognition integrations for asset management and recognition",
+      "Designed and deployed scalable APIs and microservices with tests and CI/CD",
+      "Integrated payment gateways (Izipay, Culqui) and automated reconciliation flows",
+  "Led teams delivering 3 E‑commerce platforms with notable monthly traffic"
+    ],
+    "intro": "I’m a Full Stack developer with 5+ years building enterprise solutions: E‑commerce, ERP and high‑availability APIs.",
+    "sub_title": "A quick summary of my experience and focus",
+    
+    "title": "About Me"
+  },
+  "esp": {
+    "availability": "Disponible para proyectos freelance y contrataciones",
+    "contact_hint": "Puedes contactarme vía LinkedIn o correo para discutir tu proyecto.",
+    "content": "Me especializo en backend con Laravel y desarrollo frontend con Vue.js. Me interesa la arquitectura de software, la calidad del código y la experiencia del usuario.",
+    "cta_cv": "Descargar CV",
+    "cta_hire": "Contrátame",
+    "cv": "/cv-spanish-2024v3.pdf",
+    "highlights": [
+      "Diseño e implemento APIs y microservicios escalables con tests y CI/CD",
+      "Implementé integraciones con AWS S3 y Rekognition para gestión de activos y reconocimiento",
+      "Integré pasarelas de pago (Izipay, Culqui) y flujos de conciliación automatizados",
+  "Lideré equipos que entregaron 3 plataformas E‑commerce con tráfico mensual significativo"
+    ],
+    "intro": "Soy un desarrollador Full Stack con más de 5 años construyendo soluciones empresariales: E‑commerce, ERP y APIs de alta disponibilidad.",
+    "sub_title": "Un resumen rápido de mi experiencia y foco",
+    
+    "title": "Sobre Mí"
   }
-  
+}

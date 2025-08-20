@@ -1,0 +1,31 @@
+{
+  "AWS": "simple-icons:amazons3",
+  "Laravel": "simple-icons:laravel",
+  "MySQL": "fontisto:mysql",
+  "Node.js": "la:node",
+  "PHP": "zondicons:php-elephant",
+  "PostgreSQL": "cib:postgresql",
+  "Tailwind CSS": "file-icons:tailwind",
+  "Vue.js": "akar-icons:vue-fill",
+  "Docker": "bxl:docker",
+  "Git": "pajamas:git",
+
+  "HTML": "flowbite:html-solid",
+  "Vanilla JS": "raphael:js",
+  "jQuery": "simple-icons:jquery",
+  "CSS": "streamline:css-three-solid",
+  "Astro": "simple-icons:astro",
+  "React": "uil:react",
+  "Bootstrap": "ri:bootstrap-fill",
+  "Python": "akar-icons:python-fill",
+  "CodeIgniter": "cib:codeigniter",
+  "OpenCart": "fa6-brands:opencart",
+  "WordPress": "ic:sharp-wordpress",
+
+  "PHPStorm": "devicon-plain:phpstorm",
+  "VSCode": "file-icons:vscode",
+  "Amazon EC2": "simple-icons:amazonec2",
+  "Amazon S3": "simple-icons:amazons3",
+  "Amazon Rekognition": "teenyicons:face-id-outline",
+  "Face ++": "teenyicons:face-id-outline"
+}

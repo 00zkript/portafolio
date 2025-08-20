@@ -1,14 +1,40 @@
 {
-    "esp" : {
-        "title": "Hola, soy",
-        "title_2": "Henry quispe cabello",
-        "title_3": "Developer full stack ",
-        "content": "Desarrollador Full Stack con especialización en backend, principalmente con Laravel, y habilidades para desarrollar interfaces y soluciones completas de manera eficiente."
+    "eng": {
+        "title": "Hello, I am",
+        "title_2": "Henry Quispe Cabello",
+        "title_3": "Full Stack Developer",
+        "content": "I design and build scalable web products — backend-first, with clean interfaces and reliable integrations. I specialize in Laravel and modern JavaScript stacks to deliver production-ready applications.",
+        "phrases": [
+            "Full Stack Developer",
+            "Laravel & Vue.js Specialist",
+            "E‑commerce & ERP systems",
+            "APIs, Integrations & Automation",
+            "Products that scale and perform"
+        ],
+        "cta_primary": "View my work",
+        "cta_secondary": "Download CV",
+        "cv": "/cv-english-2024v3.pdf",
+        "location": "Lima, Perú",
+        "years_experience": "5+",
+        "skills": ["Laravel", "Vue.js", "Node.js", "Tailwind CSS", "MySQL", "PostgreSQL", "AWS"]
     },
-    "eng": { 
-        "title": "Hello, I am", 
-        "title_2": "Henry Quispe Cabello", 
-        "title_3": "Full Stack Developer", 
-        "content": "Full Stack Developer specializing in backend development, primarily using Laravel, and skills to develop efficient interfaces and complete solutions." 
-    } 
+    "esp": {
+        "title": "Hola, soy",
+        "title_2": "Henry Quispe Cabello",
+        "title_3": "Desarrollador Full Stack",
+        "content": "Diseño y desarrollo productos web escalables — backend primero, con interfaces limpias e integraciones confiables. Me especializo en Laravel y stacks modernos de JavaScript para entregar aplicaciones listas para producción.",
+        "phrases": [
+            "Desarrollador Full Stack",
+            "Especialista en Laravel y Vue.js",
+            "Sistemas E‑commerce y ERP",
+            "APIs, Integraciones y Automatización",
+            "Productos que escalan y rinden"
+        ],
+        "cta_primary": "Ver mi trabajo",
+        "cta_secondary": "Descargar CV",
+        "cv": "/cv-spanish-2024v3.pdf",
+        "location": "Lima, Perú",
+        "years_experience": "5+",
+        "skills": ["Laravel", "Vue.js", "Node.js", "Tailwind CSS", "MySQL", "PostgreSQL", "AWS"]
+    }
 }

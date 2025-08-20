@@ -1,0 +1,42 @@
+{
+    "eng": {
+        "items": [
+            "Amazon EC2",
+            "Amazon Rekognition",
+            "Amazon S3",
+            "Docker",
+            "Face ++",
+            "Git",
+            "Laravel",
+            "MySQL",
+            "Node.js",
+            "PHP",
+            "PHPStorm",
+            "PostgreSQL",
+            "Tailwind CSS",
+            "VSCode",
+            "Vue.js"
+        ],
+        "title": "Tech Stack"
+    },
+    "esp": {
+        "items": [
+            "Amazon EC2",
+            "Amazon Rekognition",
+            "Amazon S3",
+            "Docker",
+            "Face ++",
+            "Git",
+            "Laravel",
+            "MySQL",
+            "Node.js",
+            "PHP",
+            "PHPStorm",
+            "PostgreSQL",
+            "Tailwind CSS",
+            "VSCode",
+            "Vue.js"
+        ],
+        "title": "Stack Tecnológico"
+    }
+}

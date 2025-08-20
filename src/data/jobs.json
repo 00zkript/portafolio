@@ -10,9 +10,9 @@
         "icons": [
             { "icon": "simple-icons:laravel", "text": "Laravel" },
             { "icon": "simple-icons:laravel", "text": "Blade" },
-            { "icon": "akar-icons:vue-fill", "text": "Vuejs " },
-            { "icon": "raphael:js", "text": "Vanilla Js " },
-            { "icon": "simple-icons:jquery", "text": "Jquery " },
+            { "icon": "akar-icons:vue-fill", "text": "Vue.js" },
+            { "icon": "raphael:js", "text": "Vanilla JS" },
+            { "icon": "simple-icons:jquery", "text": "jQuery" },
             { "icon": "arcticons:mercado-pago", "text": "Mercado pago " },
             { "icon": "simple-icons:amazonec2", "text": "Amazon C2" },
             { "icon": "simple-icons:amazons3", "text": "Amazon S3" },
@@ -47,9 +47,9 @@
         "icons": [
             { "icon": "simple-icons:laravel", "text": "Laravel" },
             { "icon": "simple-icons:laravel", "text": "Blade" },
-            { "icon": "akar-icons:vue-fill", "text": "Vuejs " },
-            { "icon": "raphael:js", "text": "Vanilla Js " },
-            { "icon": "simple-icons:jquery", "text": "Jquery " },
+            { "icon": "akar-icons:vue-fill", "text": "Vue.js" },
+            { "icon": "raphael:js", "text": "Vanilla JS" },
+            { "icon": "simple-icons:jquery", "text": "jQuery" },
             { "icon": "arcticons:mercado-pago", "text": "Mercado pago " }
         ]
     },
@@ -64,9 +64,9 @@
         "icons": [
             { "icon": "simple-icons:laravel", "text": "Laravel" },
             { "icon": "simple-icons:laravel", "text": "Blade" },
-            { "icon": "akar-icons:vue-fill", "text": "Vuejs " },
-            { "icon": "raphael:js", "text": "Vanilla Js " },
-            { "icon": "simple-icons:jquery", "text": "Jquery " },
+            { "icon": "akar-icons:vue-fill", "text": "Vue.js" },
+            { "icon": "raphael:js", "text": "Vanilla JS" },
+            { "icon": "simple-icons:jquery", "text": "jQuery" },
             { "icon": "fluent:payment-16-regular", "text": "Izipay " }
         ]
     },
@@ -81,9 +81,9 @@
         "icons": [
             { "icon": "simple-icons:laravel", "text": "Laravel" },
             { "icon": "simple-icons:laravel", "text": "Blade" },
-            { "icon": "akar-icons:vue-fill", "text": "Vuejs " },
-            { "icon": "raphael:js", "text": "Vanilla Js " },
-            { "icon": "simple-icons:jquery", "text": "Jquery " }
+            { "icon": "akar-icons:vue-fill", "text": "Vue.js" },
+            { "icon": "raphael:js", "text": "Vanilla JS" },
+            { "icon": "simple-icons:jquery", "text": "jQuery" }
             
         ]
     },
