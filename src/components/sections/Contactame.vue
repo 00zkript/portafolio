@@ -162,7 +162,7 @@
         <div class="mt-8">
           <button
             type="submit"
-            class="block w-full rounded-md btn-primary px-4 py-2 text-center text-sm font-semibold shadow-md focus-ring-primary"
+            class="block w-full rounded-md btn-primary px-4 py-2 text-center text-sm font-semibold shadow-md focus-ring-primary justify-center"
           >
             {{ content.form.send }}
           </button>
