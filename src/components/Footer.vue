@@ -3,7 +3,7 @@
 </script>
 
 <template>
-  <footer class="bg-white/10 backdrop-blur-md text-white px-6 py-4 text-center flex flex-col md:flex-row justify-between items-center gap-4">
+  <footer class="bg-white/10 backdrop-blur-md text-white px-6 py-2 text-center flex flex-col md:flex-row justify-between items-center gap-4">
     <p class="text-sm">© 2024 Henry Quispe Cabello</p>
     <div class="flex gap-4">
       <a
